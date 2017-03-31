@@ -99,6 +99,84 @@ titanic_data.head(3)
 
 
 
+## Data Cleaning
+
+- As we see that cabin data mostly contains NaN and won't be much useful for exploration,
+- And same lies with the Embarked column, this data too won't be much useful, so lets drop these columns from dataframe.
+
+
+```python
+del titanic_data['Cabin']
+del titanic_data['Embarked']
+titanic_data.head(3)
+```
+
+
+
+
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>SibSp</th>
+      <th>Parch</th>
+      <th>Ticket</th>
+      <th>Fare</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>1</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Braund, Mr. Owen Harris</td>
+      <td>male</td>
+      <td>22.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>A/5 21171</td>
+      <td>7.2500</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>2</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Cumings, Mrs. John Bradley (Florence Briggs Th...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>1</td>
+      <td>0</td>
+      <td>PC 17599</td>
+      <td>71.2833</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>3</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Heikkinen, Miss. Laina</td>
+      <td>female</td>
+      <td>26.0</td>
+      <td>0</td>
+      <td>0</td>
+      <td>STON/O2. 3101282</td>
+      <td>7.9250</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+
 ## Overall Metrics
 
 The information has a column called 'survived' whose values are either 0 or 1, using this column we can count the total number of deaths and survivors.
@@ -143,7 +221,7 @@ drawPieChart(['Survivors', 'casualties'],[survivied,casualties],(0.1, 0),105)
     
 
 
-![png](output_5_1.png)
+![png](output_7_1.png)
 
 
 ## Overall Metrics By Gender
@@ -193,7 +271,7 @@ drawPieChart(['Female Survivors', 'Male Survivors'],[female_survivors,male_survi
 ```
 
 
-![png](output_9_0.png)
+![png](output_11_0.png)
 
 
 ## Explore Casualties based on Pclass
@@ -279,11 +357,11 @@ def drawHistogram(data,title,xlabel,ylabel,xticks=None,yticks=None,bins=None,col
     plt.show()
 
 drawHistogram(pclass_casualties,'Distribution of casualties based on Pclass',
-              'Pclass value','Number of survivors',range(1,4))
+              'Pclass value','Number of survivors',range(1,4),color='DarkRed')
 ```
 
 
-![png](output_13_0.png)
+![png](output_15_0.png)
 
 
 - The Histogram above shows the distribution of casualties based on their pclass, as we can observe that lower class has the   most number of casualties when compared to upper class and middle class. So, Now we can say that lower class people got the   least priority for life saving materials like life boats, etc. 
@@ -427,7 +505,7 @@ drawHistogram(survived_age_data,'Distribution of Survivors based on Age',
 ```
 
 
-![png](output_20_0.png)
+![png](output_22_0.png)
 
 
 
@@ -437,7 +515,7 @@ drawHistogram(casualties_age_data,'Distribution of casualties based on Age',
 ```
 
 
-![png](output_21_0.png)
+![png](output_23_0.png)
 
 
 - When we observe distribution of age data, Even though we see a slight bump in data at age [0 - 10] of survivors when compared to the age data of casualties, We cannot say or conclude that children might have got some preference because there is not much difference between the total no of survivors and casulaties who were of age less than 10. 
@@ -448,7 +526,7 @@ drawHistogram(casualties_age_data,'Distribution of casualties based on Age',
 
 ```python
 child_casualties_data = titanic_data[(age_data < 10) & (survival_data == 0)]
-child_casualties_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
+child_casualties_data[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']].head(10)
 ```
 
 
@@ -581,7 +659,7 @@ child_casualties_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Tic
 ```python
 ticket_data = titanic_data['Ticket']
 ticket_bool = (ticket_data == '349909')|(ticket_data == '382652')|(ticket_data == '347088')|(ticket_data == '3101295')
-titanic_data[(age_data > 10) &(ticket_bool) ].head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
+titanic_data[(age_data > 10) &(ticket_bool) ][['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']].head(10)
 ```
 
 
@@ -684,7 +762,7 @@ titanic_data[(age_data > 10) &(ticket_bool) ].head(10)[['PassengerId','Survived'
 
 ```python
 child_survivors_data = titanic_data[(age_data < 10) & (survival_data == 1)]
-child_survivors_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
+child_survivors_data[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']].head(10)
 ```
 
 
@@ -815,117 +893,1033 @@ child_survivors_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Tick
 
 
 ```python
-ticket_bool = (ticket_data == '248738')|(ticket_data == 'SC/Paris 2123')|(ticket_data == '363291')|(ticket_data == '347077')|(ticket_data == 'C.A. 34651')
-titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
+ticket_bool = ((ticket_data == '248738')|(ticket_data == 'SC/Paris 2123')|(ticket_data == '363291')|(ticket_data == '347077')
+               |(ticket_data == 'C.A. 34651')|(ticket_data == 'F.C.C. 13529'))
+data = titanic_data[(age_data > 10)&(ticket_bool)][['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
+
+def highlight_max(s):
+    '''
+    To Highlight male rows in data
+    '''
+    is_max = s == 'male'
+    if is_max['Sex'] :
+        is_max = is_max | True  
+         
+    return ['background-color: #ff9999' if v else 'background-color: #80ffcc' for v in is_max]
+
+data.style.apply(highlight_max,axis=1)
 ```
 
 
 
 
-<div>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>PassengerId</th>
-      <th>Survived</th>
-      <th>Name</th>
-      <th>Sex</th>
-      <th>Age</th>
-      <th>Ticket</th>
-      <th>Parch</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>25</th>
-      <td>26</td>
-      <td>1</td>
-      <td>Asplund, Mrs. Carl Oscar (Selma Augusta Emilia...</td>
-      <td>female</td>
-      <td>38.0</td>
-      <td>347077</td>
-      <td>5</td>
-    </tr>
-    <tr>
-      <th>323</th>
-      <td>324</td>
-      <td>1</td>
-      <td>Caldwell, Mrs. Albert Francis (Sylvia Mae Harb...</td>
-      <td>female</td>
-      <td>22.0</td>
-      <td>248738</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>328</th>
-      <td>329</td>
-      <td>1</td>
-      <td>Goldsmith, Mrs. Frank John (Emily Alice Brown)</td>
-      <td>female</td>
-      <td>31.0</td>
-      <td>363291</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>450</th>
-      <td>451</td>
-      <td>0</td>
-      <td>West, Mr. Edwy Arthur</td>
-      <td>male</td>
-      <td>36.0</td>
-      <td>C.A. 34651</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>472</th>
-      <td>473</td>
-      <td>1</td>
-      <td>West, Mrs. Edwy Arthur (Ada Mary Worth)</td>
-      <td>female</td>
-      <td>33.0</td>
-      <td>C.A. 34651</td>
-      <td>2</td>
-    </tr>
-    <tr>
-      <th>548</th>
-      <td>549</td>
-      <td>0</td>
-      <td>Goldsmith, Mr. Frank John</td>
-      <td>male</td>
-      <td>33.0</td>
-      <td>363291</td>
-      <td>1</td>
-    </tr>
-    <tr>
-      <th>608</th>
-      <td>609</td>
-      <td>1</td>
-      <td>Laroche, Mrs. Joseph (Juliette Marie Louise La...</td>
-      <td>female</td>
-      <td>22.0</td>
-      <td>SC/Paris 2123</td>
-      <td>2</td>
-    </tr>
-    <tr style="color:red">
-      <th>685</th>
-      <td>686</td>
-      <td>0</td>
-      <td>Laroche, Mr. Joseph Philippe Lemercier</td>
-      <td>male</td>
-      <td>25.0</td>
-      <td>SC/Paris 2123</td>
-      <td>2</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+
+        <style  type="text/css" >
+        
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row0_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col0 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col1 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col2 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col3 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col4 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col5 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row1_col6 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row2_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row3_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row4_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col0 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col1 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col2 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col3 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col4 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col5 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row5_col6 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row6_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col0 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col1 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col2 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col3 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col4 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col5 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row7_col6 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col0 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col1 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col2 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col3 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col4 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col5 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row8_col6 {
+            
+                background-color:  #80ffcc;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col0 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col1 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col2 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col3 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col4 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col5 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+            #T_19eb3876_1643_11e7_b07f_685d43992905row9_col6 {
+            
+                background-color:  #ff9999;
+            
+            }
+        
+        </style>
+
+        <table id="T_19eb3876_1643_11e7_b07f_685d43992905" None>
+        
+
+        <thead>
+            
+            <tr>
+                
+                
+                <th class="blank level0" >
+                  
+                
+                
+                
+                <th class="col_heading level0 col0" colspan=1>
+                  PassengerId
+                
+                
+                
+                <th class="col_heading level0 col1" colspan=1>
+                  Survived
+                
+                
+                
+                <th class="col_heading level0 col2" colspan=1>
+                  Name
+                
+                
+                
+                <th class="col_heading level0 col3" colspan=1>
+                  Sex
+                
+                
+                
+                <th class="col_heading level0 col4" colspan=1>
+                  Age
+                
+                
+                
+                <th class="col_heading level0 col5" colspan=1>
+                  Ticket
+                
+                
+                
+                <th class="col_heading level0 col6" colspan=1>
+                  Parch
+                
+                
+            </tr>
+            
+        </thead>
+        <tbody>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row0" rowspan=1>
+                    25
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col0"
+                 class="data row0 col0" >
+                    26
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col1"
+                 class="data row0 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col2"
+                 class="data row0 col2" >
+                    Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col3"
+                 class="data row0 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col4"
+                 class="data row0 col4" >
+                    38
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col5"
+                 class="data row0 col5" >
+                    347077
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row0_col6"
+                 class="data row0 col6" >
+                    5
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row1" rowspan=1>
+                    314
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col0"
+                 class="data row1 col0" >
+                    315
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col1"
+                 class="data row1 col1" >
+                    0
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col2"
+                 class="data row1 col2" >
+                    Hart, Mr. Benjamin
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col3"
+                 class="data row1 col3" >
+                    male
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col4"
+                 class="data row1 col4" >
+                    43
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col5"
+                 class="data row1 col5" >
+                    F.C.C. 13529
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row1_col6"
+                 class="data row1 col6" >
+                    1
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row2" rowspan=1>
+                    323
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col0"
+                 class="data row2 col0" >
+                    324
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col1"
+                 class="data row2 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col2"
+                 class="data row2 col2" >
+                    Caldwell, Mrs. Albert Francis (Sylvia Mae Harbaugh)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col3"
+                 class="data row2 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col4"
+                 class="data row2 col4" >
+                    22
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col5"
+                 class="data row2 col5" >
+                    248738
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row2_col6"
+                 class="data row2 col6" >
+                    1
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row3" rowspan=1>
+                    328
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col0"
+                 class="data row3 col0" >
+                    329
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col1"
+                 class="data row3 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col2"
+                 class="data row3 col2" >
+                    Goldsmith, Mrs. Frank John (Emily Alice Brown)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col3"
+                 class="data row3 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col4"
+                 class="data row3 col4" >
+                    31
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col5"
+                 class="data row3 col5" >
+                    363291
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row3_col6"
+                 class="data row3 col6" >
+                    1
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row4" rowspan=1>
+                    440
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col0"
+                 class="data row4 col0" >
+                    441
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col1"
+                 class="data row4 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col2"
+                 class="data row4 col2" >
+                    Hart, Mrs. Benjamin (Esther Ada Bloomfield)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col3"
+                 class="data row4 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col4"
+                 class="data row4 col4" >
+                    45
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col5"
+                 class="data row4 col5" >
+                    F.C.C. 13529
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row4_col6"
+                 class="data row4 col6" >
+                    1
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row5" rowspan=1>
+                    450
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col0"
+                 class="data row5 col0" >
+                    451
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col1"
+                 class="data row5 col1" >
+                    0
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col2"
+                 class="data row5 col2" >
+                    West, Mr. Edwy Arthur
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col3"
+                 class="data row5 col3" >
+                    male
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col4"
+                 class="data row5 col4" >
+                    36
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col5"
+                 class="data row5 col5" >
+                    C.A. 34651
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row5_col6"
+                 class="data row5 col6" >
+                    2
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row6" rowspan=1>
+                    472
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col0"
+                 class="data row6 col0" >
+                    473
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col1"
+                 class="data row6 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col2"
+                 class="data row6 col2" >
+                    West, Mrs. Edwy Arthur (Ada Mary Worth)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col3"
+                 class="data row6 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col4"
+                 class="data row6 col4" >
+                    33
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col5"
+                 class="data row6 col5" >
+                    C.A. 34651
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row6_col6"
+                 class="data row6 col6" >
+                    2
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row7" rowspan=1>
+                    548
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col0"
+                 class="data row7 col0" >
+                    549
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col1"
+                 class="data row7 col1" >
+                    0
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col2"
+                 class="data row7 col2" >
+                    Goldsmith, Mr. Frank John
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col3"
+                 class="data row7 col3" >
+                    male
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col4"
+                 class="data row7 col4" >
+                    33
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col5"
+                 class="data row7 col5" >
+                    363291
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row7_col6"
+                 class="data row7 col6" >
+                    1
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row8" rowspan=1>
+                    608
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col0"
+                 class="data row8 col0" >
+                    609
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col1"
+                 class="data row8 col1" >
+                    1
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col2"
+                 class="data row8 col2" >
+                    Laroche, Mrs. Joseph (Juliette Marie Louise Lafargue)
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col3"
+                 class="data row8 col3" >
+                    female
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col4"
+                 class="data row8 col4" >
+                    22
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col5"
+                 class="data row8 col5" >
+                    SC/Paris 2123
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row8_col6"
+                 class="data row8 col6" >
+                    2
+                
+                
+            </tr>
+            
+            <tr>
+                
+                
+                <th id="T_19eb3876_1643_11e7_b07f_685d43992905"
+                 class="row_heading level0 row9" rowspan=1>
+                    685
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col0"
+                 class="data row9 col0" >
+                    686
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col1"
+                 class="data row9 col1" >
+                    0
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col2"
+                 class="data row9 col2" >
+                    Laroche, Mr. Joseph Philippe Lemercier
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col3"
+                 class="data row9 col3" >
+                    male
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col4"
+                 class="data row9 col4" >
+                    25
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col5"
+                 class="data row9 col5" >
+                    SC/Paris 2123
+                
+                
+                
+                <td id="T_19eb3876_1643_11e7_b07f_685d43992905row9_col6"
+                 class="data row9 col6" >
+                    2
+                
+                
+            </tr>
+            
+        </tbody>
+        </table>
+        
 
 
 
-- The above data shows the data related to family members of the childeren who survived the diaster. The data shows that males din't survive the disaster. Probably now we can relate to the fact that female and children were given preference.
+- The above data shows the data related to family members of the childeren who survived the diaster. The data shows that males (rows which are red in color) didn't survive the disaster. Probably now we can relate to the fact that female and children were given preference.
 - The others facts that we can produce from the data are like, if family didn't get a chance to survive, then in that case whole family died including children 
-- If in case some how family got a chance to survive then females and children were given preference.
+- If in case some how family got a chance to survive then females and children of that family were given preference.
 - Another interesting fact is that children who were of age less than 1 survived the disaster.
 
 
@@ -1042,7 +2036,7 @@ drawHistogram(casualties_parch_data,'Distribution of Parch Values',
 ```
 
 
-![png](output_33_0.png)
+![png](output_35_0.png)
 
 
 - The above Histogram shows that most of the passengers had parch value as 'Zero', i.e, they travelled alone and din't had any dependents.  
