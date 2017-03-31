@@ -581,7 +581,7 @@ child_casualties_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Tic
 ```python
 ticket_data = titanic_data['Ticket']
 ticket_bool = (ticket_data == '349909')|(ticket_data == '382652')|(ticket_data == '347088')|(ticket_data == '3101295')
-titanic_data[(age_data > 10) &(ticket_bool) ].head(10)
+titanic_data[(age_data > 10) &(ticket_bool) ].head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
 ```
 
 
@@ -594,16 +594,11 @@ titanic_data[(age_data > 10) &(ticket_bool) ].head(10)
       <th></th>
       <th>PassengerId</th>
       <th>Survived</th>
-      <th>Pclass</th>
       <th>Name</th>
       <th>Sex</th>
       <th>Age</th>
-      <th>SibSp</th>
-      <th>Parch</th>
       <th>Ticket</th>
-      <th>Fare</th>
-      <th>Cabin</th>
-      <th>Embarked</th>
+      <th>Parch</th>
     </tr>
   </thead>
   <tbody>
@@ -611,106 +606,71 @@ titanic_data[(age_data > 10) &(ticket_bool) ].head(10)
       <th>167</th>
       <td>168</td>
       <td>0</td>
-      <td>3</td>
       <td>Skoog, Mrs. William (Anna Bernhardina Karlsson)</td>
       <td>female</td>
       <td>45.0</td>
-      <td>1</td>
-      <td>4</td>
       <td>347088</td>
-      <td>27.9000</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>266</th>
       <td>267</td>
       <td>0</td>
-      <td>3</td>
       <td>Panula, Mr. Ernesti Arvid</td>
       <td>male</td>
       <td>16.0</td>
-      <td>4</td>
-      <td>1</td>
       <td>3101295</td>
-      <td>39.6875</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>360</th>
       <td>361</td>
       <td>0</td>
-      <td>3</td>
       <td>Skoog, Mr. Wilhelm</td>
       <td>male</td>
       <td>40.0</td>
-      <td>1</td>
-      <td>4</td>
       <td>347088</td>
-      <td>27.9000</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>567</th>
       <td>568</td>
       <td>0</td>
-      <td>3</td>
       <td>Palsson, Mrs. Nils (Alma Cornelia Berglund)</td>
       <td>female</td>
       <td>29.0</td>
-      <td>0</td>
-      <td>4</td>
       <td>349909</td>
-      <td>21.0750</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>4</td>
     </tr>
     <tr>
       <th>638</th>
       <td>639</td>
       <td>0</td>
-      <td>3</td>
       <td>Panula, Mrs. Juha (Maria Emilia Ojala)</td>
       <td>female</td>
       <td>41.0</td>
-      <td>0</td>
-      <td>5</td>
       <td>3101295</td>
-      <td>39.6875</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>686</th>
       <td>687</td>
       <td>0</td>
-      <td>3</td>
       <td>Panula, Mr. Jaako Arnold</td>
       <td>male</td>
       <td>14.0</td>
-      <td>4</td>
-      <td>1</td>
       <td>3101295</td>
-      <td>39.6875</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>885</th>
       <td>886</td>
       <td>0</td>
-      <td>3</td>
       <td>Rice, Mrs. William (Margaret Norton)</td>
       <td>female</td>
       <td>39.0</td>
-      <td>0</td>
-      <td>5</td>
       <td>382652</td>
-      <td>29.1250</td>
-      <td>NaN</td>
-      <td>Q</td>
+      <td>5</td>
     </tr>
   </tbody>
 </table>
@@ -856,7 +816,7 @@ child_survivors_data.head(10)[['PassengerId','Survived','Name','Sex','Age','Tick
 
 ```python
 ticket_bool = (ticket_data == '248738')|(ticket_data == 'SC/Paris 2123')|(ticket_data == '363291')|(ticket_data == '347077')|(ticket_data == 'C.A. 34651')
-titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)
+titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)[['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
 ```
 
 
@@ -869,16 +829,11 @@ titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)
       <th></th>
       <th>PassengerId</th>
       <th>Survived</th>
-      <th>Pclass</th>
       <th>Name</th>
       <th>Sex</th>
       <th>Age</th>
-      <th>SibSp</th>
-      <th>Parch</th>
       <th>Ticket</th>
-      <th>Fare</th>
-      <th>Cabin</th>
-      <th>Embarked</th>
+      <th>Parch</th>
     </tr>
   </thead>
   <tbody>
@@ -886,121 +841,81 @@ titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)
       <th>25</th>
       <td>26</td>
       <td>1</td>
-      <td>3</td>
       <td>Asplund, Mrs. Carl Oscar (Selma Augusta Emilia...</td>
       <td>female</td>
       <td>38.0</td>
-      <td>1</td>
-      <td>5</td>
       <td>347077</td>
-      <td>31.3875</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>5</td>
     </tr>
     <tr>
       <th>323</th>
       <td>324</td>
       <td>1</td>
-      <td>2</td>
       <td>Caldwell, Mrs. Albert Francis (Sylvia Mae Harb...</td>
       <td>female</td>
       <td>22.0</td>
-      <td>1</td>
-      <td>1</td>
       <td>248738</td>
-      <td>29.0000</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>328</th>
       <td>329</td>
       <td>1</td>
-      <td>3</td>
       <td>Goldsmith, Mrs. Frank John (Emily Alice Brown)</td>
       <td>female</td>
       <td>31.0</td>
-      <td>1</td>
-      <td>1</td>
       <td>363291</td>
-      <td>20.5250</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>450</th>
       <td>451</td>
       <td>0</td>
-      <td>2</td>
       <td>West, Mr. Edwy Arthur</td>
       <td>male</td>
       <td>36.0</td>
-      <td>1</td>
-      <td>2</td>
       <td>C.A. 34651</td>
-      <td>27.7500</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>472</th>
       <td>473</td>
       <td>1</td>
-      <td>2</td>
       <td>West, Mrs. Edwy Arthur (Ada Mary Worth)</td>
       <td>female</td>
       <td>33.0</td>
-      <td>1</td>
-      <td>2</td>
       <td>C.A. 34651</td>
-      <td>27.7500</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>548</th>
       <td>549</td>
       <td>0</td>
-      <td>3</td>
       <td>Goldsmith, Mr. Frank John</td>
       <td>male</td>
       <td>33.0</td>
-      <td>1</td>
-      <td>1</td>
       <td>363291</td>
-      <td>20.5250</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>608</th>
       <td>609</td>
       <td>1</td>
-      <td>2</td>
       <td>Laroche, Mrs. Joseph (Juliette Marie Louise La...</td>
       <td>female</td>
       <td>22.0</td>
-      <td>1</td>
-      <td>2</td>
       <td>SC/Paris 2123</td>
-      <td>41.5792</td>
-      <td>NaN</td>
-      <td>C</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>685</th>
       <td>686</td>
       <td>0</td>
-      <td>2</td>
       <td>Laroche, Mr. Joseph Philippe Lemercier</td>
       <td>male</td>
       <td>25.0</td>
-      <td>1</td>
-      <td>2</td>
       <td>SC/Paris 2123</td>
-      <td>41.5792</td>
-      <td>NaN</td>
-      <td>C</td>
+      <td>2</td>
     </tr>
   </tbody>
 </table>
@@ -1015,7 +930,7 @@ titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)
 
 
 ```python
-titanic_data[(age_data < 1)]
+titanic_data[(age_data < 1)][['PassengerId','Survived','Name','Sex','Age','Ticket','Parch']]
 ```
 
 
@@ -1028,16 +943,11 @@ titanic_data[(age_data < 1)]
       <th></th>
       <th>PassengerId</th>
       <th>Survived</th>
-      <th>Pclass</th>
       <th>Name</th>
       <th>Sex</th>
       <th>Age</th>
-      <th>SibSp</th>
-      <th>Parch</th>
       <th>Ticket</th>
-      <th>Fare</th>
-      <th>Cabin</th>
-      <th>Embarked</th>
+      <th>Parch</th>
     </tr>
   </thead>
   <tbody>
@@ -1045,106 +955,71 @@ titanic_data[(age_data < 1)]
       <th>78</th>
       <td>79</td>
       <td>1</td>
-      <td>2</td>
       <td>Caldwell, Master. Alden Gates</td>
       <td>male</td>
       <td>0.83</td>
-      <td>0</td>
-      <td>2</td>
       <td>248738</td>
-      <td>29.0000</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>305</th>
       <td>306</td>
       <td>1</td>
-      <td>1</td>
       <td>Allison, Master. Hudson Trevor</td>
       <td>male</td>
       <td>0.92</td>
-      <td>1</td>
-      <td>2</td>
       <td>113781</td>
-      <td>151.5500</td>
-      <td>C22 C26</td>
-      <td>S</td>
+      <td>2</td>
     </tr>
     <tr>
       <th>469</th>
       <td>470</td>
       <td>1</td>
-      <td>3</td>
       <td>Baclini, Miss. Helene Barbara</td>
       <td>female</td>
       <td>0.75</td>
-      <td>2</td>
-      <td>1</td>
       <td>2666</td>
-      <td>19.2583</td>
-      <td>NaN</td>
-      <td>C</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>644</th>
       <td>645</td>
       <td>1</td>
-      <td>3</td>
       <td>Baclini, Miss. Eugenie</td>
       <td>female</td>
       <td>0.75</td>
-      <td>2</td>
-      <td>1</td>
       <td>2666</td>
-      <td>19.2583</td>
-      <td>NaN</td>
-      <td>C</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>755</th>
       <td>756</td>
       <td>1</td>
-      <td>2</td>
       <td>Hamalainen, Master. Viljo</td>
       <td>male</td>
       <td>0.67</td>
-      <td>1</td>
-      <td>1</td>
       <td>250649</td>
-      <td>14.5000</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>803</th>
       <td>804</td>
       <td>1</td>
-      <td>3</td>
       <td>Thomas, Master. Assad Alexander</td>
       <td>male</td>
       <td>0.42</td>
-      <td>0</td>
-      <td>1</td>
       <td>2625</td>
-      <td>8.5167</td>
-      <td>NaN</td>
-      <td>C</td>
+      <td>1</td>
     </tr>
     <tr>
       <th>831</th>
       <td>832</td>
       <td>1</td>
-      <td>2</td>
       <td>Richards, Master. George Sibley</td>
       <td>male</td>
       <td>0.83</td>
-      <td>1</td>
-      <td>1</td>
       <td>29106</td>
-      <td>18.7500</td>
-      <td>NaN</td>
-      <td>S</td>
+      <td>1</td>
     </tr>
   </tbody>
 </table>
