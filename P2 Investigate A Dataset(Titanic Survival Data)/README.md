@@ -907,7 +907,7 @@ titanic_data[(age_data > 10)  &(ticket_bool) ].head(10)[['PassengerId','Survived
       <td>SC/Paris 2123</td>
       <td>2</td>
     </tr>
-    <tr>
+    <tr style="color:red">
       <th>685</th>
       <td>686</td>
       <td>0</td>
