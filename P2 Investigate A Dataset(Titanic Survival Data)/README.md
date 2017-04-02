@@ -902,7 +902,7 @@ titanic_data[(age_data > 10)&(ticket_bool)][['PassengerId','Survived','Name','Se
 
 
 <div>
-<table border="1" class="dataframe">
+<table border="1" class="">
   <thead>
     <tr style="text-align: right;">
       <th></th>
