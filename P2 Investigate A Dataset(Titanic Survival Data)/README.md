@@ -1,5 +1,5 @@
 
-# Titanic Data Analysis
+# Titanic Survival Data Analysis
 
 The data set which I am going to explore contains the information gathered from 891 of the 2224 passengers and crew on board the Titanic. The Data set has various columns like 
 
