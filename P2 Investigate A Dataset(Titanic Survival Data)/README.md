@@ -1078,844 +1078,135 @@ data.style.apply(highlight_max,axis=1)
 
 
 
-
-        <style  type="text/css" >
-        
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col0 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col1 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col3 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col4 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col6 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col7 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col0 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col1 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col3 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col4 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col6 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col7 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col0 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col1 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col3 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col4 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col6 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col7 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col0 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col1 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col3 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col4 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col6 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col7 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-        </style>
-
-        <table id="T_b0bf852c_22c9_11e7_9da7_685d43992905" None>
-        
-
-        <thead>
-            
-            <tr>
-                
-                
-                <th class="blank level0" >
-                  
-                
-                
-                
-                <th class="col_heading level0 col0" colspan=1>
-                  PassengerId
-                
-                
-                
-                <th class="col_heading level0 col1" colspan=1>
-                  Survived
-                
-                
-                
-                <th class="col_heading level0 col2" colspan=1>
-                  Name
-                
-                
-                
-                <th class="col_heading level0 col3" colspan=1>
-                  Sex
-                
-                
-                
-                <th class="col_heading level0 col4" colspan=1>
-                  Age
-                
-                
-                
-                <th class="col_heading level0 col5" colspan=1>
-                  Ticket
-                
-                
-                
-                <th class="col_heading level0 col6" colspan=1>
-                  Parch
-                
-                
-                
-                <th class="col_heading level0 col7" colspan=1>
-                  Pclass
-                
-                
-            </tr>
-            
-        </thead>
-        <tbody>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row0" rowspan=1>
-                    25
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col0"
-                 class="data row0 col0" >
-                    26
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col1"
-                 class="data row0 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col2"
-                 class="data row0 col2" >
-                    Asplund, Mrs. Carl Oscar (Selma Augusta Emilia Johansson)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col3"
-                 class="data row0 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col4"
-                 class="data row0 col4" >
-                    38
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col5"
-                 class="data row0 col5" >
-                    347077
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col6"
-                 class="data row0 col6" >
-                    5
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row0_col7"
-                 class="data row0 col7" >
-                    3
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row1" rowspan=1>
-                    314
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col0"
-                 class="data row1 col0" >
-                    315
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col1"
-                 class="data row1 col1" >
-                    0
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col2"
-                 class="data row1 col2" >
-                    Hart, Mr. Benjamin
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col3"
-                 class="data row1 col3" >
-                    male
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col4"
-                 class="data row1 col4" >
-                    43
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col5"
-                 class="data row1 col5" >
-                    F.C.C. 13529
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col6"
-                 class="data row1 col6" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row1_col7"
-                 class="data row1 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row2" rowspan=1>
-                    323
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col0"
-                 class="data row2 col0" >
-                    324
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col1"
-                 class="data row2 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col2"
-                 class="data row2 col2" >
-                    Caldwell, Mrs. Albert Francis (Sylvia Mae Harbaugh)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col3"
-                 class="data row2 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col4"
-                 class="data row2 col4" >
-                    22
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col5"
-                 class="data row2 col5" >
-                    248738
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col6"
-                 class="data row2 col6" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row2_col7"
-                 class="data row2 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row3" rowspan=1>
-                    328
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col0"
-                 class="data row3 col0" >
-                    329
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col1"
-                 class="data row3 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col2"
-                 class="data row3 col2" >
-                    Goldsmith, Mrs. Frank John (Emily Alice Brown)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col3"
-                 class="data row3 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col4"
-                 class="data row3 col4" >
-                    31
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col5"
-                 class="data row3 col5" >
-                    363291
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col6"
-                 class="data row3 col6" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row3_col7"
-                 class="data row3 col7" >
-                    3
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row4" rowspan=1>
-                    440
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col0"
-                 class="data row4 col0" >
-                    441
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col1"
-                 class="data row4 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col2"
-                 class="data row4 col2" >
-                    Hart, Mrs. Benjamin (Esther Ada Bloomfield)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col3"
-                 class="data row4 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col4"
-                 class="data row4 col4" >
-                    45
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col5"
-                 class="data row4 col5" >
-                    F.C.C. 13529
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col6"
-                 class="data row4 col6" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row4_col7"
-                 class="data row4 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row5" rowspan=1>
-                    450
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col0"
-                 class="data row5 col0" >
-                    451
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col1"
-                 class="data row5 col1" >
-                    0
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col2"
-                 class="data row5 col2" >
-                    West, Mr. Edwy Arthur
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col3"
-                 class="data row5 col3" >
-                    male
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col4"
-                 class="data row5 col4" >
-                    36
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col5"
-                 class="data row5 col5" >
-                    C.A. 34651
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col6"
-                 class="data row5 col6" >
-                    2
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row5_col7"
-                 class="data row5 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row6" rowspan=1>
-                    472
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col0"
-                 class="data row6 col0" >
-                    473
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col1"
-                 class="data row6 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col2"
-                 class="data row6 col2" >
-                    West, Mrs. Edwy Arthur (Ada Mary Worth)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col3"
-                 class="data row6 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col4"
-                 class="data row6 col4" >
-                    33
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col5"
-                 class="data row6 col5" >
-                    C.A. 34651
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col6"
-                 class="data row6 col6" >
-                    2
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row6_col7"
-                 class="data row6 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row7" rowspan=1>
-                    548
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col0"
-                 class="data row7 col0" >
-                    549
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col1"
-                 class="data row7 col1" >
-                    0
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col2"
-                 class="data row7 col2" >
-                    Goldsmith, Mr. Frank John
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col3"
-                 class="data row7 col3" >
-                    male
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col4"
-                 class="data row7 col4" >
-                    33
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col5"
-                 class="data row7 col5" >
-                    363291
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col6"
-                 class="data row7 col6" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row7_col7"
-                 class="data row7 col7" >
-                    3
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row8" rowspan=1>
-                    608
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col0"
-                 class="data row8 col0" >
-                    609
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col1"
-                 class="data row8 col1" >
-                    1
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col2"
-                 class="data row8 col2" >
-                    Laroche, Mrs. Joseph (Juliette Marie Louise Lafargue)
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col3"
-                 class="data row8 col3" >
-                    female
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col4"
-                 class="data row8 col4" >
-                    22
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col5"
-                 class="data row8 col5" >
-                    SC/Paris 2123
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col6"
-                 class="data row8 col6" >
-                    2
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row8_col7"
-                 class="data row8 col7" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b0bf852c_22c9_11e7_9da7_685d43992905"
-                 class="row_heading level0 row9" rowspan=1>
-                    685
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col0"
-                 class="data row9 col0" >
-                    686
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col1"
-                 class="data row9 col1" >
-                    0
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col2"
-                 class="data row9 col2" >
-                    Laroche, Mr. Joseph Philippe Lemercier
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col3"
-                 class="data row9 col3" >
-                    male
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col4"
-                 class="data row9 col4" >
-                    25
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col5"
-                 class="data row9 col5" >
-                    SC/Paris 2123
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col6"
-                 class="data row9 col6" >
-                    2
-                
-                
-                
-                <td id="T_b0bf852c_22c9_11e7_9da7_685d43992905row9_col7"
-                 class="data row9 col7" >
-                    2
-                
-                
-            </tr>
-            
-        </tbody>
-        </table>
-        
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Ticket</th>
+      <th>Parch</th>
+      <th>Pclass</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>25</th>
+      <td>26</td>
+      <td>1</td>
+      <td>Asplund, Mrs. Carl Oscar (Selma Augusta Emilia...</td>
+      <td>female</td>
+      <td>38.0</td>
+      <td>347077</td>
+      <td>5</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>314</th>
+      <td>315</td>
+      <td>0</td>
+      <td>Hart, Mr. Benjamin</td>
+      <td>male</td>
+      <td>43.0</td>
+      <td>F.C.C. 13529</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>323</th>
+      <td>324</td>
+      <td>1</td>
+      <td>Caldwell, Mrs. Albert Francis (Sylvia Mae Harb...</td>
+      <td>female</td>
+      <td>22.0</td>
+      <td>248738</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>328</th>
+      <td>329</td>
+      <td>1</td>
+      <td>Goldsmith, Mrs. Frank John (Emily Alice Brown)</td>
+      <td>female</td>
+      <td>31.0</td>
+      <td>363291</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>440</th>
+      <td>441</td>
+      <td>1</td>
+      <td>Hart, Mrs. Benjamin (Esther Ada Bloomfield)</td>
+      <td>female</td>
+      <td>45.0</td>
+      <td>F.C.C. 13529</td>
+      <td>1</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>450</th>
+      <td>451</td>
+      <td>0</td>
+      <td>West, Mr. Edwy Arthur</td>
+      <td>male</td>
+      <td>36.0</td>
+      <td>C.A. 34651</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>472</th>
+      <td>473</td>
+      <td>1</td>
+      <td>West, Mrs. Edwy Arthur (Ada Mary Worth)</td>
+      <td>female</td>
+      <td>33.0</td>
+      <td>C.A. 34651</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>548</th>
+      <td>549</td>
+      <td>0</td>
+      <td>Goldsmith, Mr. Frank John</td>
+      <td>male</td>
+      <td>33.0</td>
+      <td>363291</td>
+      <td>1</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>608</th>
+      <td>609</td>
+      <td>1</td>
+      <td>Laroche, Mrs. Joseph (Juliette Marie Louise La...</td>
+      <td>female</td>
+      <td>22.0</td>
+      <td>SC/Paris 2123</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>685</th>
+      <td>686</td>
+      <td>0</td>
+      <td>Laroche, Mr. Joseph Philippe Lemercier</td>
+      <td>male</td>
+      <td>25.0</td>
+      <td>SC/Paris 2123</td>
+      <td>2</td>
+      <td>2</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -1964,473 +1255,94 @@ misc_data.style.apply(highlight_age,axis=1)
 
 
 
-
-        <style  type="text/css" >
-        
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row0_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row1_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row2_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row3_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row4_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row5_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b2b19448_22c9_11e7_bb18_685d43992905row6_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-        </style>
-
-        <table id="T_b2b19448_22c9_11e7_bb18_685d43992905" None>
-        
-
-        <thead>
-            
-            <tr>
-                
-                
-                <th class="blank level0" >
-                  
-                
-                
-                
-                <th class="col_heading level0 col0" colspan=1>
-                  PassengerId
-                
-                
-                
-                <th class="col_heading level0 col1" colspan=1>
-                  Survived
-                
-                
-                
-                <th class="col_heading level0 col2" colspan=1>
-                  Pclass
-                
-                
-                
-                <th class="col_heading level0 col3" colspan=1>
-                  Name
-                
-                
-                
-                <th class="col_heading level0 col4" colspan=1>
-                  Sex
-                
-                
-                
-                <th class="col_heading level0 col5" colspan=1>
-                  Age
-                
-                
-                
-                <th class="col_heading level0 col6" colspan=1>
-                  Parch
-                
-                
-            </tr>
-            
-        </thead>
-        <tbody>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row0" rowspan=1>
-                    78
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col0"
-                 class="data row0 col0" >
-                    79
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col1"
-                 class="data row0 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col2"
-                 class="data row0 col2" >
-                    2
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col3"
-                 class="data row0 col3" >
-                    Caldwell, Master. Alden Gates
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col4"
-                 class="data row0 col4" >
-                    male
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col5"
-                 class="data row0 col5" >
-                    0.83
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row0_col6"
-                 class="data row0 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row1" rowspan=1>
-                    305
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col0"
-                 class="data row1 col0" >
-                    306
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col1"
-                 class="data row1 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col2"
-                 class="data row1 col2" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col3"
-                 class="data row1 col3" >
-                    Allison, Master. Hudson Trevor
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col4"
-                 class="data row1 col4" >
-                    male
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col5"
-                 class="data row1 col5" >
-                    0.92
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row1_col6"
-                 class="data row1 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row2" rowspan=1>
-                    469
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col0"
-                 class="data row2 col0" >
-                    470
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col1"
-                 class="data row2 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col2"
-                 class="data row2 col2" >
-                    3
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col3"
-                 class="data row2 col3" >
-                    Baclini, Miss. Helene Barbara
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col4"
-                 class="data row2 col4" >
-                    female
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col5"
-                 class="data row2 col5" >
-                    0.75
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row2_col6"
-                 class="data row2 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row3" rowspan=1>
-                    644
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col0"
-                 class="data row3 col0" >
-                    645
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col1"
-                 class="data row3 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col2"
-                 class="data row3 col2" >
-                    3
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col3"
-                 class="data row3 col3" >
-                    Baclini, Miss. Eugenie
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col4"
-                 class="data row3 col4" >
-                    female
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col5"
-                 class="data row3 col5" >
-                    0.75
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row3_col6"
-                 class="data row3 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row4" rowspan=1>
-                    755
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col0"
-                 class="data row4 col0" >
-                    756
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col1"
-                 class="data row4 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col2"
-                 class="data row4 col2" >
-                    2
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col3"
-                 class="data row4 col3" >
-                    Hamalainen, Master. Viljo
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col4"
-                 class="data row4 col4" >
-                    male
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col5"
-                 class="data row4 col5" >
-                    0.67
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row4_col6"
-                 class="data row4 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row5" rowspan=1>
-                    803
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col0"
-                 class="data row5 col0" >
-                    804
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col1"
-                 class="data row5 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col2"
-                 class="data row5 col2" >
-                    3
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col3"
-                 class="data row5 col3" >
-                    Thomas, Master. Assad Alexander
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col4"
-                 class="data row5 col4" >
-                    male
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col5"
-                 class="data row5 col5" >
-                    0.42
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row5_col6"
-                 class="data row5 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b2b19448_22c9_11e7_bb18_685d43992905"
-                 class="row_heading level0 row6" rowspan=1>
-                    831
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col0"
-                 class="data row6 col0" >
-                    832
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col1"
-                 class="data row6 col1" >
-                    1
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col2"
-                 class="data row6 col2" >
-                    2
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col3"
-                 class="data row6 col3" >
-                    Richards, Master. George Sibley
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col4"
-                 class="data row6 col4" >
-                    male
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col5"
-                 class="data row6 col5" >
-                    0.83
-                
-                
-                
-                <td id="T_b2b19448_22c9_11e7_bb18_685d43992905row6_col6"
-                 class="data row6 col6" >
-                    1
-                
-                
-            </tr>
-            
-        </tbody>
-        </table>
-        
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Parch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>78</th>
+      <td>79</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Caldwell, Master. Alden Gates</td>
+      <td>male</td>
+      <td>0.83</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>305</th>
+      <td>306</td>
+      <td>1</td>
+      <td>1</td>
+      <td>Allison, Master. Hudson Trevor</td>
+      <td>male</td>
+      <td>0.92</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>469</th>
+      <td>470</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Baclini, Miss. Helene Barbara</td>
+      <td>female</td>
+      <td>0.75</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>644</th>
+      <td>645</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Baclini, Miss. Eugenie</td>
+      <td>female</td>
+      <td>0.75</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>755</th>
+      <td>756</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Hamalainen, Master. Viljo</td>
+      <td>male</td>
+      <td>0.67</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>803</th>
+      <td>804</td>
+      <td>1</td>
+      <td>3</td>
+      <td>Thomas, Master. Assad Alexander</td>
+      <td>male</td>
+      <td>0.42</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>832</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Richards, Master. George Sibley</td>
+      <td>male</td>
+      <td>0.83</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -2453,1453 +1365,264 @@ misc_data.style.apply(highlight_class,axis=1)
 
 
 
-
-        <style  type="text/css" >
-        
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row0_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row1_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row2_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row3_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row4_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row5_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row6_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row7_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row8_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row9_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row10_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row11_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row13_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row14_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row15_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row16_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row17_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row18_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row19_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row20_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row21_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row22_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b3b794ae_22c9_11e7_8314_685d43992905row23_col2 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-        </style>
-
-        <table id="T_b3b794ae_22c9_11e7_8314_685d43992905" None>
-        
-
-        <thead>
-            
-            <tr>
-                
-                
-                <th class="blank level0" >
-                  
-                
-                
-                
-                <th class="col_heading level0 col0" colspan=1>
-                  PassengerId
-                
-                
-                
-                <th class="col_heading level0 col1" colspan=1>
-                  Survived
-                
-                
-                
-                <th class="col_heading level0 col2" colspan=1>
-                  Pclass
-                
-                
-                
-                <th class="col_heading level0 col3" colspan=1>
-                  Name
-                
-                
-                
-                <th class="col_heading level0 col4" colspan=1>
-                  Sex
-                
-                
-                
-                <th class="col_heading level0 col5" colspan=1>
-                  Age
-                
-                
-                
-                <th class="col_heading level0 col6" colspan=1>
-                  Parch
-                
-                
-            </tr>
-            
-        </thead>
-        <tbody>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row0" rowspan=1>
-                    7
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col0"
-                 class="data row0 col0" >
-                    8
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col1"
-                 class="data row0 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col2"
-                 class="data row0 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col3"
-                 class="data row0 col3" >
-                    Palsson, Master. Gosta Leonard
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col4"
-                 class="data row0 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col5"
-                 class="data row0 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row0_col6"
-                 class="data row0 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row1" rowspan=1>
-                    16
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col0"
-                 class="data row1 col0" >
-                    17
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col1"
-                 class="data row1 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col2"
-                 class="data row1 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col3"
-                 class="data row1 col3" >
-                    Rice, Master. Eugene
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col4"
-                 class="data row1 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col5"
-                 class="data row1 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row1_col6"
-                 class="data row1 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row2" rowspan=1>
-                    24
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col0"
-                 class="data row2 col0" >
-                    25
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col1"
-                 class="data row2 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col2"
-                 class="data row2 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col3"
-                 class="data row2 col3" >
-                    Palsson, Miss. Torborg Danira
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col4"
-                 class="data row2 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col5"
-                 class="data row2 col5" >
-                    8
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row2_col6"
-                 class="data row2 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row3" rowspan=1>
-                    50
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col0"
-                 class="data row3 col0" >
-                    51
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col1"
-                 class="data row3 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col2"
-                 class="data row3 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col3"
-                 class="data row3 col3" >
-                    Panula, Master. Juha Niilo
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col4"
-                 class="data row3 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col5"
-                 class="data row3 col5" >
-                    7
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row3_col6"
-                 class="data row3 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row4" rowspan=1>
-                    63
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col0"
-                 class="data row4 col0" >
-                    64
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col1"
-                 class="data row4 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col2"
-                 class="data row4 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col3"
-                 class="data row4 col3" >
-                    Skoog, Master. Harald
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col4"
-                 class="data row4 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col5"
-                 class="data row4 col5" >
-                    4
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row4_col6"
-                 class="data row4 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row5" rowspan=1>
-                    119
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col0"
-                 class="data row5 col0" >
-                    120
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col1"
-                 class="data row5 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col2"
-                 class="data row5 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col3"
-                 class="data row5 col3" >
-                    Andersson, Miss. Ellis Anna Maria
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col4"
-                 class="data row5 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col5"
-                 class="data row5 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row5_col6"
-                 class="data row5 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row6" rowspan=1>
-                    147
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col0"
-                 class="data row6 col0" >
-                    148
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col1"
-                 class="data row6 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col2"
-                 class="data row6 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col3"
-                 class="data row6 col3" >
-                    Ford, Miss. Robina Maggie "Ruby"
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col4"
-                 class="data row6 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col5"
-                 class="data row6 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row6_col6"
-                 class="data row6 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row7" rowspan=1>
-                    164
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col0"
-                 class="data row7 col0" >
-                    165
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col1"
-                 class="data row7 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col2"
-                 class="data row7 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col3"
-                 class="data row7 col3" >
-                    Panula, Master. Eino Viljami
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col4"
-                 class="data row7 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col5"
-                 class="data row7 col5" >
-                    1
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row7_col6"
-                 class="data row7 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row8" rowspan=1>
-                    171
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col0"
-                 class="data row8 col0" >
-                    172
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col1"
-                 class="data row8 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col2"
-                 class="data row8 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col3"
-                 class="data row8 col3" >
-                    Rice, Master. Arthur
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col4"
-                 class="data row8 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col5"
-                 class="data row8 col5" >
-                    4
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row8_col6"
-                 class="data row8 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row9" rowspan=1>
-                    182
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col0"
-                 class="data row9 col0" >
-                    183
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col1"
-                 class="data row9 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col2"
-                 class="data row9 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col3"
-                 class="data row9 col3" >
-                    Asplund, Master. Clarence Gustaf Hugo
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col4"
-                 class="data row9 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col5"
-                 class="data row9 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row9_col6"
-                 class="data row9 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row10" rowspan=1>
-                    205
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col0"
-                 class="data row10 col0" >
-                    206
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col1"
-                 class="data row10 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col2"
-                 class="data row10 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col3"
-                 class="data row10 col3" >
-                    Strom, Miss. Telma Matilda
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col4"
-                 class="data row10 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col5"
-                 class="data row10 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row10_col6"
-                 class="data row10 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row11" rowspan=1>
-                    278
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col0"
-                 class="data row11 col0" >
-                    279
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col1"
-                 class="data row11 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col2"
-                 class="data row11 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col3"
-                 class="data row11 col3" >
-                    Rice, Master. Eric
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col4"
-                 class="data row11 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col5"
-                 class="data row11 col5" >
-                    7
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row11_col6"
-                 class="data row11 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row12" rowspan=1>
-                    297
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col0"
-                 class="data row12 col0" >
-                    298
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col1"
-                 class="data row12 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col2"
-                 class="data row12 col2" >
-                    1
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col3"
-                 class="data row12 col3" >
-                    Allison, Miss. Helen Loraine
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col4"
-                 class="data row12 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col5"
-                 class="data row12 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row12_col6"
-                 class="data row12 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row13" rowspan=1>
-                    374
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col0"
-                 class="data row13 col0" >
-                    375
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col1"
-                 class="data row13 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col2"
-                 class="data row13 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col3"
-                 class="data row13 col3" >
-                    Palsson, Miss. Stina Viola
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col4"
-                 class="data row13 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col5"
-                 class="data row13 col5" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row13_col6"
-                 class="data row13 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row14" rowspan=1>
-                    386
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col0"
-                 class="data row14 col0" >
-                    387
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col1"
-                 class="data row14 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col2"
-                 class="data row14 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col3"
-                 class="data row14 col3" >
-                    Goodwin, Master. Sidney Leonard
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col4"
-                 class="data row14 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col5"
-                 class="data row14 col5" >
-                    1
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row14_col6"
-                 class="data row14 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row15" rowspan=1>
-                    480
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col0"
-                 class="data row15 col0" >
-                    481
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col1"
-                 class="data row15 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col2"
-                 class="data row15 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col3"
-                 class="data row15 col3" >
-                    Goodwin, Master. Harold Victor
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col4"
-                 class="data row15 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col5"
-                 class="data row15 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row15_col6"
-                 class="data row15 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row16" rowspan=1>
-                    541
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col0"
-                 class="data row16 col0" >
-                    542
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col1"
-                 class="data row16 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col2"
-                 class="data row16 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col3"
-                 class="data row16 col3" >
-                    Andersson, Miss. Ingeborg Constanzia
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col4"
-                 class="data row16 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col5"
-                 class="data row16 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row16_col6"
-                 class="data row16 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row17" rowspan=1>
-                    634
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col0"
-                 class="data row17 col0" >
-                    635
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col1"
-                 class="data row17 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col2"
-                 class="data row17 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col3"
-                 class="data row17 col3" >
-                    Skoog, Miss. Mabel
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col4"
-                 class="data row17 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col5"
-                 class="data row17 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row17_col6"
-                 class="data row17 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row18" rowspan=1>
-                    642
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col0"
-                 class="data row18 col0" >
-                    643
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col1"
-                 class="data row18 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col2"
-                 class="data row18 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col3"
-                 class="data row18 col3" >
-                    Skoog, Miss. Margit Elizabeth
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col4"
-                 class="data row18 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col5"
-                 class="data row18 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row18_col6"
-                 class="data row18 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row19" rowspan=1>
-                    787
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col0"
-                 class="data row19 col0" >
-                    788
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col1"
-                 class="data row19 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col2"
-                 class="data row19 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col3"
-                 class="data row19 col3" >
-                    Rice, Master. George Hugh
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col4"
-                 class="data row19 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col5"
-                 class="data row19 col5" >
-                    8
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row19_col6"
-                 class="data row19 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row20" rowspan=1>
-                    813
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col0"
-                 class="data row20 col0" >
-                    814
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col1"
-                 class="data row20 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col2"
-                 class="data row20 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col3"
-                 class="data row20 col3" >
-                    Andersson, Miss. Ebba Iris Alfrida
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col4"
-                 class="data row20 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col5"
-                 class="data row20 col5" >
-                    6
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row20_col6"
-                 class="data row20 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row21" rowspan=1>
-                    824
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col0"
-                 class="data row21 col0" >
-                    825
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col1"
-                 class="data row21 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col2"
-                 class="data row21 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col3"
-                 class="data row21 col3" >
-                    Panula, Master. Urho Abraham
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col4"
-                 class="data row21 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col5"
-                 class="data row21 col5" >
-                    2
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row21_col6"
-                 class="data row21 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row22" rowspan=1>
-                    850
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col0"
-                 class="data row22 col0" >
-                    851
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col1"
-                 class="data row22 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col2"
-                 class="data row22 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col3"
-                 class="data row22 col3" >
-                    Andersson, Master. Sigvard Harald Elias
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col4"
-                 class="data row22 col4" >
-                    male
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col5"
-                 class="data row22 col5" >
-                    4
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row22_col6"
-                 class="data row22 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b3b794ae_22c9_11e7_8314_685d43992905"
-                 class="row_heading level0 row23" rowspan=1>
-                    852
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col0"
-                 class="data row23 col0" >
-                    853
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col1"
-                 class="data row23 col1" >
-                    0
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col2"
-                 class="data row23 col2" >
-                    3
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col3"
-                 class="data row23 col3" >
-                    Boulos, Miss. Nourelain
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col4"
-                 class="data row23 col4" >
-                    female
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col5"
-                 class="data row23 col5" >
-                    9
-                
-                
-                
-                <td id="T_b3b794ae_22c9_11e7_8314_685d43992905row23_col6"
-                 class="data row23 col6" >
-                    1
-                
-                
-            </tr>
-            
-        </tbody>
-        </table>
-        
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Parch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>7</th>
+      <td>8</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Palsson, Master. Gosta Leonard</td>
+      <td>male</td>
+      <td>2.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>16</th>
+      <td>17</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Rice, Master. Eugene</td>
+      <td>male</td>
+      <td>2.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>24</th>
+      <td>25</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Palsson, Miss. Torborg Danira</td>
+      <td>female</td>
+      <td>8.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>50</th>
+      <td>51</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Panula, Master. Juha Niilo</td>
+      <td>male</td>
+      <td>7.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>63</th>
+      <td>64</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Skoog, Master. Harald</td>
+      <td>male</td>
+      <td>4.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>119</th>
+      <td>120</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Andersson, Miss. Ellis Anna Maria</td>
+      <td>female</td>
+      <td>2.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>147</th>
+      <td>148</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Ford, Miss. Robina Maggie "Ruby"</td>
+      <td>female</td>
+      <td>9.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>164</th>
+      <td>165</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Panula, Master. Eino Viljami</td>
+      <td>male</td>
+      <td>1.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>171</th>
+      <td>172</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Rice, Master. Arthur</td>
+      <td>male</td>
+      <td>4.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>182</th>
+      <td>183</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Asplund, Master. Clarence Gustaf Hugo</td>
+      <td>male</td>
+      <td>9.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>205</th>
+      <td>206</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Strom, Miss. Telma Matilda</td>
+      <td>female</td>
+      <td>2.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>278</th>
+      <td>279</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Rice, Master. Eric</td>
+      <td>male</td>
+      <td>7.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>297</th>
+      <td>298</td>
+      <td>0</td>
+      <td>1</td>
+      <td>Allison, Miss. Helen Loraine</td>
+      <td>female</td>
+      <td>2.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>374</th>
+      <td>375</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Palsson, Miss. Stina Viola</td>
+      <td>female</td>
+      <td>3.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>386</th>
+      <td>387</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Goodwin, Master. Sidney Leonard</td>
+      <td>male</td>
+      <td>1.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>480</th>
+      <td>481</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Goodwin, Master. Harold Victor</td>
+      <td>male</td>
+      <td>9.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>541</th>
+      <td>542</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Andersson, Miss. Ingeborg Constanzia</td>
+      <td>female</td>
+      <td>9.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>634</th>
+      <td>635</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Skoog, Miss. Mabel</td>
+      <td>female</td>
+      <td>9.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>642</th>
+      <td>643</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Skoog, Miss. Margit Elizabeth</td>
+      <td>female</td>
+      <td>2.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>787</th>
+      <td>788</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Rice, Master. George Hugh</td>
+      <td>male</td>
+      <td>8.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>813</th>
+      <td>814</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Andersson, Miss. Ebba Iris Alfrida</td>
+      <td>female</td>
+      <td>6.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>824</th>
+      <td>825</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Panula, Master. Urho Abraham</td>
+      <td>male</td>
+      <td>2.0</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>850</th>
+      <td>851</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Andersson, Master. Sigvard Harald Elias</td>
+      <td>male</td>
+      <td>4.0</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>852</th>
+      <td>853</td>
+      <td>0</td>
+      <td>3</td>
+      <td>Boulos, Miss. Nourelain</td>
+      <td>female</td>
+      <td>9.0</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
@@ -4001,1005 +1724,194 @@ misc_data.style.apply(highlight_age_lessThan10,axis=1)
 
 
 
-
-        <style  type="text/css" >
-        
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-            #T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col5 {
-            
-                background-color:  #ff9999;
-            
-            }
-        
-        </style>
-
-        <table id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905" None>
-        
-
-        <thead>
-            
-            <tr>
-                
-                
-                <th class="blank level0" >
-                  
-                
-                
-                
-                <th class="col_heading level0 col0" colspan=1>
-                  PassengerId
-                
-                
-                
-                <th class="col_heading level0 col1" colspan=1>
-                  Survived
-                
-                
-                
-                <th class="col_heading level0 col2" colspan=1>
-                  Pclass
-                
-                
-                
-                <th class="col_heading level0 col3" colspan=1>
-                  Name
-                
-                
-                
-                <th class="col_heading level0 col4" colspan=1>
-                  Sex
-                
-                
-                
-                <th class="col_heading level0 col5" colspan=1>
-                  Age
-                
-                
-                
-                <th class="col_heading level0 col6" colspan=1>
-                  Parch
-                
-                
-            </tr>
-            
-        </thead>
-        <tbody>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row0" rowspan=1>
-                    17
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col0"
-                 class="data row0 col0" >
-                    18
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col1"
-                 class="data row0 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col2"
-                 class="data row0 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col3"
-                 class="data row0 col3" >
-                    Williams, Mr. Charles Eugene
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col4"
-                 class="data row0 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col5"
-                 class="data row0 col5" >
-                    nan
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row0_col6"
-                 class="data row0 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row1" rowspan=1>
-                    21
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col0"
-                 class="data row1 col0" >
-                    22
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col1"
-                 class="data row1 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col2"
-                 class="data row1 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col3"
-                 class="data row1 col3" >
-                    Beesley, Mr. Lawrence
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col4"
-                 class="data row1 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col5"
-                 class="data row1 col5" >
-                    34
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row1_col6"
-                 class="data row1 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row2" rowspan=1>
-                    78
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col0"
-                 class="data row2 col0" >
-                    79
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col1"
-                 class="data row2 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col2"
-                 class="data row2 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col3"
-                 class="data row2 col3" >
-                    Caldwell, Master. Alden Gates
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col4"
-                 class="data row2 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col5"
-                 class="data row2 col5" >
-                    0.83
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row2_col6"
-                 class="data row2 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row3" rowspan=1>
-                    183
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col0"
-                 class="data row3 col0" >
-                    184
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col1"
-                 class="data row3 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col2"
-                 class="data row3 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col3"
-                 class="data row3 col3" >
-                    Becker, Master. Richard F
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col4"
-                 class="data row3 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col5"
-                 class="data row3 col5" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row3_col6"
-                 class="data row3 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row4" rowspan=1>
-                    193
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col0"
-                 class="data row4 col0" >
-                    194
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col1"
-                 class="data row4 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col2"
-                 class="data row4 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col3"
-                 class="data row4 col3" >
-                    Navratil, Master. Michel M
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col4"
-                 class="data row4 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col5"
-                 class="data row4 col5" >
-                    3
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row4_col6"
-                 class="data row4 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row5" rowspan=1>
-                    226
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col0"
-                 class="data row5 col0" >
-                    227
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col1"
-                 class="data row5 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col2"
-                 class="data row5 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col3"
-                 class="data row5 col3" >
-                    Mellors, Mr. William John
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col4"
-                 class="data row5 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col5"
-                 class="data row5 col5" >
-                    19
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row5_col6"
-                 class="data row5 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row6" rowspan=1>
-                    288
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col0"
-                 class="data row6 col0" >
-                    289
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col1"
-                 class="data row6 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col2"
-                 class="data row6 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col3"
-                 class="data row6 col3" >
-                    Hosono, Mr. Masabumi
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col4"
-                 class="data row6 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col5"
-                 class="data row6 col5" >
-                    42
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row6_col6"
-                 class="data row6 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row7" rowspan=1>
-                    340
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col0"
-                 class="data row7 col0" >
-                    341
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col1"
-                 class="data row7 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col2"
-                 class="data row7 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col3"
-                 class="data row7 col3" >
-                    Navratil, Master. Edmond Roger
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col4"
-                 class="data row7 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col5"
-                 class="data row7 col5" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row7_col6"
-                 class="data row7 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row8" rowspan=1>
-                    407
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col0"
-                 class="data row8 col0" >
-                    408
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col1"
-                 class="data row8 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col2"
-                 class="data row8 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col3"
-                 class="data row8 col3" >
-                    Richards, Master. William Rowe
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col4"
-                 class="data row8 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col5"
-                 class="data row8 col5" >
-                    3
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row8_col6"
-                 class="data row8 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row9" rowspan=1>
-                    543
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col0"
-                 class="data row9 col0" >
-                    544
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col1"
-                 class="data row9 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col2"
-                 class="data row9 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col3"
-                 class="data row9 col3" >
-                    Beane, Mr. Edward
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col4"
-                 class="data row9 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col5"
-                 class="data row9 col5" >
-                    32
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row9_col6"
-                 class="data row9 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row10" rowspan=1>
-                    547
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col0"
-                 class="data row10 col0" >
-                    548
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col1"
-                 class="data row10 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col2"
-                 class="data row10 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col3"
-                 class="data row10 col3" >
-                    Padro y Manent, Mr. Julian
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col4"
-                 class="data row10 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col5"
-                 class="data row10 col5" >
-                    nan
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row10_col6"
-                 class="data row10 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row11" rowspan=1>
-                    549
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col0"
-                 class="data row11 col0" >
-                    550
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col1"
-                 class="data row11 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col2"
-                 class="data row11 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col3"
-                 class="data row11 col3" >
-                    Davies, Master. John Morgan Jr
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col4"
-                 class="data row11 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col5"
-                 class="data row11 col5" >
-                    8
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row11_col6"
-                 class="data row11 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row12" rowspan=1>
-                    570
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col0"
-                 class="data row12 col0" >
-                    571
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col1"
-                 class="data row12 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col2"
-                 class="data row12 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col3"
-                 class="data row12 col3" >
-                    Harris, Mr. George
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col4"
-                 class="data row12 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col5"
-                 class="data row12 col5" >
-                    62
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row12_col6"
-                 class="data row12 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row13" rowspan=1>
-                    673
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col0"
-                 class="data row13 col0" >
-                    674
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col1"
-                 class="data row13 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col2"
-                 class="data row13 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col3"
-                 class="data row13 col3" >
-                    Wilhelms, Mr. Charles
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col4"
-                 class="data row13 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col5"
-                 class="data row13 col5" >
-                    31
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row13_col6"
-                 class="data row13 col6" >
-                    0
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row14" rowspan=1>
-                    755
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col0"
-                 class="data row14 col0" >
-                    756
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col1"
-                 class="data row14 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col2"
-                 class="data row14 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col3"
-                 class="data row14 col3" >
-                    Hamalainen, Master. Viljo
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col4"
-                 class="data row14 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col5"
-                 class="data row14 col5" >
-                    0.67
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row14_col6"
-                 class="data row14 col6" >
-                    1
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row15" rowspan=1>
-                    827
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col0"
-                 class="data row15 col0" >
-                    828
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col1"
-                 class="data row15 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col2"
-                 class="data row15 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col3"
-                 class="data row15 col3" >
-                    Mallet, Master. Andre
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col4"
-                 class="data row15 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col5"
-                 class="data row15 col5" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row15_col6"
-                 class="data row15 col6" >
-                    2
-                
-                
-            </tr>
-            
-            <tr>
-                
-                
-                <th id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905"
-                 class="row_heading level0 row16" rowspan=1>
-                    831
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col0"
-                 class="data row16 col0" >
-                    832
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col1"
-                 class="data row16 col1" >
-                    1
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col2"
-                 class="data row16 col2" >
-                    2
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col3"
-                 class="data row16 col3" >
-                    Richards, Master. George Sibley
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col4"
-                 class="data row16 col4" >
-                    male
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col5"
-                 class="data row16 col5" >
-                    0.83
-                
-                
-                
-                <td id="T_b5a7cf0c_22c9_11e7_b6cb_685d43992905row16_col6"
-                 class="data row16 col6" >
-                    1
-                
-                
-            </tr>
-            
-        </tbody>
-        </table>
-        
+<div>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>PassengerId</th>
+      <th>Survived</th>
+      <th>Pclass</th>
+      <th>Name</th>
+      <th>Sex</th>
+      <th>Age</th>
+      <th>Parch</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>17</th>
+      <td>18</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Williams, Mr. Charles Eugene</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>21</th>
+      <td>22</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Beesley, Mr. Lawrence</td>
+      <td>male</td>
+      <td>34.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>78</th>
+      <td>79</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Caldwell, Master. Alden Gates</td>
+      <td>male</td>
+      <td>0.83</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>183</th>
+      <td>184</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Becker, Master. Richard F</td>
+      <td>male</td>
+      <td>1.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>193</th>
+      <td>194</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Navratil, Master. Michel M</td>
+      <td>male</td>
+      <td>3.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>226</th>
+      <td>227</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Mellors, Mr. William John</td>
+      <td>male</td>
+      <td>19.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>288</th>
+      <td>289</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Hosono, Mr. Masabumi</td>
+      <td>male</td>
+      <td>42.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>340</th>
+      <td>341</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Navratil, Master. Edmond Roger</td>
+      <td>male</td>
+      <td>2.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>407</th>
+      <td>408</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Richards, Master. William Rowe</td>
+      <td>male</td>
+      <td>3.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>543</th>
+      <td>544</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Beane, Mr. Edward</td>
+      <td>male</td>
+      <td>32.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>547</th>
+      <td>548</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Padro y Manent, Mr. Julian</td>
+      <td>male</td>
+      <td>NaN</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>549</th>
+      <td>550</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Davies, Master. John Morgan Jr</td>
+      <td>male</td>
+      <td>8.00</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>570</th>
+      <td>571</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Harris, Mr. George</td>
+      <td>male</td>
+      <td>62.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>673</th>
+      <td>674</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Wilhelms, Mr. Charles</td>
+      <td>male</td>
+      <td>31.00</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <th>755</th>
+      <td>756</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Hamalainen, Master. Viljo</td>
+      <td>male</td>
+      <td>0.67</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>827</th>
+      <td>828</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Mallet, Master. Andre</td>
+      <td>male</td>
+      <td>1.00</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>831</th>
+      <td>832</td>
+      <td>1</td>
+      <td>2</td>
+      <td>Richards, Master. George Sibley</td>
+      <td>male</td>
+      <td>0.83</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+</div>
 
 
 
