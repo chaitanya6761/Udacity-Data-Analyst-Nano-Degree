@@ -1,9 +1,9 @@
 
 # OpenStreetMapData Case Study
 
-**Author : Chaitanya Madala **
+**Author : Chaitanya Madala**
 
-**Date : May 15, 2016 **
+**Date : May 15, 2016**
 
 ## Map Area
 
