@@ -26,7 +26,7 @@ The data set which I am going to explore contains the information gathered from 
 
 **Age:** Age is fractional if less than 1. If the age is estimated, is it in the form of xx.5
 
-** Sibsp:**  The dataset defines family relations in this way...
+**Sibsp:**  The dataset defines family relations in this way...
 - Sibling = brother, sister, stepbrother, stepsister
 - Spouse = husband, wife (mistresses and fiancés were ignored)
 
