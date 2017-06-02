@@ -29,6 +29,11 @@ import re
 import os
 
 INPUT_FILENAME = 'ahmedabad_india1.osm'
+OUTPUT_DIR = 'Output_Data'
+CURR_DIR = os.getcwd()+'\\'
+
+if OUTPUT_DIR not in os.listdir(CURR_DIR):
+    os.makedirs(CURR_DIR + OUTPUT_DIR)
 ```
 
 
@@ -135,7 +140,7 @@ process_tags(INPUT_FILENAME)
 print(problem_chars_set)
 ```
 
-    {'average rate/kg', 'famous for'}
+    {'famous for', 'average rate/kg'}
     
 
 
@@ -143,7 +148,7 @@ print(problem_chars_set)
 print(others_set)
 ```
 
-    {'fuel:octane_91', 'IR:zone', 'currency:INR', 'plant:output:electricity', 'name_1', 'is_in:iso_3166_2', 'source_2', 'fuel:octane_80', 'AND_a_nosr_p', 'AND_a_c', 'fuel:octane_92', 'FID_1', 'mtb:scale:imba', 'Business', 'FIXME', 'naptan:CommonName', 'name_2', 'mtb:scale:uphill', 'source_1'}
+    {'source_1', 'name_1', 'mtb:scale:uphill', 'currency:INR', 'source_2', 'naptan:CommonName', 'Business', 'FIXME', 'AND_a_c', 'FID_1', 'AND_a_nosr_p', 'fuel:octane_80', 'fuel:octane_92', 'IR:zone', 'is_in:iso_3166_2', 'fuel:octane_91', 'mtb:scale:imba', 'plant:output:electricity', 'name_2'}
     
 
 - From the above listed tags, we can discard all of them except for "famous for" tag, as it has some meaningfull data associated with it i.e, it has the value of famous dish of that particular place or resturant. 
@@ -181,8 +186,10 @@ print("Length of k values dictionary: ",len(tags))
 ```python
 def output_data(lst,func=None,filename=None):
     '''This function is written to write output 
-    data to file or show it on console'''
+    data to a file or show it on console'''
     if filename != None:
+        filename = os.path.join(CURR_DIR+OUTPUT_DIR,filename)
+        
         with open(filename,'w',encoding="utf-8") as f:
             if func != None:
                 for val in lst:
@@ -207,6 +214,8 @@ def output_data(lst,func=None,filename=None):
 ```python
 output_data(tags,filename="tags.txt")            
 ```
+
+## Problems Encountered In Postal Codes
 
 - Now lets take a look at different postal codes present in the dataset to validate them against correct format of Ahemdabad postal codes.
 - This [[website]](http://www.mapsofindia.com/pincode/india/gujarat/ahmedabad/) lists out all the available postal codes of Ahemdabad, whcih are of the format **(38\*\*\*\*)** and are 6 digits in length.
@@ -260,6 +269,8 @@ incorrect_postal_code_set
 
 
 
+##  Problems Encountered in City Names
+
 - Almost all the postal codes the satisfy the regular expression, we assumed, except the above listed 3 postal codes. We might need to exempt them from database insertion as they are incorrect and doesn't have the correct format.
 
 - Now lets take a look at values present in **"addr:city"** tag, to check whether city name has been mentioned correctly in every city tag. 
@@ -274,6 +285,20 @@ def process_tags(filename,par_tag):
             tag_k = element.attrib['k']
             if tag_k == par_tag:
                 tag_data_set.add(element.attrib['v'])
+    return tag_data_set
+
+def process_tags_dict(filename,par_tag):
+    '''This function is written to process tags with specific "k" value.'''
+    tag_data_set = {}
+    for event,element in ET.iterparse(filename):
+        if element.tag == "tag":
+            tag_k = element.attrib['k']
+            tag_v = element.attrib['v']
+            if tag_k == par_tag:
+                if tag_v not in tag_data_set:
+                    tag_data_set[tag_v] = 1
+                else :
+                    tag_data_set[tag_v] += 1
     return tag_data_set
                     
 city_names = sorted(process_tags(INPUT_FILENAME,"addr:city"))
@@ -344,6 +369,8 @@ output_data(city_names,func=rectify_city_name)
     अहमदाबाद, गुजरात ----> Ahmedabad
     
 
+## Problems Encountered In Phone Numbers
+
 - Now lets take look at values present in **"phone"** tag to check whether they are correct format or not
 
 
@@ -352,7 +379,7 @@ phone_numbers = process_tags(INPUT_FILENAME,"phone")
 print(phone_numbers)
 ```
 
-    {'91-79-26401554', '+91 79 2657 7621', '+91 79 29705588', '+91 94262 84715', '+919099958936', '+919375565533', '(079)39830036/37', '+919879566257', '+917922864345', '07927641100', '+9179 2657 8369', '7926620059', '+917801949128', '079 26920057', '093270 38242', '+91 79 6651 5151', '07922912990', '07925500007', '07926582130', '07965422223', '915752790', '+91 79 30912345', '917926314000', '079 4050 5050', '079 6619 0201', '+917922167530', '+91 79 2657 5741', '7096805450', '+91 79 25556767', '(+91-79) 4032-7226', '07922720605', '09016861000', '+91 8758637922', '9375776800', '+917927472043', '+91 79 2589 4542 / +91 9429207992', '+91 99-98-264810', '+91 79 3983 0100 ', '099099 22239', '+91 79 2550 7181', '+91 79 2646 6464', '+91 79 2656 5222', '+91793013 0200', '+91 9054876866', '9909005694', '+917965469992', '+91 79 6190 0500/05/06/07/08/09', '+91 93776 19151', '07926306752', '+91-9978113275 ; +91-8390740897', '+917927506819', '07926304000', '855-553-4767', '+917923224006', '+91 98250 41132', '+91 98981 37147', '079 2687 2386', '+917927550875', '+917922700585', '0792740 0228'}
+    {'07925500007', '07926582130', '079 6619 0201', '+91 79 30912345', '9375776800', '07922912990', '+91 8758637922', '+917922167530', '+91 79 6651 5151', '+917801949128', '+91 9054876866', '+917965469992', '079 26920057', '07927641100', '+91 79 25556767', '079 2687 2386', '+919099958936', '+91 79 2657 7621', '7926620059', '07926304000', '0792740 0228', '+917927550875', '+917923224006', '093270 38242', '+917927472043', '+91 79 2646 6464', '+917927506819', '917926314000', '+91 93776 19151', '+91 79 2550 7181', '099099 22239', '+91 79 2657 5741', '855-553-4767', '+917922700585', '+91 79 3983 0100 ', '079 4050 5050', '91-79-26401554', '(079)39830036/37', '7096805450', '07922720605', '+91 79 6190 0500/05/06/07/08/09', '+917922864345', '+91 98250 41132', '+91-9978113275 ; +91-8390740897', '+91 79 29705588', '09016861000', '+919375565533', '+91 94262 84715', '915752790', '9909005694', '+91 79 2589 4542 / +91 9429207992', '+9179 2657 8369', '+91793013 0200', '07926306752', '+91 98981 37147', '+91 99-98-264810', '+91 79 2656 5222', '+919879566257', '07965422223', '(+91-79) 4032-7226'}
     
 
 - The observations that can be drawn from the above list phone numbers are:
@@ -449,6 +476,8 @@ def change_to_standard_format(phone_number):
 output_data(phone_numbers,rectify_phone_number,"correct_ph_numbers.txt")    
 ```
 
+## Problems Encountered In Street Names
+
 - Now lets audit what are the different street names present in the dataset.
 
 
@@ -488,12 +517,89 @@ def rectify_street_name(street_name):
 output_data(street_names,rectify_street_name,"correct_street_names.txt")  
 ```
 
+## Problems Encountered In Cuisine Data
+
+- Now lets audit data present in **"cuisine"** tag.
+
+
+```python
+cuisines = process_tags(INPUT_FILENAME,"cuisine")
+(cuisines)
+```
+
+
+
+
+    {'Coffee and Snacks',
+     'Gujarati',
+     'Punjabi,_SouthIndia,_Gujarati Thali.',
+     'burger',
+     'burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian',
+     'ice_cream',
+     'indian',
+     'international',
+     'italian',
+     'multicuisine',
+     'pizza',
+     'regional',
+     'sandwich',
+     'sandwich;regional;cake;coffee_shop;asian;pasta;noodles;pancake;pizza;indian;mexican;sausage;tea;italian;barbecue;vegetarian',
+     'vegetarian'}
+
+
+
+- The observations that can be drawn from the cuisine data are:
+    1. Few of the tags contain a single value.
+    2. Few of the tags contain more than one value .
+    
+    
+- Lets write a function that does the following:
+    1. If cuisine tag has a single value, it will return that value.
+    2. If cuisine tag has more than one value,it will return list of those values.
+
+
+```python
+def rectify_cuisine_data(cuisine):
+    cuisine_pattern = re.compile(r'[,;]')
+    match = re.search(cuisine_pattern,cuisine)
+    
+    if match:
+        cuisine_lst = cuisine.split(match.group())
+        return [cuisine.title() for cuisine in cuisine_lst]
+    
+    else:
+        return [cuisine.title()]
+    
+output_data(cuisines,func=rectify_cuisine_data)    
+```
+
+    sandwich ----> ['Sandwich']
+    sandwich;regional;cake;coffee_shop;asian;pasta;noodles;pancake;pizza;indian;mexican;sausage;tea;italian;barbecue;vegetarian ----> ['Sandwich', 'Regional', 'Cake', 'Coffee_Shop', 'Asian', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Indian', 'Mexican', 'Sausage', 'Tea', 'Italian', 'Barbecue', 'Vegetarian']
+    international ----> ['International']
+    pizza ----> ['Pizza']
+    Coffee and Snacks ----> ['Coffee And Snacks']
+    multicuisine ----> ['Multicuisine']
+    regional ----> ['Regional']
+    vegetarian ----> ['Vegetarian']
+    burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian ----> ['Burger', 'Sandwich', 'Regional', 'Ice_Cream', 'Grill', 'Cake', 'Coffee_Shop', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Chicken', 'Fish_And_Chips', 'Curry', 'Indian', 'Vegan', 'Fish', 'Breakfast', 'Savory_Pancakes', 'Tea', 'Seafood', 'Sausage', 'Local', 'Barbecue', 'Vegetarian']
+    italian ----> ['Italian']
+    Punjabi,_SouthIndia,_Gujarati Thali. ----> ['Punjabi', '_Southindia', '_Gujarati Thali.']
+    indian ----> ['Indian']
+    Gujarati ----> ['Gujarati']
+    ice_cream ----> ['Ice_Cream']
+    burger ----> ['Burger']
+    
+
 - Now lets write a function that will convert the xml dataset to json documents, which can be later be inserted to mongoDB.
 
 
 ```python
 CREATED = [ "version", "changeset", "timestamp", "user", "uid"]
-EXPECTED = ["amenity","cuisine","name","phone","religion","atm"]
+EXPECTED = ["amenity","cuisine","name","phone","religion","atm",'building','landuse',
+            'highway','surface','lanes','bridge','maxspeed','leisure','sport']
+
+speed = re.compile(r'(\d)*')
+
 def create_element(element):
     '''This function is written to convert each xml tag to a json document'''
     
@@ -528,9 +634,7 @@ def create_element(element):
             
             if tag_k == "postal_code":
                 tag_k = "addr:postcode"
-                
-                
-            
+                                            
             if tag_k.startswith('addr:') and  tag_k.count(':') == 1:
                 
                 if tag_k == "addr:postcode" and tag_v not in correct_postal_code_set:
@@ -552,6 +656,13 @@ def create_element(element):
                     tag_v = rectify_phone_number(tag_v)
                     if tag_v == "Invalid Phone Number":
                         tag_v = None
+                        
+                elif tag_k == "cuisine":
+                    tag_v = rectify_cuisine_data(tag_v)
+                    
+                elif tag_k == "maxspeed" or tag_k == 'lanes':
+                    match = re.search(speed,tag_v)
+                    tag_v = int(match.group())
                 
                 if tag_v != None:            
                     node[tag_k] = tag_v
@@ -588,9 +699,12 @@ def process_map(file_in, pretty = False):
 process_map(INPUT_FILENAME)
 ```
 
+## Data Wrangling With DB and File Sizes
+
+
 
 ```python
-client = MongoClient('localhost:27017')
+client = pymongo.MongoClient('localhost:27017')
 db_name = 'openstreetmap'
 collection_name = 'ahmedabadData'
 file_name = 'ahmedabad_india1.osm.json'
@@ -612,7 +726,6 @@ subprocess.call(cmd)
 
 
 
-## Data Wrangling With DB and File Sizes
 
 ### File sizes
 
@@ -628,7 +741,7 @@ print("Size of the ouput Json file: {0} MB".format(getSize("ahmedabad_india1.osm
 ```
 
     Size of the input file: 108.54 MB
-    Size of the ouput Json file: 126.52 MB
+    Size of the ouput Json file: 128.03 MB
     
 
 ###  Number of records
@@ -693,7 +806,9 @@ for user in top_three_users:
     Total number of entries chaitanya110 made : 123138
     
 
-### Top 5 Amenities
+## Further Data Exploration With MongoDB
+
+### Top 10 Amenities
 
 
 ```python
@@ -704,39 +819,254 @@ top_five_amenities = ahmedabad_osm.aggregate([{"$match":{"amenity":{"$exists":1}
                                              {"$limit":10}])
 
 for amenity in top_five_amenities:
-    print("Total number of {0}'s Present : {1}".format(amenity["_id"],amenity["count"]))
+    print("Total number of {0}'s Present : {1}".format(amenity["_id"].title(),amenity["count"]))
 ```
 
-    Total number of place_of_worship's Present : 92
-    Total number of restaurant's Present : 59
-    Total number of hospital's Present : 48
-    Total number of school's Present : 43
-    Total number of bank's Present : 33
-    Total number of fuel's Present : 29
-    Total number of college's Present : 28
-    Total number of police's Present : 28
-    Total number of atm's Present : 24
-    Total number of fast_food's Present : 23
+    Total number of Place_Of_Worship's Present : 92
+    Total number of Restaurant's Present : 59
+    Total number of Hospital's Present : 48
+    Total number of School's Present : 43
+    Total number of Bank's Present : 33
+    Total number of Fuel's Present : 29
+    Total number of College's Present : 28
+    Total number of Police's Present : 28
+    Total number of Atm's Present : 24
+    Total number of Fast_Food's Present : 23
     
+
+### Top 5 Cuisines
+
+
+```python
+top_five_cuisines = ahmedabad_osm.aggregate([{"$unwind":"$cuisine"},
+                                             {"$group":{"_id":"$cuisine",
+                                                       "count":{"$sum":1}}},
+                                            {"$sort":{"count":-1}},
+                                            {"$limit":5}])
+
+[cuisine["_id"].title() for cuisine in top_five_cuisines]    
+```
+
+
+
+
+    ['Regional', 'Indian', 'Pizza', 'Vegetarian', 'Ice_Cream']
+
+
 
 ### Religions  
 
 
 ```python
-ahmedabad_osm.distinct('religion')
+[val.title() for val in ahmedabad_osm.distinct('religion')]
 ```
 
 
 
 
-    ['hindu', 'jain', 'christian', 'muslim', 'nonsectarian', 'zoroastrian']
+    ['Hindu', 'Jain', 'Christian', 'Muslim', 'Nonsectarian', 'Zoroastrian']
 
 
 
-### Geospatial Indexing
+### Top 5 Building Types
 
 
 ```python
-ahmedabad_osm.create_index([('pos',pymongo.GEO2D)])
-ahmedabad_osm.find({"pos":{"$near":[23.0945918,72.6119846]}}).count()
+top_five_building_types = ahmedabad_osm.aggregate([{"$match":{"building":{"$exists":1,"$ne":"yes"}}},
+                                                   {"$group":{"_id":"$building",
+                                                       "count":{"$sum":1}}},
+                                                    {"$sort":{"count":-1}},
+                                                    {"$limit":5}])
+for building_type in top_five_building_types:
+    print("{0}: {1}".format(building_type["_id"].title(),building_type["count"]))
 ```
+
+    Commercial: 138
+    Apartments: 105
+    House: 104
+    Residential: 88
+    University: 29
+    
+
+### Top 3 Landuses
+
+
+```python
+top_three_landuses = ahmedabad_osm.aggregate([{"$match":{"landuse":{"$exists":1}}},
+                                               {"$group":{"_id":"$landuse","count":{"$sum":1}}},
+                                               {"$sort":{"count":-1}},
+                                               {"$limit":3}])
+
+for landuse in top_three_landuses:
+    print("{0}: {1}".format(landuse["_id"].title(),landuse["count"]))
+```
+
+    Residential: 319
+    Commercial: 89
+    Industrial: 53
+    
+
+### Leisure Types
+
+
+```python
+print(ahmedabad_osm.distinct('leisure'))
+```
+
+    ['sports_centre', 'park', 'garden', 'swimming_pool', 'pitch', 'stadium', 'playground', 'recreation_ground', 'track', 'golf_course']
+    
+
+### Sport Types
+
+
+```python
+print(ahmedabad_osm.distinct('sport'))
+```
+
+    ['multi', 'swimming', 'basketball', 'volleyball', 'cricket', 'tennis', 'skating', 'cricket,_football', 'running', 'soccer']
+    
+
+### Way Tag Data Exploration
+#### 1. Highway Types
+
+
+```python
+highway_types = ahmedabad_osm.distinct('highway')
+print(highway_types)
+```
+
+    ['crossing', 'traffic_signals', 'bus_stop', 'turning_circle', 'residential', 'street_lamp', 'rest_area', 'unclassified', 'primary', 'motorway', 'tertiary', 'pedestrian', 'trunk', 'footway', 'secondary', 'service', 'primary_link', 'living_street', 'motorway_link', 'trunk_link', 'tertiary_link', 'path', 'cycleway', 'secondary_link', 'track', 'road', 'steps', 'construction', 'bridleway']
+    
+
+#### 2. Surface Types
+
+
+```python
+surface_types = ahmedabad_osm.aggregate([{"$match":{"surface":{"$exists":1}}},
+                        {"$group":{"_id":"$surface","count":{"$sum":1}}},
+                         {"$sort":{"count":-1}}])
+
+for type in surface_types:
+    print("{0}: {1}".format(type["_id"].title(),type["count"]))
+```
+
+    Asphalt: 117
+    Paved: 81
+    Unpaved: 9
+    Concrete: 6
+    Gravel: 3
+    Paving_Stones: 3
+    Concrete:Plates: 3
+    Ground: 2
+    Grass: 2
+    Sand: 1
+    Metalroad: 1
+    Dirt: 1
+    
+
+#### 3. Bridges
+
+
+```python
+bridges = ahmedabad_osm.aggregate([{"$match":{"bridge":"yes"}},
+                        {"$group":{"_id":"$name"}}])
+
+print(sorted([bridge["_id"].title() for bridge in bridges if bridge["_id"] != None]))
+```
+
+    ['132 Ft. Ring Road', 'Ahmadabad Vadodara Expressway', 'Anupam Bridge | Kankaria Railway Overbridge', 'Broken Bridge', 'Brts Route', 'Chamunda Flyover', 'Chandlodia Bridge', 'Chimanbhai Patel  Bridge', 'Ellisbridge', 'Fernandiz Bridge', 'Gandhi Bridge', 'Gandhinagar-Ahmedabad Highway', 'Gota Road', 'Gulbai Tekra Road', 'Iim Overbridge', 'Indira Bridge', 'Isckon Overbridge', 'Jamalpur Flyover Bridge', 'Kavi Nanalal Marg', 'Naroda Road', 'Nathalal Jhagadia Bridge', 'Nehru Bridge', 'Nh8A', 'Pirana Chandranagar Bridge', 'Proposed  Railway Overbridge', 'Proposed Railway Overbridge', 'Railway Foot Over Bridge', 'Rakhial Odhav Road', 'Rakhial Road', 'Rana Pratap Marg', 'Rishi Dadhichi Bridge', 'Sabarmati Riverfront Road', 'Sardar Bridge', 'Sardar Patel Ring Road', 'Small Bridge', 'Sola Road', 'Subhash Bridge', 'Western Railway Line']
+    
+
+#### 4.  Top 2 MaxSpeeds
+
+
+```python
+max_speeds = ahmedabad_osm.aggregate([{"$match":{"maxspeed":{"$exists":1}}},
+                                      {"$group":{"_id":"$name","speed":{"$max":"$maxspeed"}}},
+                                      {"$sort":{"speed":-1}},
+                                      {"$limit":2}])
+for speed in max_speeds:
+    print("{0}: {1} Mph".format(speed["_id"].title(),speed["speed"]))
+```
+
+    Gulbai Tekra Road: 120 Mph
+    Ahmadabad Vadodara Expressway: 100 Mph
+    
+
+#### 5. Roads With Max Lanes
+
+
+```python
+max_lanes = ahmedabad_osm.aggregate([{"$match":{"lanes":{"$exists":1}}},
+                                      {"$group":{"_id":"$name","speed":{"$max":"$lanes"}}},
+                                      {"$sort":{"speed":-1}},
+                                      {"$limit":2}])
+for lane in max_lanes:
+    print("{0}: {1} Lanes".format(lane["_id"].title(),lane["speed"]))
+```
+
+    Nh8: 4 Lanes
+    Vatwa Road: 4 Lanes
+    
+
+### Geospatial Indexing
+
+- The below function will return the nearby matches for a given amenity and position co-ordinates.
+
+
+```python
+def return_nearby_amenities(nearby_amenity,pos_list,nearby_limit):
+    ahmedabad_osm.create_index([('pos',pymongo.GEO2D),('amenity',1)])
+    nearby_data = ahmedabad_osm.find({"pos":{"$near":pos_list},"amenity":nearby_amenity}).limit(nearby_limit)
+    
+    for val in nearby_data:
+        print(val)
+```
+
+#### 1. Near By Banks
+
+
+```python
+return_nearby_amenities('bank',[23.0945918,72.6119846],3)   
+```
+
+    {'_id': ObjectId('59314f949e4327d8804d3660'), 'id': '3500459657', 'type': 'node', 'pos': [23.0835179, 72.5909029], 'created': {'version': '1', 'timestamp': '2015-05-06T06:50:43Z', 'changeset': '30832181', 'uid': '2893945', 'user': 'Nikita Agarwal'}, 'atm': 'yes', 'name': 'HDFC Bank', 'amenity': 'bank'}
+    {'_id': ObjectId('59314f949e4327d8804d3668'), 'id': '3500459666', 'type': 'node', 'pos': [23.0825491, 72.5900739], 'created': {'version': '1', 'timestamp': '2015-05-06T06:50:44Z', 'changeset': '30832181', 'uid': '2893945', 'user': 'Nikita Agarwal'}, 'atm': 'yes', 'name': 'Bank of Baroda', 'amenity': 'bank'}
+    {'_id': ObjectId('59314f949e4327d8804d3663'), 'id': '3500459659', 'type': 'node', 'pos': [23.0834501, 72.5888148], 'created': {'version': '1', 'timestamp': '2015-05-06T06:50:44Z', 'changeset': '30832181', 'uid': '2893945', 'user': 'Nikita Agarwal'}, 'name': 'Gol Bank', 'amenity': 'bank'}
+    
+
+#### 2. Near By Hospitals
+
+
+```python
+return_nearby_amenities('hospital',[23.0945918,72.6119846],3)
+```
+
+    {'_id': ObjectId('59314f939e4327d8804c78a1'), 'id': '611572691', 'type': 'node', 'pos': [23.0924908, 72.5917525], 'created': {'version': '1', 'timestamp': '2010-01-11T08:02:54Z', 'changeset': '3594021', 'uid': '217810', 'user': 'Shardendu'}, 'amenity': 'hospital'}
+    {'_id': ObjectId('59314f949e4327d8804d365b'), 'id': '3500459652', 'type': 'node', 'pos': [23.0829627, 72.5906964], 'created': {'version': '1', 'timestamp': '2015-05-06T06:50:43Z', 'changeset': '30832181', 'uid': '2893945', 'user': 'Nikita Agarwal'}, 'name': 'Pukhraj Hospital', 'amenity': 'hospital', 'address': {'city': 'Ahmedabad', 'postcode': '380005'}}
+    {'_id': ObjectId('59314f949e4327d8804d3657'), 'id': '3500454471', 'type': 'node', 'pos': [23.0836049, 72.5901213], 'created': {'version': '1', 'timestamp': '2015-05-06T06:40:57Z', 'changeset': '30831958', 'uid': '2893945', 'user': 'Nikita Agarwal'}, 'name': 'Geeta Maternity Hospital', 'amenity': 'hospital', 'address': {'city': 'Ahmedabad', 'postcode': '380005'}}
+    
+
+#### 3. Near By Restaurants
+
+
+```python
+return_nearby_amenities('restaurant',[23.0945918,72.6119846],3)
+```
+
+    {'_id': ObjectId('59314fa19e4327d880547060'), 'id': '4481532989', 'type': 'node', 'pos': [23.111054, 72.6050699], 'created': {'version': '1', 'timestamp': '2016-11-04T11:14:31Z', 'changeset': '43398935', 'uid': '4112063', 'user': 'kailashdhirwani'}, 'name': 'AFC Garden Restaurant', 'amenity': 'restaurant'}
+    {'_id': ObjectId('59314f939e4327d8804c789c'), 'id': '611572686', 'type': 'node', 'pos': [23.1057395, 72.5975686], 'created': {'version': '1', 'timestamp': '2010-01-11T08:02:53Z', 'changeset': '3594021', 'uid': '217810', 'user': 'Shardendu'}, 'amenity': 'restaurant'}
+    {'_id': ObjectId('59314fa29e4327d880549420'), 'id': '4672030298', 'type': 'node', 'pos': [23.0687153, 72.5807241], 'created': {'version': '1', 'timestamp': '2017-02-07T14:13:46Z', 'changeset': '45886810', 'uid': '5276500', 'user': 'Silene Hoiry'}, 'amenity': 'restaurant'}
+    
+
+#### 4. Near By Cinema
+
+
+```python
+return_nearby_amenities('cinema',[23.0945918,72.6119846],3)
+```
+
+    {'_id': ObjectId('59314f939e4327d8804c78a0'), 'id': '611572690', 'type': 'node', 'pos': [23.0923921, 72.5938017], 'created': {'version': '1', 'timestamp': '2010-01-11T08:02:54Z', 'changeset': '3594021', 'uid': '217810', 'user': 'Shardendu'}, 'amenity': 'cinema'}
+    {'_id': ObjectId('59314fa29e4327d88054787e'), 'id': '4488103325', 'type': 'node', 'pos': [23.0810593, 72.6415185], 'created': {'version': '1', 'timestamp': '2016-11-08T06:52:17Z', 'changeset': '43480049', 'uid': '4112063', 'user': 'kailashdhirwani'}, 'name': 'Maya CINEMA -CLOSED', 'amenity': 'cinema'}
+    {'_id': ObjectId('59314f949e4327d8804cebd3'), 'id': '2699807313', 'type': 'node', 'pos': [23.0664215, 72.5316963], 'created': {'version': '1', 'timestamp': '2014-03-03T12:25:12Z', 'changeset': '20887124', 'uid': '1964435', 'user': 'trishul'}, 'name': 'Rajhans Multiplex', 'amenity': 'cinema'}
+    
