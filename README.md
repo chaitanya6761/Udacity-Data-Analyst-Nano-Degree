@@ -2,6 +2,7 @@
 ### Courses Completed:
 - Intro to Data Science
 - Data Wrangling with MongoDB
+- Data Analysis with R (In Progress)
 
 ### Projects Completed:
 - P0 - Analyze Bay Area Bike Share Data
