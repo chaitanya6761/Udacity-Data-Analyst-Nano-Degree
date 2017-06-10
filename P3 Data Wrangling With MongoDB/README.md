@@ -11,7 +11,23 @@
 
 [DataSet](https://mapzen.com/data/metro-extracts/metro/ahmedabad_india/) : This Dataset which is extracted from website openstreetmap contains information about the city Ahmedabad, India
 
-## Data Auditing
+## Table Of Contents
+
+1. [DataAuditing](#DataAuditing)
+2. [Problems Encountered In Postal Codes](#postalCodes)
+2. [Problems Encountered in City Names](#cityNames)
+3. [Problems Encountered In Phone Numbers](#phoneNumbers)
+4. [Problems Encountered In Street Names](#streetNames)
+4. [Problems Encountered In Cuisine Data](#cuisineData)
+5. [Data Wrangling With DB and File Sizes](#dbFileSizes)
+6. [Further Data Exploration With MongoDB](#furtherDbMongo)
+7. [The Conclusion](#conclusion)
+
+
+
+
+
+##  Data Auditing <a name="DataAuditing"><a/>
 - As part of data auditing plan lets find out what are the different types of tags present in our data set, but also how many, to get the feeling on how much of which data we can expect to have in the map.
 
 - Below are required imports and constants which will be used throught the project.
@@ -66,7 +82,7 @@ print(tags)
 ```python
 def count_users(filename):
     
-    '''This function is written to countthe number of distinct 
+    '''This function is written to count the number of distinct 
     users who contributed to the Ahemdabad Openstreetmap data'''
     
     users_set = set()
@@ -140,7 +156,7 @@ process_tags(INPUT_FILENAME)
 print(problem_chars_set)
 ```
 
-    {'famous for', 'average rate/kg'}
+    {'average rate/kg', 'famous for'}
     
 
 
@@ -148,7 +164,7 @@ print(problem_chars_set)
 print(others_set)
 ```
 
-    {'source_1', 'name_1', 'mtb:scale:uphill', 'currency:INR', 'source_2', 'naptan:CommonName', 'Business', 'FIXME', 'AND_a_c', 'FID_1', 'AND_a_nosr_p', 'fuel:octane_80', 'fuel:octane_92', 'IR:zone', 'is_in:iso_3166_2', 'fuel:octane_91', 'mtb:scale:imba', 'plant:output:electricity', 'name_2'}
+    {'AND_a_c', 'fuel:octane_92', 'Business', 'FIXME', 'FID_1', 'mtb:scale:imba', 'currency:INR', 'source_1', 'IR:zone', 'fuel:octane_80', 'source_2', 'is_in:iso_3166_2', 'plant:output:electricity', 'naptan:CommonName', 'fuel:octane_91', 'AND_a_nosr_p', 'name_2', 'name_1', 'mtb:scale:uphill'}
     
 
 - From the above listed tags, we can discard all of them except for "famous for" tag, as it has some meaningfull data associated with it i.e, it has the value of famous dish of that particular place or resturant. 
@@ -180,7 +196,7 @@ print("Length of k values dictionary: ",len(tags))
     Length of k values dictionary:  203
     
 
-- As the length of dictionary is 203, the output will be huge, So I writing it to a external file called **"tags.txt" **.
+- As the length of dictionary is 203, the output will be huge, So I am writing it to a external file called **"tags.txt" **.
 
 
 ```python
@@ -215,7 +231,7 @@ def output_data(lst,func=None,filename=None):
 output_data(tags,filename="tags.txt")            
 ```
 
-## Problems Encountered In Postal Codes
+## Problems Encountered In Postal Codes <a name="postalCodes"></a>
 
 - Now lets take a look at different postal codes present in the dataset to validate them against correct format of Ahemdabad postal codes.
 - This [[website]](http://www.mapsofindia.com/pincode/india/gujarat/ahmedabad/) lists out all the available postal codes of Ahemdabad, whcih are of the format **(38\*\*\*\*)** and are 6 digits in length.
@@ -269,9 +285,9 @@ incorrect_postal_code_set
 
 
 
-##  Problems Encountered in City Names
+- Almost all the postal codes satisfy the regular expression, we assumed, except the above listed 3 postal codes. We might need to exempt them from database insertion as they are incorrect and doesn't have the correct format.
 
-- Almost all the postal codes the satisfy the regular expression, we assumed, except the above listed 3 postal codes. We might need to exempt them from database insertion as they are incorrect and doesn't have the correct format.
+##  Problems Encountered in City Names <a name="cityNames"></a>
 
 - Now lets take a look at values present in **"addr:city"** tag, to check whether city name has been mentioned correctly in every city tag. 
 
@@ -369,7 +385,7 @@ output_data(city_names,func=rectify_city_name)
     अहमदाबाद, गुजरात ----> Ahmedabad
     
 
-## Problems Encountered In Phone Numbers
+## Problems Encountered In Phone Numbers <a name="phoneNumbers">
 
 - Now lets take look at values present in **"phone"** tag to check whether they are correct format or not
 
@@ -379,7 +395,7 @@ phone_numbers = process_tags(INPUT_FILENAME,"phone")
 print(phone_numbers)
 ```
 
-    {'07925500007', '07926582130', '079 6619 0201', '+91 79 30912345', '9375776800', '07922912990', '+91 8758637922', '+917922167530', '+91 79 6651 5151', '+917801949128', '+91 9054876866', '+917965469992', '079 26920057', '07927641100', '+91 79 25556767', '079 2687 2386', '+919099958936', '+91 79 2657 7621', '7926620059', '07926304000', '0792740 0228', '+917927550875', '+917923224006', '093270 38242', '+917927472043', '+91 79 2646 6464', '+917927506819', '917926314000', '+91 93776 19151', '+91 79 2550 7181', '099099 22239', '+91 79 2657 5741', '855-553-4767', '+917922700585', '+91 79 3983 0100 ', '079 4050 5050', '91-79-26401554', '(079)39830036/37', '7096805450', '07922720605', '+91 79 6190 0500/05/06/07/08/09', '+917922864345', '+91 98250 41132', '+91-9978113275 ; +91-8390740897', '+91 79 29705588', '09016861000', '+919375565533', '+91 94262 84715', '915752790', '9909005694', '+91 79 2589 4542 / +91 9429207992', '+9179 2657 8369', '+91793013 0200', '07926306752', '+91 98981 37147', '+91 99-98-264810', '+91 79 2656 5222', '+919879566257', '07965422223', '(+91-79) 4032-7226'}
+    {'079 26920057', '+91 79 2589 4542 / +91 9429207992', '+917927472043', '+91 79 3983 0100 ', '855-553-4767', '+917922864345', '+917922700585', '+91-9978113275 ; +91-8390740897', '07927641100', '9375776800', '+917965469992', '079 6619 0201', '+91 98981 37147', '(+91-79) 4032-7226', '07925500007', '+91793013 0200', '07926304000', '+917927550875', '07922912990', '+9179 2657 8369', '+91 79 6190 0500/05/06/07/08/09', '+91 98250 41132', '079 4050 5050', '+91 8758637922', '079 2687 2386', '0792740 0228', '+917927506819', '+919375565533', '915752790', '+91 79 2657 7621', '+91 79 2550 7181', '+919099958936', '+91 94262 84715', '+91 79 2656 5222', '07926306752', '7096805450', '+91 79 2646 6464', '+91 99-98-264810', '093270 38242', '+91 79 29705588', '+917923224006', '+91 93776 19151', '07926582130', '07922720605', '+91 9054876866', '099099 22239', '+91 79 30912345', '+91 79 2657 5741', '09016861000', '7926620059', '+919879566257', '07965422223', '+91 79 6651 5151', '+917801949128', '+91 79 25556767', '9909005694', '91-79-26401554', '+917922167530', '917926314000', '(079)39830036/37'}
     
 
 - The observations that can be drawn from the above list phone numbers are:
@@ -476,7 +492,7 @@ def change_to_standard_format(phone_number):
 output_data(phone_numbers,rectify_phone_number,"correct_ph_numbers.txt")    
 ```
 
-## Problems Encountered In Street Names
+## Problems Encountered In Street Names <a name="streetNames"></a>
 
 - Now lets audit what are the different street names present in the dataset.
 
@@ -517,7 +533,7 @@ def rectify_street_name(street_name):
 output_data(street_names,rectify_street_name,"correct_street_names.txt")  
 ```
 
-## Problems Encountered In Cuisine Data
+## Problems Encountered In Cuisine Data <a name="cuisineData"></a>
 
 - Now lets audit data present in **"cuisine"** tag.
 
@@ -573,21 +589,21 @@ def rectify_cuisine_data(cuisine):
 output_data(cuisines,func=rectify_cuisine_data)    
 ```
 
-    sandwich ----> ['Sandwich']
-    sandwich;regional;cake;coffee_shop;asian;pasta;noodles;pancake;pizza;indian;mexican;sausage;tea;italian;barbecue;vegetarian ----> ['Sandwich', 'Regional', 'Cake', 'Coffee_Shop', 'Asian', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Indian', 'Mexican', 'Sausage', 'Tea', 'Italian', 'Barbecue', 'Vegetarian']
-    international ----> ['International']
     pizza ----> ['Pizza']
-    Coffee and Snacks ----> ['Coffee And Snacks']
-    multicuisine ----> ['Multicuisine']
-    regional ----> ['Regional']
     vegetarian ----> ['Vegetarian']
-    burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian ----> ['Burger', 'Sandwich', 'Regional', 'Ice_Cream', 'Grill', 'Cake', 'Coffee_Shop', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Chicken', 'Fish_And_Chips', 'Curry', 'Indian', 'Vegan', 'Fish', 'Breakfast', 'Savory_Pancakes', 'Tea', 'Seafood', 'Sausage', 'Local', 'Barbecue', 'Vegetarian']
-    italian ----> ['Italian']
-    Punjabi,_SouthIndia,_Gujarati Thali. ----> ['Punjabi', '_Southindia', '_Gujarati Thali.']
     indian ----> ['Indian']
-    Gujarati ----> ['Gujarati']
-    ice_cream ----> ['Ice_Cream']
+    italian ----> ['Italian']
     burger ----> ['Burger']
+    Punjabi,_SouthIndia,_Gujarati Thali. ----> ['Punjabi', '_Southindia', '_Gujarati Thali.']
+    regional ----> ['Regional']
+    burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian ----> ['Burger', 'Sandwich', 'Regional', 'Ice_Cream', 'Grill', 'Cake', 'Coffee_Shop', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Chicken', 'Fish_And_Chips', 'Curry', 'Indian', 'Vegan', 'Fish', 'Breakfast', 'Savory_Pancakes', 'Tea', 'Seafood', 'Sausage', 'Local', 'Barbecue', 'Vegetarian']
+    international ----> ['International']
+    sandwich;regional;cake;coffee_shop;asian;pasta;noodles;pancake;pizza;indian;mexican;sausage;tea;italian;barbecue;vegetarian ----> ['Sandwich', 'Regional', 'Cake', 'Coffee_Shop', 'Asian', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Indian', 'Mexican', 'Sausage', 'Tea', 'Italian', 'Barbecue', 'Vegetarian']
+    ice_cream ----> ['Ice_Cream']
+    multicuisine ----> ['Multicuisine']
+    Coffee and Snacks ----> ['Coffee And Snacks']
+    Gujarati ----> ['Gujarati']
+    sandwich ----> ['Sandwich']
     
 
 - Now lets write a function that will convert the xml dataset to json documents, which can be later be inserted to mongoDB.
@@ -596,7 +612,7 @@ output_data(cuisines,func=rectify_cuisine_data)
 ```python
 CREATED = [ "version", "changeset", "timestamp", "user", "uid"]
 EXPECTED = ["amenity","cuisine","name","phone","religion","atm",'building','landuse',
-            'highway','surface','lanes','bridge','maxspeed','leisure','sport']
+            'highway','surface','lanes','bridge','maxspeed','leisure','sport','operator']
 
 speed = re.compile(r'(\d)*')
 
@@ -699,7 +715,7 @@ def process_map(file_in, pretty = False):
 process_map(INPUT_FILENAME)
 ```
 
-## Data Wrangling With DB and File Sizes
+## Data Wrangling With DB and File Sizes <a name="dbFileSizes"></a>
 
 
 
@@ -727,7 +743,7 @@ subprocess.call(cmd)
 
 
 
-### File sizes
+### 1. File sizes
 
 
 ```python
@@ -744,7 +760,7 @@ print("Size of the ouput Json file: {0} MB".format(getSize("ahmedabad_india1.osm
     Size of the ouput Json file: 128.03 MB
     
 
-###  Number of records
+### 2. Number of records
 
 
 ```python
@@ -755,7 +771,7 @@ print('Total Number Of Records: ',total_records)
     Total Number Of Records:  627356
     
 
-###  Number of nodes
+###  3. Number of nodes
 
 
 ```python
@@ -766,7 +782,7 @@ print('Number of nodes: ',total_nodes)
     Number of nodes:  546085
     
 
-### Number of ways :
+### 4. Number of ways :
 
 
 ```python
@@ -777,7 +793,7 @@ print('Number of ways: ',total_nodes)
     Number of ways:  81271
     
 
-###  Number of unique users
+###  5. Number of unique users
 
 
 ```python
@@ -788,7 +804,7 @@ print('Number of users contributed: ',distinct_users)
     Number of users contributed:  349
     
 
-### Top 3 users who contributed
+### 6. Top 3 users who contributed
 
 
 ```python
@@ -806,9 +822,9 @@ for user in top_three_users:
     Total number of entries chaitanya110 made : 123138
     
 
-## Further Data Exploration With MongoDB
+## Further Data Exploration With MongoDB <a name="furtherDbMongo"></a>
 
-### Top 10 Amenities
+### 1. Top 5  Amenities
 
 
 ```python
@@ -816,7 +832,7 @@ top_five_amenities = ahmedabad_osm.aggregate([{"$match":{"amenity":{"$exists":1}
                                              {"$group":{"_id":"$amenity",
                                                        "count":{"$sum":1}}},
                                              {"$sort":{"count":-1}},
-                                             {"$limit":10}])
+                                             {"$limit":5}])
 
 for amenity in top_five_amenities:
     print("Total number of {0}'s Present : {1}".format(amenity["_id"].title(),amenity["count"]))
@@ -827,14 +843,21 @@ for amenity in top_five_amenities:
     Total number of Hospital's Present : 48
     Total number of School's Present : 43
     Total number of Bank's Present : 33
-    Total number of Fuel's Present : 29
-    Total number of College's Present : 28
-    Total number of Police's Present : 28
-    Total number of Atm's Present : 24
-    Total number of Fast_Food's Present : 23
     
 
-### Top 5 Cuisines
+### 2. Number Of Atm's Present
+- Some of the banks have atms too, so to count the total number, we need to include both atm's and banks with atm's.
+
+
+```python
+total_atms = ahmedabad_osm.find({"$or":[{"amenity":"bank","atm":"yes"},{"amenity":"atm"}]}).count()
+print("Total Number of Atms's :{0}".format(total_atms))
+```
+
+    Total Number of Atms's :38
+    
+
+### 3. Top 5 Cuisines
 
 
 ```python
@@ -854,7 +877,7 @@ top_five_cuisines = ahmedabad_osm.aggregate([{"$unwind":"$cuisine"},
 
 
 
-### Religions  
+### 4. Religions  
 
 
 ```python
@@ -868,7 +891,7 @@ top_five_cuisines = ahmedabad_osm.aggregate([{"$unwind":"$cuisine"},
 
 
 
-### Top 5 Building Types
+### 5. Top 5 Building Types
 
 
 ```python
@@ -888,7 +911,7 @@ for building_type in top_five_building_types:
     University: 29
     
 
-### Top 3 Landuses
+### 6. Top 3 Landuses
 
 
 ```python
@@ -906,7 +929,7 @@ for landuse in top_three_landuses:
     Industrial: 53
     
 
-### Leisure Types
+### 7. Leisure Types
 
 
 ```python
@@ -916,7 +939,7 @@ print(ahmedabad_osm.distinct('leisure'))
     ['sports_centre', 'park', 'garden', 'swimming_pool', 'pitch', 'stadium', 'playground', 'recreation_ground', 'track', 'golf_course']
     
 
-### Sport Types
+### 8. Sport Types
 
 
 ```python
@@ -1070,3 +1093,15 @@ return_nearby_amenities('cinema',[23.0945918,72.6119846],3)
     {'_id': ObjectId('59314fa29e4327d88054787e'), 'id': '4488103325', 'type': 'node', 'pos': [23.0810593, 72.6415185], 'created': {'version': '1', 'timestamp': '2016-11-08T06:52:17Z', 'changeset': '43480049', 'uid': '4112063', 'user': 'kailashdhirwani'}, 'name': 'Maya CINEMA -CLOSED', 'amenity': 'cinema'}
     {'_id': ObjectId('59314f949e4327d8804cebd3'), 'id': '2699807313', 'type': 'node', 'pos': [23.0664215, 72.5316963], 'created': {'version': '1', 'timestamp': '2014-03-03T12:25:12Z', 'changeset': '20887124', 'uid': '1964435', 'user': 'trishul'}, 'name': 'Rajhans Multiplex', 'amenity': 'cinema'}
     
+
+## The Conclusion <a name="conclusion"></a>
+
+- Though OpenStreetMap data seems to be fairly sorted in terms of the data distribution(nodes, ways and relations),Its becomes problematic when it comes to data representation in terms of tags due to following reasons:
+
+    1. Different tags have been used to represent the same data like "postal_code" and "addr:postcode".
+    2. Phone numbers are in different formats.
+    3. Street names are having city and states names appended.
+    4. City names are having local area names appended.
+    
+    
+- To avoid these problems OpenStreetMap should provide various templates based on the country, so that data would be more clean and sorted.   
