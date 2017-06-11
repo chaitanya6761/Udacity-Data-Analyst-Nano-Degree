@@ -164,7 +164,7 @@ print(problem_chars_set)
 print(others_set)
 ```
 
-    {'AND_a_c', 'fuel:octane_92', 'Business', 'FIXME', 'FID_1', 'mtb:scale:imba', 'currency:INR', 'source_1', 'IR:zone', 'fuel:octane_80', 'source_2', 'is_in:iso_3166_2', 'plant:output:electricity', 'naptan:CommonName', 'fuel:octane_91', 'AND_a_nosr_p', 'name_2', 'name_1', 'mtb:scale:uphill'}
+    {'source_1', 'source_2', 'is_in:iso_3166_2', 'plant:output:electricity', 'currency:INR', 'Business', 'name_1', 'fuel:octane_92', 'AND_a_c', 'AND_a_nosr_p', 'naptan:CommonName', 'fuel:octane_91', 'name_2', 'IR:zone', 'FIXME', 'fuel:octane_80', 'mtb:scale:imba', 'mtb:scale:uphill', 'FID_1'}
     
 
 - From the above listed tags, we can discard all of them except for "famous for" tag, as it has some meaningfull data associated with it i.e, it has the value of famous dish of that particular place or resturant. 
@@ -395,7 +395,7 @@ phone_numbers = process_tags(INPUT_FILENAME,"phone")
 print(phone_numbers)
 ```
 
-    {'079 26920057', '+91 79 2589 4542 / +91 9429207992', '+917927472043', '+91 79 3983 0100 ', '855-553-4767', '+917922864345', '+917922700585', '+91-9978113275 ; +91-8390740897', '07927641100', '9375776800', '+917965469992', '079 6619 0201', '+91 98981 37147', '(+91-79) 4032-7226', '07925500007', '+91793013 0200', '07926304000', '+917927550875', '07922912990', '+9179 2657 8369', '+91 79 6190 0500/05/06/07/08/09', '+91 98250 41132', '079 4050 5050', '+91 8758637922', '079 2687 2386', '0792740 0228', '+917927506819', '+919375565533', '915752790', '+91 79 2657 7621', '+91 79 2550 7181', '+919099958936', '+91 94262 84715', '+91 79 2656 5222', '07926306752', '7096805450', '+91 79 2646 6464', '+91 99-98-264810', '093270 38242', '+91 79 29705588', '+917923224006', '+91 93776 19151', '07926582130', '07922720605', '+91 9054876866', '099099 22239', '+91 79 30912345', '+91 79 2657 5741', '09016861000', '7926620059', '+919879566257', '07965422223', '+91 79 6651 5151', '+917801949128', '+91 79 25556767', '9909005694', '91-79-26401554', '+917922167530', '917926314000', '(079)39830036/37'}
+    {'+91 79 2550 7181', '91-79-26401554', '+917927550875', '+91 79 2589 4542 / +91 9429207992', '+91-9978113275 ; +91-8390740897', '9375776800', '+919879566257', '+91 79 29705588', '+91 79 2656 5222', '+91 99-98-264810', '+917965469992', '079 2687 2386', '+91 79 2646 6464', '915752790', '+91 79 2657 5741', '+917801949128', '07922720605', '+917923224006', '(+91-79) 4032-7226', '+91 79 25556767', '7926620059', '079 6619 0201', '+91 93776 19151', '099099 22239', '+919375565533', '07926582130', '+917927472043', '855-553-4767', '+91 98250 41132', '+917927506819', '+91 79 3983 0100 ', '07965422223', '9909005694', '+917922167530', '+91 79 30912345', '+91 79 6190 0500/05/06/07/08/09', '(079)39830036/37', '+917922700585', '07926304000', '07922912990', '07925500007', '07926306752', '+91 79 2657 7621', '+91 8758637922', '+919099958936', '+91793013 0200', '07927641100', '+91 79 6651 5151', '+917922864345', '079 26920057', '+91 98981 37147', '09016861000', '+91 94262 84715', '917926314000', '079 4050 5050', '7096805450', '+91 9054876866', '0792740 0228', '+9179 2657 8369', '093270 38242'}
     
 
 - The observations that can be drawn from the above list phone numbers are:
@@ -581,7 +581,7 @@ def rectify_cuisine_data(cuisine):
     
     if match:
         cuisine_lst = cuisine.split(match.group())
-        return [cuisine.title() for cuisine in cuisine_lst]
+        return [cuisine.title().lstrip('_') for cuisine in cuisine_lst]
     
     else:
         return [cuisine.title()]
@@ -589,21 +589,81 @@ def rectify_cuisine_data(cuisine):
 output_data(cuisines,func=rectify_cuisine_data)    
 ```
 
-    pizza ----> ['Pizza']
-    vegetarian ----> ['Vegetarian']
-    indian ----> ['Indian']
-    italian ----> ['Italian']
+    Punjabi,_SouthIndia,_Gujarati Thali. ----> ['Punjabi', 'Southindia', 'Gujarati Thali.']
     burger ----> ['Burger']
-    Punjabi,_SouthIndia,_Gujarati Thali. ----> ['Punjabi', '_Southindia', '_Gujarati Thali.']
     regional ----> ['Regional']
-    burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian ----> ['Burger', 'Sandwich', 'Regional', 'Ice_Cream', 'Grill', 'Cake', 'Coffee_Shop', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Chicken', 'Fish_And_Chips', 'Curry', 'Indian', 'Vegan', 'Fish', 'Breakfast', 'Savory_Pancakes', 'Tea', 'Seafood', 'Sausage', 'Local', 'Barbecue', 'Vegetarian']
+    vegetarian ----> ['Vegetarian']
+    Gujarati ----> ['Gujarati']
+    multicuisine ----> ['Multicuisine']
+    sandwich ----> ['Sandwich']
+    Coffee and Snacks ----> ['Coffee And Snacks']
     international ----> ['International']
     sandwich;regional;cake;coffee_shop;asian;pasta;noodles;pancake;pizza;indian;mexican;sausage;tea;italian;barbecue;vegetarian ----> ['Sandwich', 'Regional', 'Cake', 'Coffee_Shop', 'Asian', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Indian', 'Mexican', 'Sausage', 'Tea', 'Italian', 'Barbecue', 'Vegetarian']
     ice_cream ----> ['Ice_Cream']
-    multicuisine ----> ['Multicuisine']
-    Coffee and Snacks ----> ['Coffee And Snacks']
-    Gujarati ----> ['Gujarati']
-    sandwich ----> ['Sandwich']
+    indian ----> ['Indian']
+    pizza ----> ['Pizza']
+    burger;sandwich;regional;ice_cream;grill;cake;coffee_shop;pasta;noodles;pancake;pizza;chicken;fish_and_chips;curry;indian;vegan;fish;breakfast;savory_pancakes;tea;seafood;sausage;local;barbecue;vegetarian ----> ['Burger', 'Sandwich', 'Regional', 'Ice_Cream', 'Grill', 'Cake', 'Coffee_Shop', 'Pasta', 'Noodles', 'Pancake', 'Pizza', 'Chicken', 'Fish_And_Chips', 'Curry', 'Indian', 'Vegan', 'Fish', 'Breakfast', 'Savory_Pancakes', 'Tea', 'Seafood', 'Sausage', 'Local', 'Barbecue', 'Vegetarian']
+    italian ----> ['Italian']
+    
+
+## Problems Encountered In Building Levels Data <a name="buildingLevels"></a>
+
+
+```python
+building_levels = process_tags(INPUT_FILENAME,"building:levels")
+print(building_levels)
+```
+
+    {'8', '9', '12', '0', '3', '1', '10', '6', '1601', '1,2,3', '-1', '15', '29', '4', '11', '1,2,3,4,5,6,7,8,9,10,11', '5', '2', '7'}
+    
+
+- The observations that can be drawn from the building levels data are:
+    1. Most of the building levels are single values.
+    2. Few values are lists which comprises of all the levels.
+    3. One or more value are inccorect like '1601'.
+    
+    
+- Lets write a function that would ignore incorrect values and return a correct set of building values.
+
+
+  
+
+
+```python
+def rectify_building_level_data(level):
+    level_pattern = re.compile(r'[,]')
+    match = re.search(level_pattern,level)
+    
+    if match:
+        level_lst = level.split(match.group())
+        return [int(level) for level in level_lst]
+    elif len(level) <= 2:
+        return [int(level)]
+    else:
+        return None    
+    
+output_data(building_levels,func=rectify_building_level_data)     
+```
+
+    8 ----> [8]
+    9 ----> [9]
+    12 ----> [12]
+    0 ----> [0]
+    3 ----> [3]
+    1 ----> [1]
+    10 ----> [10]
+    6 ----> [6]
+    1601 ----> None
+    1,2,3 ----> [1, 2, 3]
+    -1 ----> [-1]
+    15 ----> [15]
+    29 ----> [29]
+    4 ----> [4]
+    11 ----> [11]
+    1,2,3,4,5,6,7,8,9,10,11 ----> [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
+    5 ----> [5]
+    2 ----> [2]
+    7 ----> [7]
     
 
 - Now lets write a function that will convert the xml dataset to json documents, which can be later be inserted to mongoDB.
@@ -611,7 +671,7 @@ output_data(cuisines,func=rectify_cuisine_data)
 
 ```python
 CREATED = [ "version", "changeset", "timestamp", "user", "uid"]
-EXPECTED = ["amenity","cuisine","name","phone","religion","atm",'building','landuse',
+EXPECTED = ["amenity","cuisine","name","phone","religion","atm",'building','building:levels','landuse',
             'highway','surface','lanes','bridge','maxspeed','leisure','sport','operator']
 
 speed = re.compile(r'(\d)*')
@@ -675,6 +735,9 @@ def create_element(element):
                         
                 elif tag_k == "cuisine":
                     tag_v = rectify_cuisine_data(tag_v)
+                
+                elif tag_k=="building:levels":
+                    tag_v = rectify_building_level_data(tag_v)
                     
                 elif tag_k == "maxspeed" or tag_k == 'lanes':
                     match = re.search(speed,tag_v)
@@ -911,7 +974,39 @@ for building_type in top_five_building_types:
     University: 29
     
 
-### 6. Top 3 Landuses
+### 6. Top 3 Tallest Buildings
+
+
+```python
+top_levels = ahmedabad_osm.aggregate([{"$match":{"building:levels":{"$exists":1}}},{"$unwind":"$building:levels"},
+                        {"$group":{"_id":"$name",
+                                     "max_level":{"$max":"$building:levels"}}},
+                        {"$sort":{"max_level":-1}},
+                        {"$limit":15}])
+
+
+for level in top_levels:
+    print("{0}: {1}".format(level["_id"].title(),level["max_level"]))
+```
+
+    Gift One: 29
+    Gift Two: 29
+    C2: 15
+    B6: 15
+    B3: 15
+    B1: 15
+    C1: 15
+    B2: 15
+    B5: 15
+    B4: 15
+    B7: 15
+    C3: 15
+    C4: 15
+    B8: 15
+    Green Acres: 12
+    
+
+### 7. Top 3 Landuses
 
 
 ```python
@@ -929,7 +1024,7 @@ for landuse in top_three_landuses:
     Industrial: 53
     
 
-### 7. Leisure Types
+### 8. Leisure Types
 
 
 ```python
@@ -939,7 +1034,7 @@ print(ahmedabad_osm.distinct('leisure'))
     ['sports_centre', 'park', 'garden', 'swimming_pool', 'pitch', 'stadium', 'playground', 'recreation_ground', 'track', 'golf_course']
     
 
-### 8. Sport Types
+### 9. Sport Types
 
 
 ```python
