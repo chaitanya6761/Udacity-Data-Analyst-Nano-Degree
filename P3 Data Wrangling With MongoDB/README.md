@@ -15,13 +15,14 @@
 
 1. [DataAuditing](#DataAuditing)
 2. [Problems Encountered In Postal Codes](#postalCodes)
-2. [Problems Encountered in City Names](#cityNames)
-3. [Problems Encountered In Phone Numbers](#phoneNumbers)
-4. [Problems Encountered In Street Names](#streetNames)
-4. [Problems Encountered In Cuisine Data](#cuisineData)
-5. [Data Wrangling With DB and File Sizes](#dbFileSizes)
-6. [Further Data Exploration With MongoDB](#furtherDbMongo)
-7. [The Conclusion](#conclusion)
+3. [Problems Encountered in City Names](#cityNames)
+4. [Problems Encountered In Phone Numbers](#phoneNumbers)
+5. [Problems Encountered In Street Names](#streetNames)
+6. [Problems Encountered In Cuisine Data](#cuisineData)
+7. [Problems Encountered In Building Levels Data](#buildingLevels)
+8. [Data Wrangling With DB and File Sizes](#dbFileSizes)
+9. [Further Data Exploration With MongoDB](#furtherDbMongo)
+10. [The Conclusion](#conclusion)
 
 
 
