@@ -22,8 +22,9 @@
 7. [Problems Encountered In Building Levels Data](#buildingLevels)
 8. [Data Wrangling With DB and File Sizes](#dbFileSizes)
 9. [Further Data Exploration With MongoDB](#furtherDbMongo)
-10. [The Conclusion](#conclusion)
-
+10. [Way Tag Data Exploration](#wayTagExp)
+11. [Geospatial Indexing](#geoIndex)
+12. [The Conclusion](#conclusion)
 
 
 
@@ -197,7 +198,7 @@ print("Length of k values dictionary: ",len(tags))
     Length of k values dictionary:  203
     
 
-- As the length of dictionary is 203, the output will be huge, So I am writing it to a external file called **"tags.txt" **.
+- As the length of dictionary is 203, the output will be huge, So I am writing it to a external file called **"tags.txt"**.
 
 
 ```python
@@ -290,7 +291,7 @@ incorrect_postal_code_set
 
 ##  Problems Encountered in City Names <a name="cityNames"></a>
 
-- Now lets take a look at values present in **"addr:city"** tag, to check whether city name has been mentioned correctly in every city tag. 
+- Now lets take a look at values present in **"addr:city"** tag, to check whether city name has been properly in every city tag. 
 
 
 ```python
@@ -399,7 +400,7 @@ print(phone_numbers)
     {'+91 79 2550 7181', '91-79-26401554', '+917927550875', '+91 79 2589 4542 / +91 9429207992', '+91-9978113275 ; +91-8390740897', '9375776800', '+919879566257', '+91 79 29705588', '+91 79 2656 5222', '+91 99-98-264810', '+917965469992', '079 2687 2386', '+91 79 2646 6464', '915752790', '+91 79 2657 5741', '+917801949128', '07922720605', '+917923224006', '(+91-79) 4032-7226', '+91 79 25556767', '7926620059', '079 6619 0201', '+91 93776 19151', '099099 22239', '+919375565533', '07926582130', '+917927472043', '855-553-4767', '+91 98250 41132', '+917927506819', '+91 79 3983 0100 ', '07965422223', '9909005694', '+917922167530', '+91 79 30912345', '+91 79 6190 0500/05/06/07/08/09', '(079)39830036/37', '+917922700585', '07926304000', '07922912990', '07925500007', '07926306752', '+91 79 2657 7621', '+91 8758637922', '+919099958936', '+91793013 0200', '07927641100', '+91 79 6651 5151', '+917922864345', '079 26920057', '+91 98981 37147', '09016861000', '+91 94262 84715', '917926314000', '079 4050 5050', '7096805450', '+91 9054876866', '0792740 0228', '+9179 2657 8369', '093270 38242'}
     
 
-- The observations that can be drawn from the above list phone numbers are:
+- The observations that can be drawn from the above listed phone numbers are:
   1. Some of the phone numbers are starting with coutry code **"+91" or 91** like **+91 79 2550 7181, "917926314000" .**
   2. some of the phone numbers are starting with **Zero** like **"079 6619 0201".**
   3. Some numbers are having Parentheses in them like **"(+91-79) 4032-7226".** 
@@ -507,7 +508,7 @@ output_data(street_names,filename="street_names.txt")
   1. Most of the street names are either ending with word **road or marg** which are in correct format.
   2. Few street names are in incorrect format i.e, they are having city, country name in them for eg.**"Uttamnagar, Ahmedabad".**
   3. One of the Street names is mentioned in local language **"Hindi"** like **"एरपोर्ट रोड"**.
-  4. Some of the street names are in lower case letters, some of them are in upper case.
+  4. Some of the street names are in lower case letters and some of them are in upper case.
   
 - Now lets write a function that would process a given street name and convert it into a standard format.
 - Lets create a dictionary that would contain incorrect names as keys and correct names as values, if a given street name is  found in that dictionary, we will return the correct value , else will return the given street name in standard format.
@@ -515,6 +516,7 @@ output_data(street_names,filename="street_names.txt")
 
 ```python
 def rectify_street_name(street_name):
+    '''This function is written to rectify the given street name'''
     incorrect_names = {'एरपोर्ट रोड': 'Airport Road'}
     if street_name in incorrect_names:
         return incorrect_names[street_name]
@@ -577,6 +579,7 @@ cuisines = process_tags(INPUT_FILENAME,"cuisine")
 
 ```python
 def rectify_cuisine_data(cuisine):
+    '''This function is written to rectify cuisine data'''
     cuisine_pattern = re.compile(r'[,;]')
     match = re.search(cuisine_pattern,cuisine)
     
@@ -632,6 +635,7 @@ print(building_levels)
 
 ```python
 def rectify_building_level_data(level):
+    '''This function is written to rectify building levels data'''
     level_pattern = re.compile(r'[,]')
     match = re.search(level_pattern,level)
     
@@ -678,7 +682,7 @@ EXPECTED = ["amenity","cuisine","name","phone","religion","atm",'building','buil
 speed = re.compile(r'(\d)*')
 
 def create_element(element):
-    '''This function is written to convert each xml tag to a json document'''
+    '''This function is written to convert each xml tag to a json object'''
     
     node = {}
     if element.tag == "node" or element.tag == "way" :
@@ -1045,7 +1049,7 @@ print(ahmedabad_osm.distinct('sport'))
     ['multi', 'swimming', 'basketball', 'volleyball', 'cricket', 'tennis', 'skating', 'cricket,_football', 'running', 'soccer']
     
 
-### Way Tag Data Exploration
+### Way Tag Data Exploration <a name="wayTagExp"></a>
 #### 1. Highway Types
 
 
@@ -1128,7 +1132,7 @@ for lane in max_lanes:
     Vatwa Road: 4 Lanes
     
 
-### Geospatial Indexing
+### Geospatial Indexing  <a name="geoIndex"></a>
 
 - The below function will return the nearby matches for a given amenity and position co-ordinates.
 
