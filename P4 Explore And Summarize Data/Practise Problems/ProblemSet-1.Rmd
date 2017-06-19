@@ -3,16 +3,16 @@ title: "R Notebook"
 output: html_notebook
 ---
 
-###1. Laoding Diamond Dataset.
+### 1. Laoding Diamond Dataset.
 ```{r}
 data(diamonds)
 ```
 
-###2. How many observations are in the dataset.
+### 2. How many observations are in the dataset.
 ```{r}
 nrow(diamonds)
 ```
-###3. How many variables are there in the dataset ?
+### 3. How many variables are there in the dataset ?
 ```{r}
 ncol(diamonds)
 ```
