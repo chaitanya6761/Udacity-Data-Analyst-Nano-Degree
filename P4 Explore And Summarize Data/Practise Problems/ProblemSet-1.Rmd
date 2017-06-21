@@ -1,15 +1,19 @@
 ---
 title: "R Notebook"
-output: html_notebook
+output:
+  html_document: default
 ---
 
 ###1. Laoding Diamond Dataset.
 ```{r}
+install.packages('ggplot2')
+library('ggplot2')
 data(diamonds)
 ```
 
 ###2. How many observations are in the dataset.
 ```{r}
+data(diamonds)
 nrow(diamonds)
 ```
 ###3. How many variables are there in the dataset ?
@@ -28,6 +32,75 @@ levels(diamonds$color)
 ### 6. Create Histogram for price data.
 ```{r}
 ggplot(aes(x=price),data=diamonds)+
-  geom_histogram(fill='blue',color='black')
+  geom_histogram(fill='#F79420',color='black')
 ```
+### 7. Find summary statistics like mean and median.
+```{r}
+mean(diamonds$price)
+median(diamonds$price)
+```
+### 8. How many diamonds cost less than 500?.
+```{r}
+sum(diamonds$price < 500)
+```
+### 9. How many diamonds cost less than 250?.
+```{r}
+sum(diamonds$price < 250)
+```
+### 8. How many diamonds cost 15000 or more?.
+```{r}
+sum(diamonds$price >= 15000)
+```
+### 9. Explore the largest peak in price histogram.
+```{r}
+ggplot(aes(x=price),data = diamonds)+
+  geom_histogram(color='black',fill='#F79420',binwidth = 50)+
+  scale_x_continuous(limits = c(200,1000),breaks = seq(300,950,50))
+```
+### 10. Break out the histogram prices by cut.
+```{r}
+ggplot(data=diamonds,aes(x=diamonds$price))+
+  geom_histogram(color='black')+
+  facet_wrap(~cut)
+```
+### 11. Summary stattistics to find min and max by cut.
+
+```{r}
+by(diamonds$price,diamonds$cut,summary)
+```
+
+```{r}
+ggplot(data=diamonds,aes(x=diamonds$price))+
+  geom_histogram(color='black',fill='#F79420')+
+  facet_wrap(~cut,scales = 'free_y')
+```
+
+### 12.Create a histogram of price per carat and facet it by cut.
+```{r}
+ggplot(aes(x=price/carat),data=diamonds)+
+  geom_histogram(color='black',fill='#F79420')+
+  scale_x_log10()+
+  facet_wrap(~cut)
+```
+
+### 13. Investigate the price of diamonds using boxplots.
+```{r}
+ggplot(aes(x=color,y=price),data=diamonds)+
+  geom_boxplot(fill='#F79420')
+
+by(diamonds$price,diamonds$color,summary)
+  
+```
+
+### 14.Investigate the price per carat of diamonds across the different colors of diamonds using boxplots.
+```{r}
+ggplot(aes(y=price/carat,x=color),data=diamonds)+
+  geom_boxplot(fill='#F79420')
+```
+
+### 15. Investigate the weights of diamonds using a frequency ploygon.
+```{r}
+
+```
+
 
