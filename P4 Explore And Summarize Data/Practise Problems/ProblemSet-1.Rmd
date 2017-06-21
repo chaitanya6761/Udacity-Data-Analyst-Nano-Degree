@@ -4,19 +4,19 @@ output:
   html_document: default
 ---
 
-###1. Laoding Diamond Dataset.
+### 1. Laoding Diamond Dataset.
 ```{r}
 install.packages('ggplot2')
 library('ggplot2')
 data(diamonds)
 ```
 
-###2. How many observations are in the dataset.
+### 2. How many observations are in the dataset.
 ```{r}
 data(diamonds)
 nrow(diamonds)
 ```
-###3. How many variables are there in the dataset ?
+### 3. How many variables are there in the dataset ?
 ```{r}
 ncol(diamonds)
 ```
