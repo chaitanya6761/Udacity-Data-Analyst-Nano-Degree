@@ -6,7 +6,7 @@ output:
 
 ### 1. Laoding Diamond Dataset.
 ```{r}
-install.packages('ggplot2')
+#install.packages('ggplot2')
 library('ggplot2')
 data(diamonds)
 ```
@@ -47,23 +47,23 @@ sum(diamonds$price < 500)
 ```{r}
 sum(diamonds$price < 250)
 ```
-### 8. How many diamonds cost 15000 or more?.
+### 10. How many diamonds cost 15000 or more?.
 ```{r}
 sum(diamonds$price >= 15000)
 ```
-### 9. Explore the largest peak in price histogram.
+### 11. Explore the largest peak in price histogram.
 ```{r}
 ggplot(aes(x=price),data = diamonds)+
   geom_histogram(color='black',fill='#F79420',binwidth = 50)+
   scale_x_continuous(limits = c(200,1000),breaks = seq(300,950,50))
 ```
-### 10. Break out the histogram prices by cut.
+### 12. Break out the histogram prices by cut.
 ```{r}
 ggplot(data=diamonds,aes(x=diamonds$price))+
   geom_histogram(color='black')+
   facet_wrap(~cut)
 ```
-### 11. Summary stattistics to find min and max by cut.
+### 13. Summary stattistics to find min and max by cut.
 
 ```{r}
 by(diamonds$price,diamonds$cut,summary)
@@ -75,7 +75,7 @@ ggplot(data=diamonds,aes(x=diamonds$price))+
   facet_wrap(~cut,scales = 'free_y')
 ```
 
-### 12.Create a histogram of price per carat and facet it by cut.
+### 14.Create a histogram of price per carat and facet it by cut.
 ```{r}
 ggplot(aes(x=price/carat),data=diamonds)+
   geom_histogram(color='black',fill='#F79420')+
@@ -83,7 +83,7 @@ ggplot(aes(x=price/carat),data=diamonds)+
   facet_wrap(~cut)
 ```
 
-### 13. Investigate the price of diamonds using boxplots.
+### 15. Investigate the price of diamonds using boxplots.
 ```{r}
 ggplot(aes(x=color,y=price),data=diamonds)+
   geom_boxplot(fill='#F79420')
@@ -92,15 +92,16 @@ by(diamonds$price,diamonds$color,summary)
   
 ```
 
-### 14.Investigate the price per carat of diamonds across the different colors of diamonds using boxplots.
+### 16.Investigate the price per carat of diamonds across the different colors of diamonds using boxplots.
 ```{r}
 ggplot(aes(y=price/carat,x=color),data=diamonds)+
   geom_boxplot(fill='#F79420')
 ```
 
-### 15. Investigate the weights of diamonds using a frequency ploygon.
+### 17. Investigate the weights of diamonds using a frequency ploygon.
 ```{r}
-
+ggplot(aes(x=carat),data=diamonds)+
+  geom_freqpoly(binwidth=0.1,color='orange')+
+  scale_x_continuous(limits = c(0,2),breaks=seq(0,2,0.1))
 ```
-
 
