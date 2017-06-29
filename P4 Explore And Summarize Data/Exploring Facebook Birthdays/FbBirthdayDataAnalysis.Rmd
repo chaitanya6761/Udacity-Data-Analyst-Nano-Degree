@@ -3,31 +3,31 @@ title: "Facebook Friends Birthday Data Analysis"
 output: html_notebook
 ---
 
-##1. Loading the data file and required packages
+## 1. Loading the data file and required packages
 ```{r}
 install.packages('lubridate')
 library(lubridate)
 fb <- read.csv('birthdays.csv')
 ```
 
-##2. Lets take look at the dataset using the head command.
+## 2. Lets take look at the dataset using the head command.
 ```{r}
 head(fb)
 ```
 
-##3. Lets remove the columns End and duration, as they might not be much useful for exploration.
+## 3. Lets remove the columns End and duration, as they might not be much useful for exploration.
 ```{r}
 fb <- subset(fb,select = -c(End,Duration))
 head(fb)
 ```
 
-##4. Lets convert the Start column data to date format.
+## 4. Lets convert the Start column data to date format.
 ```{r}
 fb$Start <- as.Date(fb$Start,format='%m/%d/%Y')
 head(fb$Start)
 ```
 
-##5. Lets add month column to dataset.
+## 5. Lets add month column to dataset.
 ```{r}
 fb$month <- format(fb$Start,'%b')
 head(fb)
@@ -35,19 +35,19 @@ head(fb)
 
 # Now Lets Explore The Dataset.
 
-##7. How many birthdays are in each month?
+## 7. How many birthdays are in each month?
 ```{r}
 table(fb$month)
 ```
 
-##8. How many people share My birthday?
+## 8. How many people share My birthday?
 ```{r}
 myBdayDate = as.Date('10/12/2017','%m/%d/%Y')
 shareMyBday <- subset(fb,fb$Start == myBdayDate)
 shareMyBday
 ```
 
-##9. Which month contains the most number of birthdays?
+## 9. Which month contains the most number of birthdays?
 ```{r}
 names(which(table(fb$month) == max(table(fb$month))))
 ```
