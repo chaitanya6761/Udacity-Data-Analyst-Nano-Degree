@@ -1,11 +1,15 @@
 ---
 title: "Facebook Friends Birthday Data Analysis"
-output: html_notebook
+output:
+  html_document: default
+  html_notebook: default
+  pdf_document: default
+  word_document: default
 ---
 
 ## 1. Loading the data file and required packages
 ```{r}
-install.packages('lubridate')
+#install.packages('lubridate')
 library(lubridate)
 fb <- read.csv('birthdays.csv')
 ```
@@ -51,3 +55,18 @@ shareMyBday
 ```{r}
 names(which(table(fb$month) == max(table(fb$month))))
 ```
+
+## 10. Plot a bar chart to show number of birthdays in each month
+```{r}
+#install.packages("ggplot2")
+library(ggplot2)
+```
+
+
+
+```{r}
+ggplot(data=fb,aes(x=month))+
+  geom_bar(color='black',fill='#F79420')
+```
+
+
