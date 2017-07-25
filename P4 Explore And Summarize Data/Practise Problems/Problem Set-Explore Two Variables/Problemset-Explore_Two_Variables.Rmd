@@ -1,0 +1,31 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+
+### 1. Loading Diamond Dataset
+```{r}
+install.packages('ggplot2')
+library('ggplot2')
+data(diamonds)
+names(diamonds)
+```
+
+### 2. create a scatterplot of price vs x. using the ggplot syntax.
+```{r}
+ggplot(aes(x=x,y=price),data=diamonds)+
+  geom_point()
+```
+### 3. What is the correlation between price and x,y,z? 
+```{r}
+with(diamonds,cor.test(price,x))
+with(diamonds,cor.test(price,y))
+with(diamonds,cor.test(price,z))
+```
+
+### 4.# Create a simple scatter plot of price vs depth.
+```{r}
+ggplot(aes(x=price,y=depth),data=diamonds) +
+  geom_point()
+```
+
