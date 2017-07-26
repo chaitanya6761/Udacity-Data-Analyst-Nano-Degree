@@ -23,9 +23,29 @@ with(diamonds,cor.test(price,y))
 with(diamonds,cor.test(price,z))
 ```
 
-### 4.# Create a simple scatter plot of price vs depth.
+### 4.Create a simple scatter plot of price vs depth.
 ```{r}
-ggplot(aes(x=price,y=depth),data=diamonds) +
+ggplot(aes(x=depth,y=price),data=diamonds) +
+  geom_point()
+```
+
+### 5.Change the code to make the transparency of the points to be 1/100 of what they are now and mark the x-axis every 2 units. See the instructor notes for two hints.
+```{r}
+ggplot(aes(x=depth,y=price),data=diamonds) +
+  geom_point(alpha=1/100)+
+  scale_x_continuous(breaks=seq(0,80,2))
+```
+### 6. Based on the scatterplot of depth vs price, most diamonds are between what values of depth?
+Ans. 60 to 64
+
+### 7. What is the correlation of depth vs price?
+```{r}
+with(diamonds,cor.test(depth,price))
+```
+
+### 8. Create a scatterplot of price vs carat and omit the top 1% of price and carat values.
+```{r}
+ggplot(aes(x=carat,y=price),data=diamonds)+
   geom_point()
 ```
 
