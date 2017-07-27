@@ -38,14 +38,45 @@ ggplot(aes(x=depth,y=price),data=diamonds) +
 ### 6. Based on the scatterplot of depth vs price, most diamonds are between what values of depth?
 Ans. 60 to 64
 
-### 7. What is the correlation of depth vs price?
+### 7. What is the correlation of depth vs price? Basedd on the correlation coefficient would you depth to predict the price of diamond?
 ```{r}
 with(diamonds,cor.test(depth,price))
 ```
+As the correlation coefficient value seems to very low, we can say that depth and price doesn't have a strong relationship, So we cannot use the depth to predict the price of a diamond.  
+
 
 ### 8. Create a scatterplot of price vs carat and omit the top 1% of price and carat values.
 ```{r}
 ggplot(aes(x=carat,y=price),data=diamonds)+
+  geom_point()+
+  xlim(0,quantile(diamonds$carat,0.99))+
+  ylim(0,quantile(diamonds$price,0.99))+
+  geom_smooth()
+```
+
+### 9.Create a scatterplot of price vs. volume (x  y  z). This is a very rough approximation for a diamond's volume.
+```{r}
+diamonds$volume <- diamonds$x * diamonds$y * diamonds$z
+ggplot(aes(x=volume,y=price),data=diamonds)+
   geom_point()
 ```
+
+### 10.How many diamonds have zero volume?
+```{r}
+sum(diamonds$volume==0)
+```
+
+### 11.What is the correlation of price and volume? Exclude diamonds that have volume of zero or that are greater than or equal to 800.
+```{r}
+with(subset(diamonds,volume > 0 & volume <= 800),cor.test(price,volume))
+```
+
+### 12.Subset the data to exclude diamonds with a volume greater than or equal to 800. Also, exclude diamonds with a volume of 0. Adjust the transparency of the points and add a linear model to the plot.
+```{r}
+ggplot(aes(x=volume,y=price),data=subset(diamonds,volume > 0 & volume <= 800))+
+  geom_point(alpha=1/5)+
+  geom_smooth(method = 'lm')
+```
+
+
 
