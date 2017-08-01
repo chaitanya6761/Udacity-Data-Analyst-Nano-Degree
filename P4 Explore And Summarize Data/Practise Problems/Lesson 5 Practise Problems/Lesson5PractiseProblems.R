@@ -119,8 +119,31 @@ ggplot(aes(x=Month,y=Temp),data=Mitchell)+
   scale_x_continuous(breaks = seq(0,204,12))
 
 
+## Calculate age in months
+pf$age_with_months <- pf$age + (1 - pf$dob_month / 12)
+
+##Create data groups using age with months variable
+
+age_groups_months <- group_by(pf,age_with_months) 
+
+pf.fc_by_age_months <- summarise(age_groups_months,
+                                 friend_count_mean = mean(friend_count),
+                                 friend_count_median = median(friend_count),
+                                 n = n())
+
+pf.fc_by_age_months <- arrange(pf.fc_by_age_months, age_with_months)
+head(pf.fc_by_age_months) 
 
 
+# Create a new line plot showing friend_count_mean versus the new variable,
+# age_with_months. Be sure to use the correct data frame (the one you created
+# in the last exercise) AND subset the data to investigate users with ages less
+# than 71.
+
+ggplot(aes(x=age_with_months,y=friend_count_mean),
+  data=subset(pf.fc_by_age_months,age_with_months < 71))+
+  geom_line()+
+  geom_smooth()
 
 
 
