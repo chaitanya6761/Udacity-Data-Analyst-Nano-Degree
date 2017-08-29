@@ -80,10 +80,51 @@ pf$year_joined_bucket <- cut(pf$year_joined,c(2004,2009,2011,2012,2014))
 
 table(pf$year_joined_bucket)
  
+# Create a line graph of friend_count vs. age so that each year_joined.bucket 
+# is a line tracking the median user friend_count across age. This means you 
+# should have four different lines on your plot.
+
+ggplot(aes(x = age, y = friend_count),
+       data = subset(pf, !is.na(year_joined_bucket))) +
+  geom_line(aes(color = year_joined_bucket), stat = 'summary', fun.y = median)
+
+# Write code to do the following:
+# (1) Add another geom_line to code below to plot the grand mean of the friend count vs age.
+# (2) Exclude any users whose year_joined.bucket is NA.
+# (3) Use a different line type for the grand mean.
 
 ggplot(aes(x = age, y = friend_count),
        data = subset(pf, !is.na(year_joined_bucket))) +
   geom_line(aes(color = year_joined_bucket), stat = 'summary', fun.y = mean)+
   geom_line(stat='summary',fun.y=mean,linetype=2)
+
+
+#Friending Rate
+
+with(subset(pf,tenure>0),summary(friend_count/tenure))
+
+# Create a line graph of mean of friendships_initiated per day (of tenure)
+# vs. tenure colored by year_joined.bucket.
+
+ggplot(aes(x=tenure,y=friendships_initiated/tenure),data=subset(pf,tenure>0))+
+  geom_line(aes(color=year_joined_bucket),stat='summary',fun.y=mean)
+
+# Instead of geom_line(), use geom_smooth() to add a smoother to the plot.
+# You can use the defaults for geom_smooth() but do color the line
+# by year_joined.bucket
+
+ggplot(aes(x = 7 * round(tenure / 7), y = friendships_initiated / tenure),
+ data = subset(pf, tenure > 0)) +
+ geom_smooth(aes(color = year_joined_bucket))
+
+
+
+
+
+
+
+
+
+
 
 
