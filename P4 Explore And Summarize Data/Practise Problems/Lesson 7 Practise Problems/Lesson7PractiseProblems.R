@@ -118,13 +118,28 @@ ggplot(aes(x = 7 * round(tenure / 7), y = friendships_initiated / tenure),
  geom_smooth(aes(color = year_joined_bucket))
 
 
+#Exploring Yogurt dataset
+
+setwd('F:/chaitanya/eda-course-materials')
+yo <- read.csv('yogurt.csv')
+names(yo)
+
+yo$id<- factor(yo$id)
+
+#Revisted Histogram
+ggplot(aes(x=price),data=yo)+
+  geom_histogram()
+
+#Create a new variable called all.purchases, which gives the total counts of 
+#yogurt for each observation or household.
+
+yo$all.purchases <- yo$strawberry + yo$blueberry + yo$pina.colada + yo$plain+
+                    yo$mixed.berry
 
 
-
-
-
-
-
+# Create a scatterplot of price vs time.
+ggplot(aes(x=time,y=price),data=yo)+
+  geom_point()
 
 
 
