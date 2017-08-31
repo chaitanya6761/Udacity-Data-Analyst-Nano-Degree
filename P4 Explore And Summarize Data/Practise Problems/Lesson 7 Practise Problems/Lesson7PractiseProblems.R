@@ -113,7 +113,7 @@ ggplot(aes(x=tenure,y=friendships_initiated/tenure),data=subset(pf,tenure>0))+
 # You can use the defaults for geom_smooth() but do color the line
 # by year_joined.bucket
 
-ggplot(aes(x = 7 * round(tenure / 7), y = friendships_initiated / tenure),
+ggplot(aes(x =tenure, y = friendships_initiated / tenure),
  data = subset(pf, tenure > 0)) +
  geom_smooth(aes(color = year_joined_bucket))
 
@@ -137,9 +137,24 @@ yo$all.purchases <- yo$strawberry + yo$blueberry + yo$pina.colada + yo$plain+
                     yo$mixed.berry
 
 
-# Create a scatterplot of price vs time.
+#Create a Histogram of all.purchases
+ggplot(aes(x=all.purchases),data=yo)+
+  geom_histogram(fill='#099DD9',color='black',binwidth=1)+
+  scale_x_continuous(breaks = seq(0,8,1),limits = c(0,8))
+
+#Create a scatterplot of price vs time.
 ggplot(aes(x=time,y=price),data=yo)+
   geom_point()
+
+#Looking at sample of households
+sample.ids <- sample(levels(yo$id),16)
+
+ggplot(aes(x=time,y=price),
+       data=subset(yo,id %in% sample.ids))+
+  facet_wrap(~id)+
+  geom_line()+
+  geom_point(aes(size=all.purchases),pch=1)
+  
 
 
 
