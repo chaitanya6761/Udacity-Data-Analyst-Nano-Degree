@@ -33,6 +33,7 @@ ggplot(aes(x=fixed.acidity),data=wines)+
 ```
 
 ```{r}
+
 ggplot(aes(x=quality),data=wines)+
   geom_histogram(binwidth = 1,color='black')+
   scale_x_continuous(breaks = seq(3,9,1))
