@@ -1,0 +1,71 @@
+White Wine Data Exploration
+========================================================
+This tidy data set contains 4,898 white wines with 11 variables on quantifying the chemical properties of each wine. At least 3 wine experts rated the quality of each wine, providing a rating between 0 (very bad) and 10 (very excellent).
+
+This Report explores the White Wine dataset to findout which chemical properties influence the quality of wines.
+
+### 1. Required imports and libraries.
+```{r}
+library(ggplot2)
+```
+
+### 2. Loading the dataset.
+```{r}
+setwd('F:/chaitanya/eda-course-materials')
+wines <- read.csv('wineQualityWhites.csv')
+```
+
+### 3. Dimensions of the dataset.
+```{r, echo=TRUE}
+dim(wines)
+```
+
+### 4. Description of the variables and thier types.
+```{r}
+str(wines)
+```
+
+### 5. Summaries of numerical variables present in dataset. 
+```{r}
+summary(wines)
+```
+Now lets explore the distribution of fixed acidity in our samples.
+- The fixed.acidity peaks at 6.5, but most of the samples seems to have acidity between 6 to 7.5 .
+
+```{r}
+ggplot(aes(x=fixed.acidity),data=wines)+
+  geom_histogram(binwidth = 0.25,color="black")+
+  scale_x_continuous(breaks = seq(3,15,0.5))
+```
+
+
+Now lets explore the distribution of volatile.acidity in our dataset.
+```{r}
+ggplot(aes(x=volatile.acidity),data=wines)+
+  geom_histogram(binwidth =0.01,color='black')+
+  scale_x_continuous(breaks = seq(0,1.2,0.05))
+```
+
+Now lets explore the contents of citric.acid in our dataset.
+```{r}
+ggplot(aes(x=citric.acid),data=wines)+
+  geom_histogram(binwidth = 0.01,color='black')+
+    scale_x_continuous(breaks = seq(0,1.7,0.1))
+```
+
+Now Lets explore the distribution of residual.sugar in our sample.
+```{r}
+ggplot(aes(x=residual.sugar),data=wines)+
+  geom_histogram(color="black",binwidth = 1)
+```
+
+The above distribution seems to be skewed and long tailed due to some huge outliers. Most of the samples have residual sugar below 22, so lets exclude these outliers to see the distribution of residual.sugar .
+```{r}
+sum(wines$residual.sugar > 22)
+```
+```{r}
+ggplot(aes(x=residual.sugar),data=subset(wines,residual.sugar < 22))+
+  geom_histogram(binwidth = 0.05,color='black')+
+  scale_x_log10(breaks = c(1,2,3,4,5,7,10,13,15,17,20))
+```
+
