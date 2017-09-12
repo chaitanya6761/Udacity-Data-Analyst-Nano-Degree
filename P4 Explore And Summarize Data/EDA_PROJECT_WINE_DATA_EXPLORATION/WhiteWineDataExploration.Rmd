@@ -11,8 +11,9 @@ library(ggplot2)
 
 ### 2. Loading the dataset.
 ```{r}
-setwd('F:/chaitanya/eda-course-materials')
+setwd('E:/git/Udacity-Data-Analyst-Nano-Degree/P4 Explore And Summarize Data/EDA_PROJECT_WINE_DATA_EXPLORATION')
 wines <- read.csv('wineQualityWhites.csv')
+head(wines)
 ```
 
 ### 3. Dimensions of the dataset.
@@ -29,9 +30,8 @@ str(wines)
 ```{r}
 summary(wines)
 ```
-Now lets explore the distribution of fixed acidity in our samples.
-- The fixed.acidity peaks at 6.5, but most of the samples seems to have acidity between 6 to 7.5 .
 
+Now lets explore the distribution of fixed acidity in our samples.The fixed.acidity peaks at 6.5, but most of the samples seems to have acidity between 6 to 7.5 .
 ```{r}
 ggplot(aes(x=fixed.acidity),data=wines)+
   geom_histogram(binwidth = 0.25,color="black")+
@@ -49,7 +49,7 @@ ggplot(aes(x=volatile.acidity),data=wines)+
 Now lets explore the contents of citric.acid in our dataset.
 ```{r}
 ggplot(aes(x=citric.acid),data=wines)+
-  geom_histogram(binwidth = 0.01,color='black')+
+  geom_histogram(binwidth = 0.05,color='black')+
     scale_x_continuous(breaks = seq(0,1.7,0.1))
 ```
 
@@ -59,13 +59,61 @@ ggplot(aes(x=residual.sugar),data=wines)+
   geom_histogram(color="black",binwidth = 1)
 ```
 
-The above distribution seems to be skewed and long tailed due to some huge outliers. Most of the samples have residual sugar below 22, so lets exclude these outliers to see the distribution of residual.sugar .
+The above distribution seems to be skewed and long tailed due to some outliers. Lets plot the data using log transformation to see the more detailed distribution. 
 ```{r}
-sum(wines$residual.sugar > 22)
-```
-```{r}
-ggplot(aes(x=residual.sugar),data=subset(wines,residual.sugar < 22))+
+ggplot(aes(x=residual.sugar),data=subset(wines))+
   geom_histogram(binwidth = 0.05,color='black')+
-  scale_x_log10(breaks = c(1,2,3,4,5,7,10,13,15,17,20))
+  scale_x_log10(breaks=c(1,3,5,7,10,3,15,20,25,31,65))
 ```
 
+Now lets explore the distribution of chlorides in our dataset.
+```{r}
+ggplot(aes(x=chlorides),data=wines)+
+  geom_histogram(binwidth=0.01,color="black")
+```
+
+As most of the values in the above distribution lie between 0.0 to 0.1 and the graph seems to be a bit long tailed towards right, lets use log scale to get more disbursed distribution.
+```{r}
+ggplot(aes(x=chlorides),data=wines)+
+  geom_histogram(binwidth =0.05,color='black')+
+  scale_x_log10(breaks=seq(0.01,0.35,0.05))
+```
+
+Now Lets see the distribution free.sulfur.dioxide in ou dataset.
+```{r}
+ggplot(aes(x=free.sulfur.dioxide),data=wines)+
+  geom_histogram(binwidth=10,color='black')
+```
+
+Now Lets see the distribution of total.sulfur.dioxide in our dataset.
+```{r}
+ggplot(aes(x=total.sulfur.dioxide),data=wines)+
+  geom_histogram(binwidth = 5,color="black")
+```
+
+```{r}
+ggplot(aes(x=density),data=wines)+
+  geom_histogram(binwidth = 0.001,color="black")+
+  xlim(0.985,1.04)
+```
+
+```{r}
+ggplot(aes(x=pH),data=wines)+
+  geom_histogram(binwidth = 0.03,color="black")
+```
+
+```{r}
+ggplot(aes(x=sulphates),data=wines)+
+  geom_histogram(binwidth=0.02,color="black")
+```
+
+```{r}
+ggplot(aes(x=alcohol),data=wines)+
+  geom_histogram(binwidth = 0.1,color="black")
+```
+
+```{r}
+ggplot(aes(x=quality),data=wines)+
+  geom_histogram(bins = 7,color="black")+
+  scale_x_continuous(breaks = seq(3,9,1))
+```
