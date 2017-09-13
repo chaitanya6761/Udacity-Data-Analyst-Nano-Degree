@@ -88,7 +88,7 @@ ggplot(aes(x=free.sulfur.dioxide),data=wines)+
 ```
 
 The above plot shows that most of the data lies below 100, so lets zoom into the plot by excluding some outliers.
-```{r}
+```{r message=FALSE, warning=FALSE}
 ggplot(aes(x=free.sulfur.dioxide),data=wines)+
   geom_histogram(binwidth=2,color='black')+
   scale_x_continuous(breaks=seq(0,100,5),limits = c(0,100))
@@ -101,7 +101,7 @@ ggplot(aes(x=total.sulfur.dioxide),data=wines)+
 ```
 
 In the above graph most of the data lies below 250, Lets zoom into the plot by excluding some outliers.
-```{r}
+```{r message=FALSE, warning=FALSE}
 ggplot(aes(x=total.sulfur.dioxide),data=wines)+
   geom_histogram(binwidth = 5,color="black")+
   scale_x_continuous(limits = c(0,250),breaks=seq(0,250,10))
