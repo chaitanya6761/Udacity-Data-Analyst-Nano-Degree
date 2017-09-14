@@ -170,7 +170,7 @@ Observations:
 3. Most of the wines in the dataset have the quality as 5 or 6, only few wines are of the best quality(8 0r 9).
 
 ### What is/are the main feature(s) of interest in your dataset?
-The main feature of interest is "Qulaity". I would like to determine what all factors are affecting the quality of wine.
+The main feature of interest is "Quality". I would like to determine what all factors are affecting the quality of wine.
 
 ### What other features in the dataset do you think will help support your investigation into your feature(s) of interest?
 Features like contents of acids,amounts of sulfur and chlorides, amount of residual.sugar and percent of alcohol might help in investigation.  
@@ -179,7 +179,7 @@ Features like contents of acids,amounts of sulfur and chlorides, amount of resid
 
 Of the features investigated, residual.sugar and chlorides have unusal distributions. I log transformed these skewed distributions, so that we can get a clear and more disbured distribution of data.
 
-The transformed distribution for residual.sugar appears to be bimodal with peaks around 1g/dm^3 and 7g/dm^3. The Chlorides distribution is heavly populated between 0.0 to 0.1, so I used log transfromation, which transfroms the data on a ten-fold sacle, so that we can more widely populted distribution of chlorides.     
+The transformed distribution for residual.sugar appears to be bimodal with peaks around 1g/dm^3 and 7g/dm^3. The Chlorides distribution is heavly populated between 0.0 to 0.1, so I used log transfromation, which transfroms the data on a ten-fold sacle, so that we can get more widely populted distribution of chlorides.     
 
 
 
