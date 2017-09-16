@@ -9,6 +9,7 @@ This Report explores the White Wine dataset to findout which chemical properties
 ### 1. Required imports and libraries.
 ```{r message=FALSE, warning=FALSE}
 library(ggplot2)
+library(corrplot)
 ```
 
 ### 2. Loading the dataset.
@@ -188,16 +189,17 @@ The transformed distribution for residual.sugar appears to be bimodal with peaks
 
 In this section, I will be exploring the two variable relationships.
 ```{r}
-cor(wines)
+res <- cor(subset(wines,select=-c(X)))
+corrplot(res,type = "full")
 ```
+
+
 
 As our main feature of interest lies in "Quality", Lets see how quality is getting effected by other variables like alcohol. Quality and alcohol seem to have a bit strong relationship because they have positive correlation co-efficent of 0.435.
 ```{r}
 ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
   geom_boxplot()
 ```
-
-
 
 
 
