@@ -10,6 +10,7 @@ This Report explores the White Wine dataset to findout which chemical properties
 ```{r message=FALSE, warning=FALSE}
 library(ggplot2)
 library(corrplot)
+library(gridExtra)
 ```
 
 ### 2. Loading the dataset.
@@ -194,35 +195,74 @@ corrplot(res,type = "full")
 ```
 
 
-
 As our main feature of interest lies in "Quality", Lets see how quality is getting effected by other variables like alcohol. Quality and alcohol seem to have a bit strong relationship because they have positive correlation co-efficent of 0.435.
 ```{r}
 ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
   geom_boxplot()+
-  stat_summary(fun.y = mean,geom ="point",shape=4,color="red")
+  stat_summary(fun.y = mean,geom ="point",shape=4,color="red",size=4)
 ```
 
-As the mean and median of alcohol content initially seems to drop with quality upto 5, but increases after that till 9, so we can partially conclude that higher quality wines have a bit high amounts of alcohol on average.  
+As the mean and median of alcohol content initially seems to drop with quality upto 5, but increases after that till 9, so we can partially conclude that higher quality wines have a bit high amounts of alcohol on average. Lets see how quality of wine is getting effected by amount of chlorides.
+```{r}
+ggplot(aes(y=chlorides,x=factor(quality)),data=wines)+
+  geom_boxplot()+
+  scale_y_log10()+
+  stat_summary(fun.y = mean,geom="point",color="red",size=5,shape=4)
+```
 
-As we know that density of wine depends upon the combination of liquids and residuals, so lets explore the relationship of density with alcohol and residual.sugar .
+The mean and median of amount of chlorides seems to decrease as quality of wines increases. High quality wines like that of 9, have less amount of chlorides.Now lets explore distribution of density aganist quality.
+```{r}
+ggplot(aes(y=density,x=factor(quality)),data=wines)+
+  geom_boxplot()+
+  coord_cartesian(ylim=c(0.9871,1.0025))+
+  stat_summary(fun.y = mean,geom = "point",color="red",shape=4,size=4)
+```
+
+The density seems to initially increase with quality, but drops off for high quality wines. High quality wines like that of 7,8 and 9 have less density. Now lets see how residual.sugar is effecting the quality of wine.
+```{r}
+ggplot(aes(x=factor(quality),y=residual.sugar),data = wines)+
+  geom_boxplot()+
+  scale_y_log10()+
+  stat_summary(fun.y = mean,geom = "point",color="red",shape=4,size=4)
+```
+
+It looks like residual.sugar is not playing much role in determining the quality of wine, however high quality wines seems to have less amounts sugar.Now lets exlpore what sulfur dioxide is doing to the quality of wine. 
+```{r}
+p1 <- ggplot(aes(y=free.sulfur.dioxide,x=factor(quality)),data=wines)+
+  geom_boxplot()+
+  coord_cartesian(ylim = c(0,60))+
+  stat_summary(fun.y = mean,geom="point",color="red",size=3,shape=4)
+
+p2 <- ggplot(aes(y=total.sulfur.dioxide,x=factor(quality)),data=wines)+
+  geom_boxplot()+
+  coord_cartesian(ylim=c(50,220))+
+  stat_summary(fun.y = mean,geom="point",color="red",size=3,shape=4)
+
+grid.arrange(p1,p2)
+```
+
+it looks like sulfur dioxide doesn't have much effect on quality of wine because median and mean levels remain almost same over a wide range of quality of wines.As we know that density of wine depends upon the combination of liquids and residuals, so lets explore the relationship of density with alcohol and residual.sugar .
 ```{r}
 ggplot(aes(x=residual.sugar,y=density), data = wines)+
   geom_point()+
   geom_smooth(color="red",method="lm",linetype=2)
 ```
+
 The relationship seeems to be linear,lets exclude outliers from density and residual.sugar to get a more clear picture of the relationship.    
 ```{r warning=FALSE}
 ggplot(aes(x=residual.sugar,y=density),data = wines)+
   geom_point()+
-  scale_x_continuous(limits=c(0,25),breaks=seq(0,25,2.5))+
+  scale_x_log10(breaks=c(1,3,5,10,23))+
   scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
   geom_smooth(method = "lm",color="red",linetype=1)
 ```
-The graph seems to be densely populated in some regions because the density values have very less range(0.9871,1.0390). Now lets explore the relationship between density and alcohol.
+
+The graph seems to be densely populated in some regions because the density values have very less range(0.9871,1.0390).The relationship doesn't seem to be completely linear because of many different values of density for same range of residual.suagr, but we can say that its some what exponential. Now lets explore the relationship between density and alcohol.
 ```{r}
 ggplot(aes(x=alcohol,y=density),data=wines)+
   geom_point()
 ```
+
 As we know, the density drops off with the increase of liquid content, samething is happening with this wine data set. The density is decreasing with increase in alcohol content. Lets exclude some outliers from the data and plot the same graph to get a more disbursed distribution.
 ```{r warning=FALSE}
 ggplot(aes(x=alcohol,y=density),data=wines)+
@@ -231,6 +271,24 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
   geom_smooth(method = "lm",color="red",linetype=1)
 ```
+
 The plot is densely populated in some regions because the range of density values in wine dataset is very less.  
+```{r warning=FALSE}
+ggplot(aes(x=total.sulfur.dioxide,y=free.sulfur.dioxide),data=wines)+
+  geom_point(alpha=1/5)+
+  ylim(0,100)+
+  xlim(0,250)+
+  geom_smooth(method = "lm",color="red")
+```
+
+
+```{r}
+ggplot(aes(x=factor(quality),pH),data = wines)+
+  geom_boxplot()
+```
+
+
+
+
 
   
