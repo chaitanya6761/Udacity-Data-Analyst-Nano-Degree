@@ -162,7 +162,7 @@ ggplot(aes(x=quality),data=wines)+
 ## Univariate Analysis
 
 ### What is the structure of your dataset?
-There are 4,898 diamonds in the dataset with 11 features(fixed.acidity, volatile.acidity, citric.acid, residual.sugar, chlorides,     free.sulfur.dioxide, total.sulfur.dioxide, density, pH, sulphates, alcohol) and quality being the sensory data.
+There are 4,898 wines in the dataset with 11 features(fixed.acidity, volatile.acidity, citric.acid, residual.sugar, chlorides,     free.sulfur.dioxide, total.sulfur.dioxide, density, pH, sulphates, alcohol) and quality being the sensory data.
 
 Observations:
 
@@ -177,7 +177,7 @@ The main feature of interest is "Quality". I would like to determine what all fa
 Features like contents of acids,amounts of sulfur and chlorides, amount of residual.sugar and percent of alcohol might help in investigation.  
 
 ### Did you create any new variables from existing variables in the dataset?
-No I didn't create any new varaiable, but transformed the existing variable "Quality" to a factor variable, So that it can be later useful to plot categorical graphs in terms of quality.
+No I didn't create any new varaiable, but will be transforming the existing variable "Quality" to a factor variable later, So that it can be later useful to plot categorical graphs in terms of quality.
 
 ### Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
 
@@ -201,6 +201,9 @@ ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
   geom_boxplot()+
   stat_summary(fun.y = mean,geom ="point",shape=4,color="red",size=4)
 ```
+```{r}
+with(wines,by(alcohol,quality,summary))
+```
 
 As the mean and median of alcohol content initially seems to drop with quality upto 5, but increases after that till 9, so we can partially conclude that higher quality wines have a bit high amounts of alcohol on average. Lets see how quality of wine is getting effected by amount of chlorides.
 ```{r}
@@ -208,6 +211,9 @@ ggplot(aes(y=chlorides,x=factor(quality)),data=wines)+
   geom_boxplot()+
   scale_y_log10()+
   stat_summary(fun.y = mean,geom="point",color="red",size=5,shape=4)
+```
+```{r}
+with(wines,by(chlorides,quality,summary))
 ```
 
 The mean and median of amount of chlorides seems to decrease as quality of wines increases. High quality wines like that of 9, have less amount of chlorides.Now lets explore distribution of density aganist quality.
@@ -217,6 +223,9 @@ ggplot(aes(y=density,x=factor(quality)),data=wines)+
   coord_cartesian(ylim=c(0.9871,1.0025))+
   stat_summary(fun.y = mean,geom = "point",color="red",shape=4,size=4)
 ```
+```{r}
+with(wines,by(density,quality,summary))
+```
 
 The density seems to initially increase with quality, but drops off for high quality wines. High quality wines like that of 7,8 and 9 have less density. Now lets see how residual.sugar is effecting the quality of wine.
 ```{r}
@@ -225,8 +234,11 @@ ggplot(aes(x=factor(quality),y=residual.sugar),data = wines)+
   scale_y_log10()+
   stat_summary(fun.y = mean,geom = "point",color="red",shape=4,size=4)
 ```
+```{r}
+with(wines,by(residual.sugar,quality,summary))
+```
 
-It looks like residual.sugar is not playing much role in determining the quality of wine, however high quality wines seems to have less amounts sugar.Now lets exlpore what sulfur dioxide is doing to the quality of wine. 
+It looks like residual.sugar is not playing much role in determining the quality of wine because mean and median seems to fluctuate as the value of quality increases, however high quality wines seems to have less amounts sugar. Now lets exlpore what sulfur dioxide is doing to the quality of wine. 
 ```{r}
 p1 <- ggplot(aes(y=free.sulfur.dioxide,x=factor(quality)),data=wines)+
   geom_boxplot()+
@@ -241,7 +253,21 @@ p2 <- ggplot(aes(y=total.sulfur.dioxide,x=factor(quality)),data=wines)+
 grid.arrange(p1,p2)
 ```
 
-it looks like sulfur dioxide doesn't have much effect on quality of wine because median and mean levels remain almost same over a wide range of quality of wines.As we know that density of wine depends upon the combination of liquids and residuals, so lets explore the relationship of density with alcohol and residual.sugar .
+It looks like sulfur dioxide doesn't have much effect on quality of wine because median and mean levels remain almost same over a wide range of quality of wines. Now lets explore how pH is effecting the quality of fine.
+```{r}
+ggplot(aes(x=factor(quality),pH),data = wines)+
+  geom_boxplot()+
+  stat_summary(fun.y = mean,geom = "point",shape=4,color="red",size=4)
+```
+
+It looks like ph doesn't have much effect on quality because median and mean of pH remains almost same over a wide range of quality of wines.  
+```{r}
+with(wines,by(pH,quality,summary))
+```
+
+
+
+As we know that density of wine depends upon the combination of liquids and residuals, so lets explore the relationship of density with alcohol and residual.sugar .
 ```{r}
 ggplot(aes(x=residual.sugar,y=density), data = wines)+
   geom_point()+
@@ -272,7 +298,7 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   geom_smooth(method = "lm",color="red",linetype=1)
 ```
 
-The plot is densely populated in some regions because the range of density values in wine dataset is very less.  
+The plot is densely populated in some regions because the range of density values in wine dataset is very less. As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationsip b/w them
 ```{r warning=FALSE}
 ggplot(aes(x=total.sulfur.dioxide,y=free.sulfur.dioxide),data=wines)+
   geom_point(alpha=1/5)+
@@ -281,11 +307,32 @@ ggplot(aes(x=total.sulfur.dioxide,y=free.sulfur.dioxide),data=wines)+
   geom_smooth(method = "lm",color="red")
 ```
 
+## Bivariate Analysis
 
-```{r}
-ggplot(aes(x=factor(quality),pH),data = wines)+
-  geom_boxplot()
-```
+### Talk about some of the relationships you observed in this part of the investigation. How did the feature(s) of interest vary with other features in the dataset?
+
+The mean and median amount of alcohol seems to increase as the quality of wine increases.
+
+The mean and median amount of chlorides seems to decrease as the quality of wine increases.
+
+The density seems to initially increase with quality, but drops off for high quality wines. High quality wines like that of 7,8 and 9 have less density.
+
+The median and mean amount of residual.sugar seem to fluctuate as the quality of wine increases, but high quality wines seems to have less amounts of residual sugar on average.
+
+### Did you observe any interesting relationships between the other features (not the main feature(s) of interest)?
+
+As we know density of liquids depends upon the amount of residuals and liquid content, that's why we can see a strong relationship b/w density,
+amount of alcohol and residual sugar.
+
+### What was the strongest relationship you found?
+
+The strongest relationship I found was b/w the alcohol and quality, the amount of alcohol seems to increase as the quality of wine increases.
+
+## Multivariate Plots Section
+
+
+
+
 
 
 
