@@ -300,11 +300,10 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
 
 The plot is densely populated in some regions because the range of density values in wine dataset is very less. As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationsip b/w them
 ```{r warning=FALSE}
-ggplot(aes(x=total.sulfur.dioxide,y=free.sulfur.dioxide),data=wines)+
-  geom_point(alpha=1/5)+
-  ylim(0,100)+
-  xlim(0,250)+
-  geom_smooth(method = "lm",color="red")
+ggplot(aes(x=free.sulfur.dioxide,y=sulphates),data=wines)+
+  geom_point()+
+  xlim(0,75)+
+  ylim(0.2,0.8)
 ```
 
 ## Bivariate Analysis
@@ -330,12 +329,40 @@ The strongest relationship I found was b/w the alcohol and quality, the amount o
 
 ## Multivariate Plots Section
 
+```{r}
+residual.sugar_bucket <- cut(wines$residual.sugar,c(0.6,3,7.5,15,20,65.8))
+quality_bucket <- cut(wines$quality,c(3,6,7,10))
+alcohol_bucket <- cut(wines$alcohol,c(8,11,15))
+chlorides_bucket <- cut(wines$chlorides,c(0.00900,0.01,0.03,0.05,0.35))
+total.sulfur.dioxide_bucket <- cut(wines$total.sulfur.dioxide,c(100,150,200,440))
+```
 
 
+```{r warning=FALSE}
+ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
+  geom_point()+
+  scale_x_continuous(breaks = seq(8,14,1))+
+  scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))
+```
+```{r warning=FALSE}
+ggplot(aes(x=residual.sugar,y=density,color=alcohol_bucket),data = wines)+
+  geom_point()+
+  scale_x_log10(breaks=c(1,3,5,10,23))+
+  scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
+  geom_smooth(method = "lm",color="blue",linetype=1)
+```
 
+```{r}
+ggplot(aes(x=quality,y= chlorides,size=chlorides),data=wines)+
+  geom_jitter()+
+  scale_y_log10()
+```
 
-
-
+```{r}
+ggplot(aes(x=chlorides,y=alcohol),data =wines)+
+  geom_point()+
+  scale_x_log10()
+```
 
 
   
