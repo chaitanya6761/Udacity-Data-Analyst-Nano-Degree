@@ -6,7 +6,8 @@
 - P4 - ExploreE And Summarize Data (White Wine Dataset)
 
 ### Courses Completed:
-- Intro to Data Science
+- Intro To Descriptive And Inferential Statistics 
+- Intro To Data Science
 - Data Wrangling with MongoDB
 - Data Analysis with R 
 - Intro To Machine Learning (In Progress)
