@@ -3,7 +3,7 @@
 - P1 - Test a Perceptual Phenomenon (Stroop Effect)
 - P2 - Investigate A Dataset (Titanic Survival Data)
 - P3 - Data Wrangling With MongoDB (Open Street Map Data)
-- P4 - ExploreE And Summarize Data (White Wine Dataset)
+- P4 - Explore And Summarize Data (White Wine Dataset)
 
 ### Courses Completed:
 - Intro To Descriptive And Inferential Statistics 
