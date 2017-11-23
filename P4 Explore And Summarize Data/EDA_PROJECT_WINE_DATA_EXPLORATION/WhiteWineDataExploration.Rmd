@@ -326,12 +326,13 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   theme_bw()
 ```
 
-The plot is densely populated in some regions because the range of density values in wine dataset is very less. As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationsip b/w them
+The plot is densely populated in some regions because the range of density values in wine dataset is very less. Now lets explore sulfur dixode content, As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationsip b/w them.
 ```{r warning=FALSE}
 ggplot(aes(x=free.sulfur.dioxide,y=sulphates),data=wines)+
   geom_point()+
   xlim(0,75)+
-  ylim(0.2,0.8)
+  ylim(0.2,0.8)+
+  theme_bw()
 ```
 
 ## Bivariate Analysis
@@ -354,6 +355,7 @@ amount of alcohol and residual sugar.
 ### What was the strongest relationship you found?
 
 The strongest relationship I found was b/w the alcohol and quality, the amount of alcohol seems to increase as the quality of wine increases.
+
 
 ## Multivariate Plots Section
 
@@ -382,17 +384,9 @@ ggplot(aes(x=residual.sugar,y=density,color=alcohol_bucket),data = wines)+
   theme_bw()
 ```
 
-```{r}
-ggplot(aes(x=quality,y= chlorides,size=chlorides),data=wines)+
-  geom_jitter()+
-  scale_y_log10()
-```
 
-```{r}
-ggplot(aes(x=chlorides,y=alcohol),data =wines)+
-  geom_point()+
-  scale_x_log10()
-```
+
+
 
 
   
