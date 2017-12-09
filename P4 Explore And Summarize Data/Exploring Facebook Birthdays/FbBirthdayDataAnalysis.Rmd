@@ -8,7 +8,7 @@ output:
 ---
 
 ## 1. Loading the data file and required packages
-```{r}
+```{r warning=FALSE}
 #install.packages('lubridate')
 library(lubridate)
 fb <- read.csv('birthdays.csv')
@@ -57,7 +57,7 @@ names(which(table(fb$month) == max(table(fb$month))))
 ```
 
 ## 10. Plot a bar chart to show number of birthdays in each month
-```{r}
+```{r warning=FALSE}
 #install.packages("ggplot2")
 library(ggplot2)
 ```
@@ -65,8 +65,14 @@ library(ggplot2)
 
 
 ```{r}
+fb$month <- factor(fb$month,ordered = TRUE,levels = c("Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"))
 ggplot(data=fb,aes(x=month))+
-  geom_bar(color='black',fill='#F79420')
+  geom_bar(color='black',fill='#F79420',width = 0.6)+
+  geom_text(stat="count",aes(label=..count..),vjust=-0.8)+
+  scale_y_continuous(limits = c(0,55),breaks = seq(0,55,10))+
+  labs(x="Different  Months",y="No of Birthdays",title="Month Wise facebook Birthdays Distribution.")+
+  theme_bw()+
+  theme(axis.title = element_text(size=14),plot.title =element_text(hjust=0.5,size =14,face="bold"))
 ```
 
 
