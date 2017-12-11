@@ -8,7 +8,7 @@ output:
 ---
 
 ## 1. Loading the data file and required packages
-```{r warning=FALSE}
+```{r warning=FALSE,message=FALSE}
 #install.packages('lubridate')
 library(lubridate)
 fb <- read.csv('birthdays.csv')

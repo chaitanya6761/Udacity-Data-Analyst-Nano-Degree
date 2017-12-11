@@ -3,8 +3,10 @@ title: "R Notebook"
 output: html_notebook
 ---
 ### 1. Loading Diamond Dataset   
-```{r}
+```{r warning=FALSE}
 library(ggplot2)
+setwd('E:/MOOC/udacity/Data Analysis With R/eda-course-materials/lesson3')
+pf <- read.csv('pseudo_facebook.tsv',sep='\t')
 data("diamonds")
 names(diamonds)
 ```
