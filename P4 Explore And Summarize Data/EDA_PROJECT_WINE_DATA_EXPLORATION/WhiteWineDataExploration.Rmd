@@ -427,10 +427,10 @@ ggplot(aes(x=residual.sugar),data=subset(wines))+
 ## Plot Two:
 ```{r fig.width=10}
 ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
-  geom_boxplot()+
+  geom_boxplot(fill="white")+
   stat_summary(fun.y = mean,geom ="point",shape=4,color="red",size=4)+
   labs(x="Quality",y="Percent of alcohol",title="Distribution Of Alocohol Percent By Quality.")+
-  theme_bw()+
+  theme_dark()+
   theme(axis.title=element_text(size=14),plot.title = element_text(size =14,face="bold",hjust = 0.5))
 ```
 
@@ -442,8 +442,9 @@ ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
   geom_point()+
   scale_x_continuous(breaks = seq(8,14,1))+
   scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
+  scale_color_brewer(type="qual")+
   labs(x="Percent Of Alcohol",y="Density",title="Distribution Of Density By Alcohol And Residual Sugar")+
-  theme_bw()+
+  theme_dark()+
   theme(axis.title = element_text(size=14),plot.title = element_text(size = 14,face = "bold",hjust = 0.5))
 ```
 
