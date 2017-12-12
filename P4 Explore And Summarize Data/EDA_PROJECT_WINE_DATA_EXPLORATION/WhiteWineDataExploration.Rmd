@@ -2,7 +2,7 @@ White Wine Data Exploration
 ========================================================
 This tidy data set contains 4,898 white wines with 11 variables on quantifying the chemical properties of each wine. At least 3 wine experts rated the quality of each wine, providing a rating between 0 (very bad) and 10 (very excellent).
 
-This Report explores the White Wine dataset to findout which chemical properties influence the quality of wines.
+This Report explores the White Wine dataset to find out which chemical properties influence the quality of wines.
 
 ## Univariate Plot Section
 
@@ -53,7 +53,7 @@ ggplot(aes(x=volatile.acidity),data=wines)+
   theme_bw()
 ```
 
- * Now lets explore the contents of citric.acid in our dataset. Citric acid found in samll quantities, can add freshness and flavour to wines.
+ * Now lets explore the contents of citric.acid in our dataset. Citric acid found in small quantities, can add freshness and flavor to wines.
 ```{r fig.width=10}
 ggplot(aes(x=citric.acid),data=wines)+
   geom_histogram(binwidth = 0.05,color='black')+
@@ -68,7 +68,7 @@ ggplot(aes(x=residual.sugar),data=wines)+
   theme_bw()
 ```
 
- * The above distribution seems to be skewed and long tailed due to some outliers. Lets plot the data using log transformation to see the more detailed distribution. 
+ * The above distribution seems to be skewed and long tailed due to some outlines. Lets plot the data using log transformation to see the more detailed distribution. 
 ```{r fig.width=10}
 ggplot(aes(x=residual.sugar),data=subset(wines))+
   geom_histogram(binwidth = 0.05,color='black')+
@@ -76,7 +76,7 @@ ggplot(aes(x=residual.sugar),data=subset(wines))+
   theme_bw()
 ```
 
- * Transformed the long-tailed data to better understand the distribution of residual.sugar. The transformed residual.sugar appears to be bimodal with two peaks. As mentioned in dataset descripton that it's rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet.
+ * Transformed the long-tailed data to better understand the distribution of residual.sugar. The transformed residual.sugar appears to be bimodal with two peaks. As mentioned in dataset description that it's rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet.
 ```{r}
 sprintf("Total Number Of Sweet Wines: %s",sum(wines$residual.sugar > 45))
 ```
@@ -103,7 +103,7 @@ ggplot(aes(x=chlorides),data=wines)+
   theme_bw()
 ```
 
- * Now Lets see the distribution free.sulfur.dioxide in ou dataset. It prevents microbial growth and the oxidation of wine
+ * Now Lets see the distribution free.sulfur.dioxide in our dataset. It prevents microbial growth and the oxidation of wine
  
 ```{r fig.width=10}
 ggplot(aes(x=free.sulfur.dioxide),data=wines)+
@@ -138,7 +138,7 @@ ggplot(aes(x=total.sulfur.dioxide),data=wines)+
 ```
 
 
- * Now lets explore the density of wines in our dataset. The desity of wine is close to the density of water but it also depends upon the percent alcohol and sugar content.
+ * Now lets explore the density of wines in our dataset. The density of wine is close to the density of water but it also depends upon the percent alcohol and sugar content.
  
 ```{r fig.width=10}
 ggplot(aes(x=density),data=wines)+
@@ -164,7 +164,7 @@ ggplot(aes(x=pH),data=wines)+
   theme_bw()
 ```
 
- * Now lets explore the distribution of sulphates in our dataset. Sulphates are a wine additive which can contribute to sulfur dioxide gas (S02) levels, wich acts as an antimicrobial and antioxidant.
+ * Now lets explore the distribution of sulphates in our dataset. Sulphates are a wine additive which can contribute to sulfur dioxide gas (S02) levels, which acts as an antimicrobial and antioxidant.
  
 ```{r fig.width=10}
 ggplot(aes(x=sulphates),data=wines)+
@@ -201,7 +201,7 @@ ggplot(aes(x=quality),data=wines)+
 Observations:
 
 1. Residual.sugar, chlorides, free.sulfur.dioxide, total.sulfur.dioxide have huge outliers, which are too far away from the mean.
-2. There is only one wine in the dataset which can be considered as sweet and there are 77 wines with residual suagr less than 1 gram/liter     which is a very rare property.
+2. There is only one wine in the dataset which can be considered as sweet and there are 77 wines with residual sugar less than 1 gram/liter     which is a very rare property.
 3. Most of the wines in the dataset have the quality as 5 or 6, only few wines are of the best quality(8 0r 9).
 
 ### What is/are the main feature(s) of interest in your dataset?
@@ -211,13 +211,13 @@ Observations:
 * Features like contents of acids,amounts of sulfur and chlorides, amount of residual.sugar and percent of alcohol might help in investigation.  
 
 ### Did you create any new variables from existing variables in the dataset?
-* No I didn't create any new varaiable, but will be transforming the existing variable "Quality" to a factor variable later, So that it can be later useful to plot categorical graphs in terms of quality.
+* No I didn't create any new variable, but will be transforming the existing variable "Quality" to a factor variable later, So that it can be later useful to plot categorical graphs in terms of quality.
 
 ### Of the features you investigated, were there any unusual distributions? Did you perform any operations on the data to tidy, adjust, or change the form of the data? If so, why did you do this?
 
- * Of the features investigated, residual.sugar and chlorides have unusal distributions. I log transformed these skewed distributions, so that we can get a clear and more disbured distribution of data.
+ * Of the features investigated, residual.sugar and chlorides have unusual distributions. I log transformed these skewed distributions, so that we can get a clear and more disbursed distribution of data.
 
- * The transformed distribution for residual.sugar appears to be bimodal with peaks around 1g/dm^3 and 7g/dm^3. The Chlorides distribution is heavly populated between 0.0 to 0.1, so I used log transfromation, which transfroms the data on a ten-fold sacle, so that we can get more widely populted distribution of chlorides.     
+ * The transformed distribution for residual.sugar appears to be bimodal with peaks around 1g/dm^3 and 7g/dm^3. The Chlorides distribution is heavily populated between 0.0 to 0.1, so I used log transformation, which transforms the data on a ten-fold scale, so that we can get more widely populated distribution of chlorides.     
 
 
 ## Bivariate Plot Section
@@ -229,7 +229,7 @@ corrplot(res,type = "full")
 ```
 
 
- * As our main feature of interest lies in "Quality", Lets see how quality is getting effected by other variables like alcohol. Quality and alcohol seem to have a bit strong relationship because they have positive correlation co-efficent of 0.435.
+ * As our main feature of interest lies in "Quality", Lets see how quality is getting effected by other variables like alcohol. Quality and alcohol seem to have a bit strong relationship because they have positive correlation co-efficient of 0.435.
  
 ```{r fig.width=10}
 ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
@@ -254,7 +254,7 @@ ggplot(aes(y=chlorides,x=factor(quality)),data=wines)+
 with(wines,by(chlorides,quality,summary))
 ```
 
- * The mean and median of amount of chlorides seems to decrease as quality of wines increases. High quality wines like that of 9, have less amount of chlorides.Now lets explore distribution of density aganist quality.
+ * The mean and median of amount of chlorides seems to decrease as quality of wines increases. High quality wines like that of 9, have less amount of chlorides.Now lets explore distribution of density against quality.
  
 ```{r fig.width=10}
 ggplot(aes(y=density,x=factor(quality)),data=wines)+
@@ -280,7 +280,7 @@ ggplot(aes(x=factor(quality),y=residual.sugar),data = wines)+
 with(wines,by(residual.sugar,quality,summary))
 ```
 
- * It looks like residual.sugar is not playing much role in determining the quality of wine because mean and median seems to fluctuate as the value of quality increases, however high quality wines seems to have less amounts sugar. Now lets exlpore what sulfur dioxide is doing to the quality of wine. 
+ * It looks like residual.sugar is not playing much role in determining the quality of wine because mean and median seems to fluctuate as the value of quality increases, however high quality wines seems to have less amounts sugar. Now lets explore what sulfur dioxide is doing to the quality of wine. 
  
 ```{r fig.width=10}
 p1 <- ggplot(aes(y=free.sulfur.dioxide,x=factor(quality)),data=wines)+
@@ -321,7 +321,7 @@ ggplot(aes(x=residual.sugar,y=density), data = wines)+
   theme_bw()
 ```
 
- * The relationship seeems to be linear,lets exclude outliers from density and residual.sugar to get a more clear picture of the relationship.    
+ * The relationship seems to be linear,lets exclude outliers from density and residual.sugar to get a more clear picture of the relationship.    
 ```{r warning=FALSE, fig.width=10}
 ggplot(aes(x=residual.sugar,y=density),data = wines)+
   geom_point()+
@@ -332,7 +332,7 @@ ggplot(aes(x=residual.sugar,y=density),data = wines)+
 ```
 
  * The graph seems to be densely populated in some regions because the density values have very less range(0.9871,1.0390).
- * The relationship doesn't seem to be completely linear because of many different values of density for same range of residual.suagr, but we can say that its some what exponential. Now lets explore the relationship between density and alcohol.
+ * The relationship doesn't seem to be completely linear because of many different values of density for same range of residual.sugar, but we can say that its some what exponential. Now lets explore the relationship between density and alcohol.
  
 ```{r fig.width=10} 
 ggplot(aes(x=alcohol,y=density),data=wines)+
@@ -340,7 +340,7 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   theme_bw()
 ```
 
- * As we know, the density drops off with the increase of liquid content, samething is happening with this wine data set. The density is decreasing with increase in alcohol content. Lets exclude some outliers from the data and plot the same graph to get a more disbursed distribution.
+ * As we know, the density drops off with the increase of liquid content, something is happening with this wine data set. The density is decreasing with increase in alcohol content. Lets exclude some outliers from the data and plot the same graph to get a more disbursed distribution.
  
 ```{r warning=FALSE, fig.width=10}
 ggplot(aes(x=alcohol,y=density),data=wines)+
@@ -351,7 +351,7 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   theme_bw()
 ```
 
- * The plot is densely populated in some regions because the range of density values in wine dataset is very less. Now lets explore sulfur dixode content, As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationsip b/w them.
+ * The plot is densely populated in some regions because the range of density values in wine dataset is very less. Now lets explore sulfur dixode content, As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationship b/w them.
  
 ```{r warning=FALSE,fig.width=10}
 ggplot(aes(y=free.sulfur.dioxide,x=total.sulfur.dioxide),data=wines)+
@@ -393,7 +393,7 @@ chlorides_bucket <- cut(wines$chlorides,c(0.00900,0.01,0.03,0.05,0.35))
 total.sulfur.dioxide_bucket <- cut(wines$total.sulfur.dioxide,c(100,150,200,440))
 ```
 
-```{r warning=FALSE, fig.width=10,fig.height=7}
+```{r warning=FALSE, fig.width=10}
 ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
   geom_point()+
   scale_x_continuous(breaks = seq(8,14,1))+
@@ -401,7 +401,7 @@ ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
   theme_bw()
 ```
 
-```{r warning=FALSE,fig.width=10,fig.height=7}
+```{r warning=FALSE,fig.width=10}
 ggplot(aes(x=residual.sugar,y=density,color=alcohol_bucket),data = wines)+
   geom_point()+
   scale_x_log10(breaks=c(1,3,5,10,23))+
@@ -410,6 +410,44 @@ ggplot(aes(x=residual.sugar,y=density,color=alcohol_bucket),data = wines)+
   theme_bw()
 ```
 
+# Final Plots And Summary.
+
+## Plot One: 
+```{r fig.width=10}
+ggplot(aes(x=residual.sugar),data=subset(wines))+
+  geom_histogram(binwidth = 0.05,color='black')+
+  scale_x_log10(breaks=c(1,3,5,7,10,3,15,20,25,31,65))+
+  labs(x="Residual Sugar",y="Number Of Samples",title="Distribution Of Residual Sugar On A Log_10 Sacle")+
+  theme_bw()+
+  theme(axis.title = element_text(size = 14),plot.title=element_text(size = 14,face = "bold",hjust = 0.5))
+```
+ 
+ * The Log distribution of residual sugar resulted in a bimodal distribution because people might have different sugar level preferences. The    distribution first peaks at around 1 and again at around 7.
+ 
+## Plot Two:
+```{r fig.width=10}
+ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
+  geom_boxplot()+
+  stat_summary(fun.y = mean,geom ="point",shape=4,color="red",size=4)+
+  labs(x="Quality",y="Percent of alcohol",title="Distribution Of Alocohol Percent By Quality.")+
+  theme_bw()+
+  theme(axis.title=element_text(size=14),plot.title = element_text(size =14,face="bold",hjust = 0.5))
+```
+
+  * The mean and median amount of alcohol seems to increase with quality but we cannot conclude that high quality wines have higher amounts of alcohol because wines of other quality too have high amounts of alcohol. 
+
+## Plot Three:
+```{r fig.width=12,warning=FALSE}
+ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
+  geom_point()+
+  scale_x_continuous(breaks = seq(8,14,1))+
+  scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
+  labs(x="Percent Of Alcohol",y="Density",title="Distribution Of Density By Alcohol And Residual Sugar")+
+  theme_bw()+
+  theme(axis.title = element_text(size=14),plot.title = element_text(size = 14,face = "bold",hjust = 0.5))
+```
+
+ * The above Plot describes relationship among density, alcohol and residual sugar. As we know that density of a substance depends upon the      amount of solids and liquids in a particular material. we can observe the same in the above plot too, as the amount of alcohol increases     the density drops and as the amount sugar increases the density increases too.   
 
 
 
