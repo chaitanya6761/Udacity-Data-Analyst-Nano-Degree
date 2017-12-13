@@ -76,7 +76,8 @@ ggplot(aes(x=residual.sugar),data=subset(wines))+
   theme_bw()
 ```
 
- * Transformed the long-tailed data to better understand the distribution of residual.sugar. The transformed residual.sugar appears to be bimodal with two peaks. As mentioned in dataset description that it's rare to find wines with less than 1 gram/liter and wines with greater than 45 grams/liter are considered sweet.
+ * Transformed the long-tailed data to better understand the distribution of residual.sugar. The transformed residual.sugar appears to be bimodal with two peaks. 
+ * As mentioned in dataset description that it's rare to find wines with sugar content less than 1 gram/liter and wines with sugar content greater than 45 grams/liter are considered to be sweet.
 ```{r}
 sprintf("Total Number Of Sweet Wines: %s",sum(wines$residual.sugar > 45))
 ```
@@ -188,7 +189,7 @@ table(wines$quality)
 
 ```{r fig.width=10}
 ggplot(aes(x=quality),data=wines)+
-  geom_bar(color="black",width=0.5)+
+  geom_bar(color="black",width=0.4)+
   scale_x_continuous(breaks = seq(3,9,1))+
   theme_bw()
 ```
@@ -227,6 +228,7 @@ Observations:
 res <- cor(subset(wines,select=-c(X)))
 corrplot(res,type = "full")
 ```
+
 
 
  * As our main feature of interest lies in "Quality", Lets see how quality is getting effected by other variables like alcohol. Quality and alcohol seem to have a bit strong relationship because they have positive correlation co-efficient of 0.435.
@@ -427,7 +429,7 @@ ggplot(aes(x=residual.sugar),data=subset(wines))+
 ## Plot Two:
 ```{r fig.width=10}
 ggplot(aes(x=factor(quality),y=alcohol),data=wines)+
-  geom_boxplot(fill="white")+
+  geom_boxplot(fill="white",width=0.5)+
   stat_summary(fun.y = mean,geom ="point",shape=4,color="red",size=4)+
   labs(x="Quality",y="Percent of alcohol",title="Distribution Of Alocohol Percent By Quality.")+
   theme_dark()+
@@ -451,7 +453,18 @@ ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
  * The above Plot describes relationship among density, alcohol and residual sugar. As we know that density of a substance depends upon the      amount of solids and liquids in a particular material. we can observe the same in the above plot too, as the amount of alcohol increases     the density drops and as the amount sugar increases the density increases too.   
 
 
+```{r}
+wines$category <- ifelse(wines$quality<=5,"Poor",ifelse(wines$quality<8,"Good","Premium"))
+wines$category <- factor(wines$category,ordered = TRUE,levels = c("Poor","Good","Premium")) 
+table(wines$category)
+```
 
 
+```{r}
+ggplot(aes(x=alcohol,y=density),data=wines)+
+  geom_point()+
+  facet_wrap(~category)+
+  theme_bw()
+```
 
   
