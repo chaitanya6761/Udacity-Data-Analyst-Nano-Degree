@@ -11,6 +11,7 @@
 - Data Wrangling with MongoDB
 - Data Analysis with R 
 - Intro To Machine Learning (In Progress)
+- Data Visualization And D3.js (In Progress) 
 
 
 
