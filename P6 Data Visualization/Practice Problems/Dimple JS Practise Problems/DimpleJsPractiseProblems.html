@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <script type="text/javascript">
+      function draw(data) {
+          "use strict";
+          var margin = 75,
+              width = 1400 ,
+              height = 600 ;
+
+          var svg = d3.select("body")
+            .append("svg")
+              .attr("width", width - margin)
+              .attr("height", height - margin)
+            .append('g')
+                .attr('class','chart');
+
+      /*
+        Dimple.js Chart construction code
+      */
+        };
+      </script>
+  </head>
+<body>
+  <script type="text/javascript">
+  d3.tsv("world_cup.tsv", draw);
+  </script>
+</body>
+</html>
