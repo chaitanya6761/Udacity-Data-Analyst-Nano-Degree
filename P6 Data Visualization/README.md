@@ -1,1 +1,1 @@
-# Make Effective Data Visualization : Visualising Pakistan Drone Attacks
+# Data Visualization : Visualising Pakistan Drone Attacks
