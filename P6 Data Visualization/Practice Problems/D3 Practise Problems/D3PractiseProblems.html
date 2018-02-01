@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <script type="text/javascript">
+      function draw(data) {
+      /*
+        D3.js setup code
+      */
+          "use strict";
+          var margin = 75,
+          width = 1400 - margin,
+          height = 600 - margin;
+
+          var svg = d3.select("body")
+          .append("svg")
+          .attr("width", width + margin)
+          .attr("height", height + margin)
+          .append('g')
+          .attr('class','chart');
+      /*
+        Dimple.js Chart construction code
+      */
+
+          debugger;
+
+          // D3 code to create chart 
+          d3.select('svg').
+          selectAll('circle').
+          data(data).
+          enter().
+          append('cicle')
+
+          // D3 code to create scales
+
+          var time_extent = d3.extent(data,function(d){return d['date'];});
+          var count_extent = d3.extent(data,function(d){return d['attendance'];});
+
+          var time_scale = d3.time.scale().range([margin,width]).domain(time_extent);
+          var count_scale = d3.scale.linear().range([height,margin]).domain(count_extent);
+
+
+          // D3 code to create axis 
+
+          var time_axis = d3.svg.axis()
+              .scale(time_scale)
+              .ticks(d3.time.years,2);
+
+          var count_axis = d3.svg.axis()
+              .scale(count_scale)
+              .orient("left");    
+
+
+
+          var x = myChart.addTimeAxis("x", "year"); 
+          myChart.addMeasureAxis("y", "attendance");
+          myChart.addSeries(null, dimple.plot.bar);
+          myChart.draw();
+        };
+      </script>
+  </head>
+<body>
+  <script type="text/javascript">
+  /*
+    Use D3 (not dimple.js) to load the TSV file and pass the contents of it to the draw function
+    */
+  d3.tsv("world_cup_geo.tsv",function(d){
+
+    format = d3.time.format("%d-%m-%Y (%H:%M h)");
+
+    d['date'] = format.parse(d['date']);
+    d['attendance'] = +d['attendance'];
+
+    return d; 
+
+  },draw);
+  </script>
+</body>
+</html>
