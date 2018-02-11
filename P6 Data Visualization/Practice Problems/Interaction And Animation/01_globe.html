@@ -4,6 +4,11 @@
   <meta charset="utf-8">
   <script src="http://d3js.org/d3.v3.min.js"></script>
     <style>
+    circle {
+      fill : red;
+      stroke-width:0.7;
+      opacity: 0.7; 
+    }  
     </style>
     <script type="text/javascript">  
       function draw(geo_data) {
@@ -17,7 +22,131 @@
                     .append('svg')
                     .attr({'height':height,'width':width})
                     .append('g')
-                    .attr('class','map');    
+                    .attr('class','map');   
+
+
+        //To convert map co-ordinates to pixels            
+        var projection = d3.geo.mercator()
+                              .scale(220)
+                              .translate([700,500]);
+        //To draw path values from pixels
+        var path = d3.geo.path().
+                    projection(projection);
+
+        //To draw map on svg.
+        svg.selectAll('path')
+            .data(geo_data.features)
+            .enter()
+            .append('path')
+            .attr('d',path).
+            style({'stroke':'black','stroke-width':0.5,'fill':'lightblue'});
+
+
+       // Code to draw points on the above Map
+       function plot_points(data){
+
+            var nested = d3.nest()
+            .key(function(d){
+                  return d['date'].getUTCFullYear();
+            })
+            .rollup(agg_year).entries(data);
+
+            // Code to add circles to map
+
+            var attendance_extent = d3.extent(nested,function(d){
+              return d.values['attendance'];
+            });
+
+            var radius = d3.scale.sqrt().range([0,12]).domain(attendance_extent); 
+
+
+            svg.append('g')
+              .attr('class','bubble')
+              .selectAll('circle')
+              .data(nested.sort(function(a,b){
+                return b.values['attendance'] - a.values['attendance'];
+              }),key_func)
+              .enter()
+              .append('circle')
+              .attr('cx',function(d){
+                return d.values.x;
+              }).attr('cy',function(d){
+                return d.values.y;
+              }).attr('r',function(d){
+                return radius(d.values['attendance']);
+              });
+
+
+              function update(year){
+                  var filtered = nested.filter(function(d){
+                    return new Date(d['key']).getUTCFullYear() === year;
+                  });
+
+
+                  var circles = d3.selectAll('circle')
+                                  .data(filtered,key_func);
+
+                  circles.enter().append('circle')
+                  .attr('cx',function(d){
+                      return d.values.x;
+                  }).attr('cy',function(d){
+                      return d.values.y;
+                  }).attr('r',function(d){
+                      return radius(d.values['attendance']);
+                  });
+                              
+
+                  circles.exit().remove();
+              };  
+
+
+              function agg_year(groupedData){
+
+               var total =  d3.sum(groupedData,function(d){
+                   return d['attendance'];
+                });
+
+               var coords = groupedData.map(function(d){
+                  return projection([+d.long,+d.lat]); 
+               });
+
+               var center_x = d3.mean(coords,function(d){
+                  return d[0];  
+               });
+
+               var center_y = d3.mean(coords,function(d){
+                  return d[1];  
+               });  
+
+               var teams = d3.set();
+
+               groupedData.forEach(function(d){
+
+                   teams.add(d['team1']);
+                   teams.add(d['team2']);
+
+               });
+
+               return {'attendance':total,'x':center_x,'y':center_y,'teams':teams.values()};
+
+            };
+
+            function key_func(d){
+               return d['key'];
+            };
+
+            update(1967);
+ 
+       }
+
+      var format = d3.time.format('%d-%m-%Y (%H:%M h)');
+      d3.tsv("world_cup_geo.tsv",function(d){
+        d['date'] = format.parse(d['date']);
+        d['attendance'] = +d['attendance'];
+        return d;
+      },plot_points);
+
+
       };
       </script>
   </head>
