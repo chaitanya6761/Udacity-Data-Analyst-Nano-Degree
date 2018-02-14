@@ -26,9 +26,27 @@ The United States has targeted militants in the Federally Administered Tribal Ar
 - Sort the bars of a bar plot in the increasing/decreasing order to represent the trend b/w various categories. 
 - Add a lengend to your tenure analysis graph to highlight the values of tenure variable.
 
+
+## Post Feedback changes
+
+- Added titles/header to each graph.
+- Used different colors to represent lines and dots.
+- Sorted the bars of categorical graph.
+- Addded legend to tenure analysis graph.
+
 ## Data
 
 - `attacks.csv` : This tiny dataset which has around 400 rows contains information about drone attacks carried out on pakistan soil for fight aganist terrorism. This dataset is obtained from the website kaggle.
+
+
+## Resources 
+
+- [Dimple.js](http://dimplejs.org/)
+- [D3.js](https://github.com/d3/d3)
+- [Mike Bostock's Blog](https://bost.ocks.org)
+- [stackoverflow](https://stackoverflow.com/)
+
+
 
 
 
