@@ -32,7 +32,7 @@ The United States has targeted militants in the Federally Administered Tribal Ar
 - Added titles/header to each graph.
 - Used different colors to represent lines and dots.
 - Sorted the bars of categorical graph.
-- Addded legend to tenure analysis graph.
+- Added legend to tenure analysis graph.
 
 ## Data
 
