@@ -23,7 +23,7 @@ The United States has targeted militants in the Federally Administered Tribal Ar
 
 #### Reader 3.
 
-- Sort the bars of a bar plot in the increasing/decreasing order to represent the trend b/w various categories. 
+- Sort the bars of a bar plot in the decreasing order and reduce the size of the bars of province graph.. 
 - Add a lengend to your tenure analysis graph to highlight the values of tenure variable.
 
 
