@@ -1,0 +1,122 @@
+<html>
+<head>
+<style>
+
+svg {
+margin-left: -42px;
+margin-top: -5px;
+}
+
+
+rect{
+border:1px solid;
+border-style: solid;
+}
+
+.pclass {
+font-size:22px;	
+margin-top: 15px;
+}
+
+.unStyleList {
+ list-style-type: none;
+}
+</style>
+<meta charset="utf-8">
+  <script src="http://d3js.org/d3.v3.min.js"></script>
+  <script src="http://dimplejs.org/dist/dimple.v2.0.0.min.js"></script>
+    <script type="text/javascript">
+		function draw(data){
+
+			var svg1 = createSvg("#svg1",600,1200,75);
+			var myChart = new dimple.chart(svg1,data);
+			createTimelineChart(myChart,"Year","No.of.Strike");
+			
+
+			var svg2 = createSvg("#svg2",600,1200,75);
+			var myChart = new dimple.chart(svg2,data);
+			createTimelineChart(myChart,"Year","Civilians.Max");
+
+			var svg3 = createSvg("#svg3",600,1200,75);
+			var myChart = new dimple.chart(svg3,data);
+			createTimelineChart(myChart,"Year","Injured.Max");
+
+			var svg4 = createSvg("#svg4",600,1200,75);
+			var myChart = new dimple.chart(svg4,data);
+			createTimelineChart(myChart,"Year","Total.Terrorists.killed");
+
+			var svg5 = createSvg("#svg5",600,800,75);
+			var myChart = new dimple.chart(svg5,data);
+			createCategoryChart(myChart,"Province","Count",null,false);
+
+			var svg6 = createSvg("#svg6",600,1200,75);
+			var myChart = new dimple.chart(svg6,data);
+			createCategoryChart(myChart,"Count","City",null,true);	
+
+			var svg7 = createSvg("#svg7",600,1200,75);
+			var myChart = new dimple.chart(svg7,data);
+			createCategoryChart(myChart,"Year","Count","Tenure",false);
+
+		};
+
+		function createSvg(id,height,width,margin){
+
+			var svg = d3.select(id)
+            .append("svg")
+              .attr("width", width-margin)
+              .attr("height", height-margin)
+              .append('g')
+              .attr('class','chart');
+
+            return svg;  
+		};
+
+
+		function createTimelineChart(myChart,x,y){
+			var x = myChart.addTimeAxis("x",x);
+			x.dateParseFormat = "%Y";
+			x.tickFormat = "%Y";
+			x.timeInterval = 1;
+			var y = myChart.addMeasureAxis("y",y);	
+			myChart.addSeries(null,dimple.plot.line);
+			myChart.addSeries(null,dimple.plot.scatter);
+			myChart.draw();
+		};
+
+		function createCategoryChart(myChart,x,y,factor,flip){
+			if(flip){
+				var y = myChart.addCategoryAxis("y",y);
+				myChart.addMeasureAxis("x",x);				
+			}else{
+				myChart.addCategoryAxis("x",x);
+				myChart.addMeasureAxis("y",y);	
+			}
+			myChart.addSeries(factor,dimple.plot.bar);
+			myChart.draw();
+		};
+
+	</script>
+</head>
+<body>
+<h1 align="center">Pakistan Drone Attacks Analysis</h1><hr/>
+<ul><li class="pclass">This tiny dataset which has around 400 rows contains information about drone attacks carried out on pakistan soil for fight aganist terrorism. This dataset is obtained from the website kaggle.</li>
+<li class = "pclass">Now lets explore the number of drone strikes carried out over year timeline. </li>
+<li class = "unStyleList" id="svg1"></li>
+<li class = "pclass">The above timeline shows that maximum number of attacks were carried out b/w 2008 and 2015. Now lets explore the civilian casualties and number of Injured over a year timeline.</li>
+<li class = "unStyleList" id="svg2"></li>
+<li class = "unStyleList" id="svg3"></li>
+<li class = "pclass">Now lets compare the above obtained civilians data to the number of terrorists killed over a year timeline.</li>
+<li class = "unStyleList" id="svg4"></li>
+<li class = "pclass">The above timeline analysis shows that, till 2012 the number of civilian casualties reported were high when compared to the number of terrorists killed and most number of people were injured in b/w 2008 and 2015, which was the period in which most of the drone strikes were carried out.Now lets take a look at province variable in the dataset, to see which province of Pakistani was targeted the most.</li>
+<li class = "unStyleList" id="svg5"></li>
+<li class = "pclass">The Province wise analysis show that most of the attacks were carried out in FATA province because its is a tribal region in Pakistan and its not under much control of Pakistan government and many terrorist groups carry out their operations from this region. Now lets explore the city variable to see which cities were targeted the most.</li>
+<li class = "unStyleList" id="svg6"></li>
+<li class = "pclass">The City analysis shows that, most attacked cities are north and south waziristan. These two cities belong to the FATA province that's the reason why they are targeted the most. Now lets explore the tenure variable to see in which President's tenure the most attacks were carried out.</li>
+<li class = "unStyleList" id="svg7"></li>
+<li class = "pclass">Under Barack Obama's Presidency the us security organisations speed up their process to find (osama bin laden) and to neutralize other terrorists groups as well, that's the reason why we see most of the drone attacks were carried under his term as a president. </li>
+</ul>
+<script type="text/javascript">	
+	d3.csv("attacks.csv",draw);
+</script>
+</body>
+</html>
