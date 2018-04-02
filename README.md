@@ -4,6 +4,7 @@
 - P2 - Investigate A Dataset (Titanic Survival Data)
 - P3 - Data Wrangling With MongoDB (Open Street Map Data)
 - P4 - Explore And Summarize Data (White Wine Dataset)
+- P6 - Data Visualization (Visualising Pakistan Drone Attacks)
 
 ### Courses Completed:
 - Intro To Descriptive And Inferential Statistics 
@@ -11,7 +12,8 @@
 - Data Wrangling with MongoDB
 - Data Analysis with R 
 - Intro To Machine Learning (In Progress)
-- Data Visualization And D3.js (In Progress) 
+- Data Visualization And D3.js 
+- A/B Testing (In Progress)
 
 
 
