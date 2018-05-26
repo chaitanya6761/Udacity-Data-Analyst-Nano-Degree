@@ -190,6 +190,7 @@ table(wines$quality)
 ```{r fig.width=10}
 ggplot(aes(x=quality),data=wines)+
   geom_bar(color="black",width=0.4)+
+  geom_text(aes(label=..count..),stat="count",vjust=-0.5)+
   scale_x_continuous(breaks = seq(3,9,1))+
   theme_bw()
 ```
@@ -353,7 +354,9 @@ ggplot(aes(x=alcohol,y=density),data=wines)+
   theme_bw()
 ```
 
- * The plot is densely populated in some regions because the range of density values in wine dataset is very less. Now lets explore sulfur dixode content, As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows a strong relationship b/w them.
+ * The plot is densely populated in some regions because the range of density values in wine dataset is very less. 
+ 
+ * Lets explore the relationship b/w the other features too.As free.sulfur.dioxide is a subset of total.sulfur.dioxide, the below plot shows   a strong relationship b/w them.
  
 ```{r warning=FALSE,fig.width=10}
 ggplot(aes(y=free.sulfur.dioxide,x=total.sulfur.dioxide),data=wines)+
@@ -363,6 +366,32 @@ ggplot(aes(y=free.sulfur.dioxide,x=total.sulfur.dioxide),data=wines)+
   geom_smooth(method = "lm",color="red")+
   theme_bw()
 ```
+
+ * Now Lets explore the relationship b/w the other acidic properties too.
+ 
+```{r fig.width=10}
+ggplot(wines,aes(fixed.acidity,citric.acid))+
+  geom_point()+
+  theme_bw()
+``` 
+ 
+ 
+```{r fig.width=10}
+ggplot(wines,aes(fixed.acidity,citric.acid))+
+  geom_point()+
+  xlim(5,10)+
+  ylim(0,0.75)+
+  theme_bw()
+```
+
+```{r fig.width=10}
+ggplot(wines,aes(pH,fixed.acidity))+
+  geom_point()+
+  ylim(4.5,10.5)+
+  geom_smooth(method = "lm")+
+  theme_bw()
+```
+
 
 ## Bivariate Analysis
 
@@ -395,6 +424,8 @@ chlorides_bucket <- cut(wines$chlorides,c(0.00900,0.01,0.03,0.05,0.35))
 total.sulfur.dioxide_bucket <- cut(wines$total.sulfur.dioxide,c(100,150,200,440))
 ```
 
+ * As we know that amount of alcohol and residual sugar effect the density of wine lets explore the relationship b/w them.
+ 
 ```{r warning=FALSE, fig.width=10}
 ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
   geom_point()+
@@ -402,7 +433,9 @@ ggplot(aes(x=alcohol,y=density,color=residual.sugar_bucket),data=wines)+
   scale_y_continuous(limits=c(0.9871,1.0025),breaks=seq(0.985,1.0025,0.0025))+
   theme_bw()
 ```
-
+ 
+ * We can observe from the above plot that as the alcohol content increases, the residual sugar level decreases and density too decreases and vice versa. The same type of behaviour can be observed in the below plot too.
+ 
 ```{r warning=FALSE,fig.width=10}
 ggplot(aes(x=residual.sugar,y=density,color=alcohol_bucket),data = wines)+
   geom_point()+
