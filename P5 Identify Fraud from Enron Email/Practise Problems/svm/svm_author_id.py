@@ -44,6 +44,15 @@ print "Prediction Time: ",(time() -t1)
 accuracy = classifier.score(features_test,labels_test)
 print "Accuracy Score: ",accuracy
 
+#Extracting Results from Predictions
+
+print 'The 10th: ',predictions[10]
+print 'The 26th: ',predictions[26]
+print 'The 50th: ',predictions[50]
+
+print 'The Number Emails By Chris:',sum(predictions)
+
+
 #########################################################
 
 
