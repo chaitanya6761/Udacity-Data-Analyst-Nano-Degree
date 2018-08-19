@@ -52,11 +52,13 @@ for name, from_person in [("sara", from_sara), ("chris", from_chris)]:
                 parsedText = parseOutText(email)
 
             ### use str.replace() to remove any instances of the words
-            ### ["sara", "shackleton", "chris", "germani"]
+            ### ["sara", "shackleton", "chris", "germani, sshacklensf, cgermannsf"]
                 parsedText = parsedText.replace("sara","")
                 parsedText = parsedText.replace("shackleton", "")
                 parsedText = parsedText.replace("chris", "")
                 parsedText = parsedText.replace("germani", "")
+                parsedText = parsedText.replace("sshacklensf", "")
+                parsedText = parsedText.replace("cgermannsf", "")
             ### append the text to word_data
 
                 word_data.append(parsedText)
