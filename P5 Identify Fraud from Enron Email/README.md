@@ -33,3 +33,9 @@ There are 6 email features in the dataset and all their units are generally numb
 
 There is one more feature which is a boolean and determines whether a data point is a POI or not:
 - poi
+
+There are two outliers in the dataset which are **'TOTAL'** and **'THE TRAVEL AGENCY IN THE PARK'**, I removed these data points from the dataset. 
+
+By plotting each variable, I found that lot of data points have missing values which were replaced by zeros in feature formating and data points with all zeros were removed as part of feature formating.
+
+Total number of data points after outlier removal and feature formating are : 143
