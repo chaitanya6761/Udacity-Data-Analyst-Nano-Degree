@@ -39,3 +39,46 @@ There are two outliers in the dataset which are **'TOTAL'** and **'THE TRAVEL AG
 By plotting each variable, I found that lot of data points have missing values which were replaced by zeros in feature formating and data points with all zeros were removed as part of feature formating.
 
 Total number of data points after outlier removal and feature formating are : 143
+
+**Q2. What features did you end up using in your POI identifier, and what selection process did you use to pick them? Did you have to do any scaling? Why or why not?In your feature selection step, if you used an algorithm like a decision tree, please also give the feature importances of the features that you use, and if you used an automated feature selection function like SelectKBest, please report the feature scores and reasons for your choice of parameter values.**
+
+Following are the new features added to the dataset:
+
+- from_this_person_to_poi_ratio : which is the ratio of from_this_person_to_poi to from_messages.
+- from_poi_to_this_person_ratio : which is the ratio of from_poi_to_this_person to to_messages.
+- bonus_salary_ratio : which is the ratio of bonus to salary ratio.
+
+MinMaxScaler was used to scale the features so that algorthims which work on the basis of distance calculations doesn't get effected by the variables which have high range like salary, bonus and stock options.
+
+SelectKBest was used to select the best features and below are thier scores:
+
+| Features       | Scores |
+| :---------------------- | -----: |
+| exercised_stock_options | 24.815079733218194 |
+| total_stock_value       | 24.182898678566879 |
+| bonus                   | 20.792252047181535 |
+| salary                  | 18.289684043404513 |
+| from_this_person_to_poi_ratio         | 16.409712548035792 |
+| deferred_income     |  11.458476579280369 |
+| bonus_salary_ratio        |  10.783584708160824 |
+| long_term_incentive        |  9.9221860131898225 |
+| restricted_stock          |  9.2128106219771002 |
+| total_payments |  8.7727777300916756 |
+| shared_receipt_with_poi           |  8.589420731682381 |
+| loan_advances | 7.1840556582887247 |
+| expenses       | 6.0941733106389453 |
+| from_poi_to_this_person                   | 5.2434497133749582 |
+| other                  | 4.1874775069953749 |
+| from_poi_to_this_person_ratio         | 3.1280917481567192 |
+| from_this_person_to_poi     |  2.3826121082276739 |
+| director_fees        |  2.1263278020077054 |
+| to_messages          |  1.6463411294420076 |
+| deferral_payments | 0.22461127473600989 |
+| from_messages           |  0.16970094762175533 |
+| restricted_stock_deferred           | 0.065499652909942141 |
+
+
+Top 11 features from the above list were used to identify POI's with various Ml Algos.
+
+**Q3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?**
+
