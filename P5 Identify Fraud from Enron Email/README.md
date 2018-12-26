@@ -82,3 +82,13 @@ Top 11 features from the above list were used to identify POI's with various Ml 
 
 **Q3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?**
 
+I tried Gaussian Naive Bayes, Decision Tree and Random Forest algorithms.
+
+Below are the scores of each algorithm before tuning as reported by tester.py:
+
+| Algorithm       | Recall | Precision | F1 Score| Accuracy |
+| :---------------------- | -----: |-----: |-----: | -----: |
+| Gaussian Naive Bayes | 0.31400 | 0.36639 | 0.33818 | 0.83613 |
+| Decision Tree        | 0.31200 | 0.32687 | 0.31926 | 0.82260 |
+| Random Forest        | 0.16350 | 0.43083 | 0.23704 | 0.85967 |
+| K Nearest Neighbours       | 0.16800 | 0.63878 | 0.26603 | 0.87640 |
