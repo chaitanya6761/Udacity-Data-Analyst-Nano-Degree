@@ -115,4 +115,10 @@ The best metrics chosen for each algorithm are
 
 After tuning the parameters for the algorithms, only decision tree and random forest seem to show some improvement in metrics.
 
+**Q5. What is validation, and what’s a classic mistake you can make if you do it wrong? How did you validate your analysis?**
 
+Validation is the process of establishing how well our model has been trained on the dataset and how well it generalizes and performs on the test set. A classic mistake that we can make in this step is to train and test on the same data. 
+
+We need to always have a seperate training and testing set to validate our model. Generally we use 70%-30% split to train and test our data.
+
+The dataset used in this project has a imblance in lables, that's why I used StratifiedShuffleSplit validation technique which trains and tests model on multiple folds to average out the accuracy and other metrics
