@@ -82,7 +82,7 @@ Top 11 features from the above list were used to identify POI's with various Ml 
 
 **Q3. What algorithm did you end up using? What other one(s) did you try? How did model performance differ between algorithms?**
 
-I tried Gaussian Naive Bayes, Decision Tree and Random Forest algorithms.
+I tried Gaussian Naive Bayes, Decision Tree, Random Forest and KNN algorithms.
 
 Below are the scores of each algorithm before tuning as reported by tester.py:
 
@@ -94,3 +94,25 @@ Below are the scores of each algorithm before tuning as reported by tester.py:
 | K Nearest Neighbours | 0.16800 | 0.63878 | 0.26603 | 0.87640 |
 
 Only Gussian Naive Bayes And Decision Tree seem to achieve the limit of 0.3 for both recall and precision.
+
+**Q4. What does it mean to tune the parameters of an algorithm, and what can happen if you don’t do this well?  How did you tune the parameters of your particular algorithm? What parameters did you tune?**
+
+Tuning of algorithm refers to adjusting the parameters, so that we can achieve better performence. If in case parameters are not optimized properly it might result in lower accuracy. This process of tuning can also sometimes result in overfitting as well.
+
+GridSearchCV was used to tune the parameters of the algorithms. The table below shows the performence metrics after tuning process.
+
+The best metrics chosen for each algorithm are
+- Decision Tree : {'min_samples_split': 2, 'criterion': 'entropy', 'max_depth': 2}
+- Random Forest : {'min_samples_split': 11, 'criterion': 'gini', 'max_depth': 5}
+- KNN : {'n_neighbors': 8, 'weights': 'distance', 'algorithm': 'auto'}
+
+| Algorithm       | Recall | Precision | F1 Score| Accuracy |
+| :---------------------- | -----: |-----: |-----: | -----: |
+| Gaussian Naive Bayes | 0.31400 | 0.36639 | 0.33818 | 0.83613 |
+| Decision Tree        | 0.39650 | 0.38702 | 0.39170 | 0.83580 |
+| Random Forest        | 0.18250 | 0.45398 | 0.26034 | 0.86173 |
+| K Nearest Neighbours | 0.05750 | 0.58081 | 0.10464 | 0.86880 |
+
+After tuning the parameters for the algorithms, only decision tree and random forest seem to show some improvement in metrics.
+
+
