@@ -122,3 +122,14 @@ Validation is the process of establishing how well our model has been trained on
 We need to always have a seperate training and testing set to validate our model. Generally we use 70%-30% split to train and test our data.
 
 The dataset used in this project has a imblance in lables, that's why I used StratifiedShuffleSplit validation technique which trains and tests model on multiple folds to average out the accuracy and other metrics
+
+**Q6. Give at least 2 evaluation metrics and your average performance for each of them. Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance.**
+
+The two evaluation metrics which were used to determine the performence are precision and recall, because accuracy alone would not be enough as our dataset has imblance in classes. The precison and recall reported by tuned decison tree are `0.38702` and `0.3965`
+
+- Precision : Out all the items labelled as positive, how many belong to positive class.
+- Recall    : Out all the items that are truely positive, how many items were correctly classified as positive.
+
+For this project especially, we might want to have a high recall score than precision because we don't want to miss any poi from the dataset.  
+
+
