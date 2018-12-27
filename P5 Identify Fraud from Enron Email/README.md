@@ -133,9 +133,9 @@ The two evaluation metrics which were used to determine the performence are prec
 For this project especially, we might want to have a high recall score than precision because we don't want to miss any poi from the dataset.  
 
 ### Files: 
-`Enron Dataset Exploration.ipynb` : Contains EDA of each variable of the dataset.
-`poi_id.py` : Contains code to identify the POI's from the dataset.
-`poi_feature_selection.py` : Contains code to select best features for POI classification.
+- `Enron Dataset Exploration.ipynb` : Contains EDA of each variable of the dataset.
+- `poi_id.py` : Contains code to identify the POI's from the dataset.
+- `poi_feature_selection.py` : Contains code to select best features for POI classification.
 
 
 
