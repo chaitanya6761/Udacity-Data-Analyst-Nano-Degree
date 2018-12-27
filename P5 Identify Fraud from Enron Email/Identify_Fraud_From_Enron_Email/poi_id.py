@@ -1,22 +1,27 @@
 #!/usr/bin/python
 
+#Imports
 import sys
 import pickle
 sys.path.append("../tools/")
-
 from feature_format import featureFormat, targetFeatureSplit
+from sklearn.metrics import recall_score, precision_score, classification_report
+from sklearn.model_selection import train_test_split, GridSearchCV
 from tester import dump_classifier_and_data
-from sklearn.cross_validation import train_test_split
 from sklearn.naive_bayes import GaussianNB
-from sklearn.metrics import precision_score
-from sklearn.metrics import recall_score
-from sklearn.metrics import accuracy_score
-from sklearn.feature_selection import SelectKBest,f_classif
+from sklearn.preprocessing import MinMaxScaler
+from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.svm import SVC
+
 
 ### Task 1: Select what features you'll use.
 ### features_list is a list of strings, each of which is a feature name.
 ### The first feature must be "poi".
-features_list = ['poi','salary','to_messages',
+features_list = ['poi',
+ 'salary',
+ 'to_messages',
  'deferral_payments',
  'total_payments',
  'exercised_stock_options',
@@ -35,25 +40,81 @@ features_list = ['poi','salary','to_messages',
  'long_term_incentive',
  'from_poi_to_this_person'] # You will need to use more features
 
+
 ### Load the dictionary containing the dataset
 with open("final_project_dataset.pkl", "r") as data_file:
     data_dict = pickle.load(data_file)
 
+print '------------------------------------------------------'
+print 'Total Number Of Data Points Before Removing Outliers: ', len(data_dict)
+print 'Total Number Of Features: ', len(features_list)
+
 ### Task 2: Remove outliers
+data_dict.pop('TOTAL', 0)
+data_dict.pop('THE TRAVEL AGENCY IN THE PARK', 0)
+
+###Counting Number Of POI'S
+num_poi = 0
+for key,value in data_dict.items():
+    if value['poi'] == True:
+        num_poi += 1
+
+print "Total Number Of POI's In The Dataset: ", num_poi
+
 ### Task 3: Create new feature(s)
+### Lets Create The Follwoing New Features
+### from_this_person_to_poi_ratio
+### from_poi_to_this_person_ratio
+### salary_bonus_ratio
+
+def calculate_ratios(val1, val2):
+    result = 0
+    if val1 == 'NaN' or val2 == 'NaN':
+        result = 'NaN'
+    else :
+        result = val1/float(val2)
+
+    return result
+
+for key,value in data_dict.items():
+    value['from_this_person_to_poi_ratio'] = calculate_ratios(value['from_this_person_to_poi'], value['from_messages'])
+    value['from_poi_to_this_person_ratio'] = calculate_ratios(value['from_poi_to_this_person'], value['to_messages'])
+    value['bonus_salary_ratio'] = calculate_ratios(value['bonus'], value['salary'])
+
+
 ### Store to my_dataset for easy export below.
 my_dataset = data_dict
+
+###The below list of features were chosen by applying SelectKbest process
+###Refer to poi_feature_selection.py for analysis
+features_list = [
+ 'poi',
+ 'exercised_stock_options',
+ 'total_stock_value',
+ 'bonus',
+ 'salary',
+ 'from_this_person_to_poi_ratio',
+ 'deferred_income',
+ 'bonus_salary_ratio',
+ 'long_term_incentive',
+ 'restricted_stock',
+ 'total_payments',
+ 'shared_receipt_with_poi'
+]
 
 ### Extract features and labels from dataset for local testing
 data = featureFormat(my_dataset, features_list, sort_keys = True)
 labels, features = targetFeatureSplit(data)
+print 'Total Number Of Data Points After Removing Outliers And Feature Formatting : ', len(features)
+
+#Scalling The Data Using MinMaxScaler
+
+scaler = MinMaxScaler()
+features = scaler.fit_transform(features)
+
+#Splitting Data Into Test And Train Data
 features_train, features_test, labels_train, labels_test = \
     train_test_split(features, labels, test_size=0.3, random_state=42)
-
-selector = SelectKBest(f_classif, k=5)
-selector.fit(features_train,labels_train)
-features_train_transformed = selector.transform(features_train)
-features_test_transformed = selector.transform(features_test)
 
 ### Task 4: Try a varity of classifiers
 ### Please name your classifier clf for easy export below.
@@ -62,7 +123,41 @@ features_test_transformed = selector.transform(features_test)
 ### http://scikit-learn.org/stable/modules/pipeline.html
 
 # Provided to give you a starting point. Try a variety of classifiers.
-clf = GaussianNB()
+### Gaussian Naive Bayes Classifier
+#clf = GaussianNB()
+
+### Decision Tree Classifier
+### Best Params Reported By GridSearchCV {'min_samples_split': 2, 'criterion': 'entropy', 'max_depth': 2}
+clf = DecisionTreeClassifier(min_samples_split = 2, criterion = 'entropy', max_depth = 2)
+
+### Random Forest Classifier
+### Best Params Reported By GridSearchCV {'min_samples_split': 11, 'criterion': 'gini', 'max_depth': 5}
+#clf = RandomForestClassifier()
+
+### KNeighborsClassifier
+### Best Params Reported By GridSearchCV  {'n_neighbors': 8, 'weights': 'distance', 'algorithm': 'auto'}
+#clf = KNeighborsClassifier()
+
+### Params For Tuning DecisionTree
+'''params = {'criterion':['gini','entropy'],
+          'max_depth':[i for i in range(2,15)],
+          'min_samples_split':[i for i in range(2,15)]
+}
+
+### Params For Tuning KNN
+params = {'n_neighbors' : [i for i in range(5,20)],
+          'weights': ['uniform', 'distance'],
+          'algorithm':['auto', 'ball_tree', 'kd_tree', 'brute'],
+          }
+
+
+clf = GridSearchCV(clf, params, verbose=1000)'''
+clf.fit(features_train, labels_train)
+pred = clf.predict(features_test)
+
+###Best Params
+#print clf.best_params_
+
 
 ### Task 5: Tune your classifier to achieve better than .3 precision and recall 
 ### using our testing script. Check the tester.py script in the final project
@@ -70,18 +165,13 @@ clf = GaussianNB()
 ### function. Because of the small size of the dataset, the script uses
 ### stratified shuffle split cross validation. For more info: 
 ### http://scikit-learn.org/stable/modules/generated/sklearn.cross_validation.StratifiedShuffleSplit.html
-
+print '------------------------------------------------------'
+print 'Metrics:'
+print 'Recall Score: ', recall_score(labels_test, pred)
+print 'Precision Score: ', precision_score(labels_test, pred)
+print classification_report(labels_test, pred)
+print '------------------------------------------------------'
 # Example starting point. Try investigating other evaluation techniques!
-clf.fit(features_train_transformed,labels_train)
-pred = clf.predict(features_test_transformed)
-print "Total number of people in test set:", len(labels_test)
-print "How many poi's are there in the testset: ",sum(labels_test)
-
-
-print "Recall Score: ", recall_score(pred,labels_test)
-print "Precision Score: ", precision_score(pred,labels_test)
-print 'Accuracy Score: ',accuracy_score(pred,labels_test)
-
 ### Task 6: Dump your classifier, dataset, and features_list so anyone can
 ### check your results. You do not need to change anything below, but make sure
 ### that the version of poi_id.py that you submit can be run on its own and
