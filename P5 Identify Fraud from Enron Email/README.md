@@ -119,18 +119,18 @@ After tuning the parameters for the algorithms, only decision tree and random fo
 
 Validation is the process of establishing how well our model has been trained on the dataset and how well it generalizes and performs on the test set. A classic mistake that we can make in this step is to train and test on the same data. 
 
-We need to always have a seperate training and testing set to validate our model. Generally we use 70%-30% split to train and test our data.
+We need to always have a seperate training and testing set to validate our model. Generally we use 70%-30% split to train and test our data. For the purpose of this project in poi_id.py file, data was split into 70:30 ratio for quick traing and testing.
 
-The dataset used in this project has a imblance in lables, that's why I used StratifiedShuffleSplit validation technique which trains and tests model on multiple folds to average out the accuracy and other metrics
+The dataset used in this project has a imblance in lables, that's why I used tester.py's StratifiedShuffleSplit as an other alternative to test my model extensively by running tester.py which trains and tests model on multiple folds to average out the accuracy and other metrics
 
 **Q6. Give at least 2 evaluation metrics and your average performance for each of them. Explain an interpretation of your metrics that says something human-understandable about your algorithm’s performance.**
 
 The two evaluation metrics which were used to determine the performence are precision and recall, because accuracy alone would not be enough as our dataset has imblance in classes. The precison and recall reported by tuned decison tree are `0.38702` and `0.3965`
 
-- Precision : Out all the items labelled as positive, how many belong to positive class.
-- Recall    : Out all the items that are truely positive, how many items were correctly classified as positive.
+- Precision : Out all the datapoints labelled as POI'S, how many are actually POI's.
+- Recall    : Out all the datapoints that are truely POI'S, how many datapoints were correctly classified as POI'S.
 
-For this project especially, we might want to have a high recall score than precision because we don't want to miss any poi from the dataset.  
+For this project especially, we don't want to miss any POI's, so we don't care much about the precision, instead we want our recall parameter to be high so that no POI's is left out. Even though our model may sometimes classify some non POI to be a POI but we will do further investigation on the person to actually determine his involvement in the fraud. 
 
 ### Files: 
 - `Enron Dataset Exploration.ipynb` : Contains EDA of each variable of the dataset.
