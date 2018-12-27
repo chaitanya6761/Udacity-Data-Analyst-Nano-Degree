@@ -91,4 +91,6 @@ Below are the scores of each algorithm before tuning as reported by tester.py:
 | Gaussian Naive Bayes | 0.31400 | 0.36639 | 0.33818 | 0.83613 |
 | Decision Tree        | 0.31200 | 0.32687 | 0.31926 | 0.82260 |
 | Random Forest        | 0.16350 | 0.43083 | 0.23704 | 0.85967 |
-| K Nearest Neighbours       | 0.16800 | 0.63878 | 0.26603 | 0.87640 |
+| K Nearest Neighbours | 0.16800 | 0.63878 | 0.26603 | 0.87640 |
+
+Only Gussian Naive Bayes And Decision Tree seem to achieve the limit of 0.3 for both recall and precision.
