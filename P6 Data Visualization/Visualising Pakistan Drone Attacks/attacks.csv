@@ -1,0 +1,404 @@
+"S.","Date","Time","Location","City","Province","No.of.Strike","Al.Qaeda","Taliban","Civilians.Min","Civilians.Max","Foreigners.Min","Foreigners.Max","Total.Died.Min","Total.Died.Mix","Injured.Min","Injured.Max","Women.Children","Longitude","Latitude","Year","Tenure","Count","Total.Terrorists.killed"
+1,2004-06-18,"22:00","Near Wana","South Waziristan","FATA",1,0,1,0,4,0,0,0,5,0,0,"N",69.9,33.0333,"2004","George W. Bush",1,1
+2,2005-05-08,"23:30","Mir Ali (Near Afghan Border)","North Waziristan","FATA",1,1,0,0,1,0,0,0,2,0,0,"N",70.1455,32.9746,"2005","George W. Bush",1,1
+3,2005-12-01,"","Haisori- Miran Shah","North Waziristan","FATA",1,1,0,0,1,0,3,0,5,0,2,"",70.1455,32.9746,"2005","George W. Bush",1,1
+4,2006-01-06,"","Saidgai village- 115km north of Wana","North Waziristan","FATA",1,0,0,0,0,0,0,0,3,0,2,"",70.1455,32.9746,"2006","George W. Bush",1,0
+5,2006-01-13,"3:00","Damadola Village","Bajaur  Agency","FATA",1,0,0,0,18,0,0,0,18,0,2,"Y",71.5,34.6833,"2006","George W. Bush",1,0
+6,2006-10-30,"","Chenagai","Bajaur  Agency","FATA",1,0,0,0,82,0,0,0,82,0,0,"Y",71.5,34.6833,"2006","George W. Bush",1,0
+7,2007-04-27,"","Saidgai village","North Waziristan","FATA",1,0,0,0,2,0,2,0,4,0,2,"",70.1455,32.9746,"2007","George W. Bush",1,0
+8,2007-06-19,"10:30","MamiRogha- Dattakhel","North Waziristan","FATA",3,0,0,20,32,0,0,20,32,0,15,"Y",70.1455,32.9746,"2007","George W. Bush",1,0
+9,2007-11-02,"","Dandey darpakhel-Miranshah","North Waziristan","FATA",1,0,0,5,8,0,2,5,10,6,12,"",70.1455,32.9746,"2007","George W. Bush",1,0
+10,2007-12-03,"","Jani Khel","Bannu","KPK",1,0,0,0,0,0,0,0,0,0,1,"",70.6042,32.9861,"2007","George W. Bush",1,0
+11,2008-01-29,"4:00","Khushali village","North Waziristan","FATA",1,1,0,5,7,5,7,12,13,0,2,"Y",70.1455,32.9746,"2008","George W. Bush",1,1
+12,2008-02-28,"2:00","Kalosha","South Waziristan","FATA",1,0,0,7,8,0,6,8,13,0,3,"",69.9,33.0333,"2008","George W. Bush",1,0
+13,2008-03-16,"15:35","Dhok Pirbagh- WANA","South Waziristan","FATA",6,0,0,0,0,0,20,0,20,5,8,"",69.9,33.0333,"2008","George W. Bush",1,0
+14,2008-04-01,"","Miran shah","North Waziristan","FATA",2,0,0,0,3,0,0,0,3,0,0,"",70.1455,32.9746,"2008","George W. Bush",1,0
+15,2008-05-14,"20:00","Damadola Village- near Afghan border","Bajaur  Agency","FATA",2,1,0,12,19,0,0,12,20,0,0,"Y",71.5,34.6833,"2008","George W. Bush",1,1
+16,2008-06-14,"","Makeen","South Waziristan","FATA",3,0,0,0,1,0,0,0,1,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+17,2008-07-28,"","Azam Warsak- Near Wana","South Waziristan","FATA",1,1,0,0,6,0,0,6,7,0,3,"Y",69.9,33.0333,"2008","George W. Bush",1,1
+18,2008-08-13,"20:30","Baghar near Angoor adda- WANA","South Waziristan","FATA",1,0,0,10,12,0,8,10,20,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+19,2008-08-20,"19:00","Zari Noori area","South Waziristan","FATA",1,0,0,6,8,0,0,6,8,0,3,"",69.9,33.0333,"2008","George W. Bush",1,0
+20,2008-08-27,"","Ganghikhel area","South Waziristan","FATA",1,0,0,0,0,0,0,0,0,0,4,"Y",69.9,33.0333,"2008","George W. Bush",1,0
+21,2008-08-30,"16:30","Ganghikhel- WANA","South Waziristan","FATA",1,0,0,4,6,0,0,4,6,2,4,"",69.9,33.0333,"2008","George W. Bush",1,0
+22,2008-08-30,"15:00","Gundikili village- Miranshah","North Waziristan","FATA",1,0,0,0,0,0,6,0,6,0,8,"Y",70.1455,32.9746,"2008","George W. Bush",1,0
+23,2008-09-04,"17:00","Muhammand Khel- Miranshah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,5,"",70.1455,32.9746,"2008","George W. Bush",1,0
+24,2008-09-05,"9:00","Gorveek- Miranshah","North Waziristan","FATA",3,0,0,6,10,0,0,6,10,0,0,"Y",70.1455,32.9746,"2008","George W. Bush",1,0
+25,2008-09-08,"10:20","Dandey darpakhel-Miranshah","North Waziristan","FATA",4,0,7,12,18,0,0,17,25,19,25,"Y",70.1455,32.9746,"2008","George W. Bush",1,7
+26,2008-09-12,"5:30","Tol khel","North Waziristan","FATA",1,0,0,12,14,0,0,12,14,12,14,"",70.1455,32.9746,"2008","George W. Bush",1,0
+27,2008-09-17,"","Angoor Adda","South Waziristan","FATA",1,0,0,3,5,0,4,5,7,3,6,"",69.9,33.0333,"2008","George W. Bush",1,0
+28,2008-10-01,"","Mirali","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,9,"",70.1455,32.9746,"2008","George W. Bush",1,0
+29,2008-10-03,"16:00","Muhammand Khel- Miranshah","North Waziristan","FATA",2,0,0,0,5,0,16,20,21,0,6,"Y",70.1455,32.9746,"2008","George W. Bush",1,0
+30,2008-10-09,"22:00","Tapai-Miranshah","North Waziristan","FATA",1,0,0,3,3,3,6,6,9,0,0,"",70.1455,32.9746,"2008","George W. Bush",1,0
+31,2008-10-11,"","Miranshah","North Waziristan","FATA",2,0,5,4,4,0,0,4,9,0,2,"",70.1455,32.9746,"2008","George W. Bush",1,5
+32,2008-10-16,"11:30","Sam-WANA","South Waziristan","FATA",1,0,0,1,5,1,2,2,7,0,7,"",69.9,33.0333,"2008","George W. Bush",1,0
+33,2008-10-23,"","Miranshah","North Waziristan","FATA",1,0,0,4,11,0,0,4,11,3,6,"",70.1455,32.9746,"2008","George W. Bush",1,0
+34,2008-10-26,"","wana","South Waziristan","FATA",1,0,0,7,20,0,0,7,20,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+35,2008-10-31,"","wana","South Waziristan","FATA",1,1,0,15,27,0,0,15,28,0,8,"",69.9,33.0333,"2008","George W. Bush",1,1
+36,2008-10-31,"","Mirali","North Waziristan","FATA",1,0,12,0,6,0,0,7,12,0,2,"",70.1455,32.9746,"2008","George W. Bush",1,12
+37,2008-11-07,"10:00","kumsham-Miranshah","North Waziristan","FATA",4,7,1,8,13,0,0,13,16,0,0,"",70.1455,32.9746,"2008","George W. Bush",1,8
+38,2008-11-14,"1:45","miranshah","North Waziristan","FATA",1,0,0,4,6,5,9,11,13,3,7,"",70.1455,32.9746,"2008","George W. Bush",1,0
+39,2008-11-19,"3:00","Janikhel","Bannu","KPK",1,0,0,3,4,0,3,4,6,4,7,"",70.6042,32.9861,"2008","George W. Bush",1,0
+40,2008-11-22,"4:30","Miranshah","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,3,6,"Y",70.1455,32.9746,"2008","George W. Bush",1,0
+41,2008-11-29,"","Chashma-Miranshah","North Waziristan","FATA",1,0,0,0,3,0,0,0,3,2,3,"Y",70.1455,32.9746,"2008","George W. Bush",1,0
+42,2008-12-05,"","Khushal Torikhel- Mirnshah","North Waziristan","FATA",1,0,0,3,6,0,0,3,6,2,3,"",70.1455,32.9746,"2008","George W. Bush",1,0
+43,2008-12-11,"","Azam Warsak","South Waziristan","FATA",1,0,0,6,7,0,0,6,7,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+44,2008-12-15,"","Tappi Tolkhel- Miranshah","North Waziristan","FATA",1,0,0,0,2,0,0,0,2,0,3,"",70.1455,32.9746,"2008","George W. Bush",1,0
+45,2008-12-22,"","Ghawakhawa- Wana","South Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+46,2008-12-22,"","Azam Warsak- Near Wana","South Waziristan","FATA",1,0,0,2,5,0,0,2,5,0,0,"",69.9,33.0333,"2008","George W. Bush",1,0
+47,2009-01-01,"","Karrikot- Wanna","South Waziristan","FATA",1,0,5,0,0,0,3,0,5,0,1,"N",69.9,33.0333,"2009","Barack Obama",1,5
+48,2009-01-02,"10:00","Laddha","South Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,2,"N",69.9,33.0333,"2009","Barack Obama",1,0
+49,2009-01-23,"17:00","Mir Ali (Near Afghan Border)","North Waziristan","FATA",1,0,5,9,10,0,8,10,22,0,4,"N",70.1455,32.9746,"2009","Barack Obama",1,5
+50,2009-02-14,"7:45","Laddha","South Waziristan","FATA",1,0,2,30,33,0,0,30,35,2,6,"Y",69.9,33.0333,"2009","Barack Obama",1,2
+51,2009-02-16,"10:00","Kurram","Khyber","FATA",3,0,0,0,22,0,8,0,30,3,20,"N",68.50235,25.67848,"2009","Barack Obama",1,0
+52,2009-03-01,"","Sararogha","South Waziristan","FATA",2,0,0,8,8,0,4,8,12,0,14,"N",69.9,33.0333,"2009","Barack Obama",1,0
+53,2009-03-12,"","Barjo ","Kurram Agency","FATA",1,0,0,14,25,0,0,14,25,15,50,"N",69.9667,33.8167,"2009","Barack Obama",1,0
+54,2009-03-15,"22:30","Bannu","Bannu","KPK",1,0,0,1,3,1,2,2,5,0,0,"N",70.6042,32.9861,"2009","Barack Obama",1,0
+55,2009-03-25,"17:00","Makin","South Waziristan","FATA",1,7,0,0,7,0,4,7,8,0,0,"N",69.9,33.0333,"2009","Barack Obama",1,7
+56,2009-03-26,"","Mir Ali (Near Afghan Border)","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,4,"Y",70.1455,32.9746,"2009","Barack Obama",1,0
+57,2009-04-01,"","Khadezai","Orakzai","FATA",1,0,0,12,14,0,0,12,14,15,18,"N",69.8597,32.6674,"2009","Barack Obama",1,0
+58,2009-04-04,"19:45","Miran shah","North Waziristan","FATA",2,0,0,8,13,0,0,8,13,0,4,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+59,2009-04-08,"","Gangi Khel- Wana","South Waziristan","FATA",1,0,3,1,3,0,0,3,4,4,5,"N",69.9,33.0333,"2009","Barack Obama",1,3
+60,2009-04-19,"","Gangi Khel- Wana","South Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,5,"Y",69.9,33.0333,"2009","Barack Obama",1,0
+61,2009-04-29,"20:15","KaniGaram-Ladha","South Waziristan","FATA",1,0,0,6,8,0,2,6,10,2,4,"N",69.9,33.0333,"2009","Barack Obama",1,0
+62,2009-05-09,"10:00","Sararogha","South Waziristan","FATA",1,0,0,6,10,0,0,6,10,3,16,"N",69.9,33.0333,"2009","Barack Obama",1,0
+63,2009-05-12,"4:00","Sra Khawra","South Waziristan","FATA",1,0,0,8,10,0,0,8,10,0,4,"Y",69.9,33.0333,"2009","Barack Obama",1,0
+64,2009-05-16,"8:00","Khaisoor Area","North Waziristan","FATA",1,2,25,0,25,0,4,25,29,0,6,"N",70.1455,32.9746,"2009","Barack Obama",1,27
+65,2009-06-14,"","Laddha","South Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,0,"N",69.9,33.0333,"2009","Barack Obama",1,0
+66,2009-06-18,"10:00","Shah Alam- Wana","South Waziristan","FATA",1,0,0,0,9,0,0,0,9,0,8,"N",69.9,33.0333,"2009","Barack Obama",1,0
+67,2009-06-23,"","wana","South Waziristan","FATA",1,0,0,15,50,0,0,15,50,0,0,"N",69.9,33.0333,"2009","Barack Obama",1,0
+68,2009-07-03,"6:30","KokatKhel","South Waziristan","FATA",1,0,0,13,17,0,0,13,17,25,30,"N",69.9,33.0333,"2009","Barack Obama",1,0
+69,2009-07-07,"10:00","Laddha","South Waziristan","FATA",1,0,0,12,12,0,4,12,16,0,4,"N",69.9,33.0333,"2009","Barack Obama",1,0
+70,2009-07-08,"","Laddha","South Waziristan","FATA",1,0,0,25,60,0,0,25,60,5,10,"N",69.9,33.0333,"2009","Barack Obama",1,0
+71,2009-07-10,"","PaindaKhel","South Waziristan","FATA",1,0,0,3,8,0,0,3,8,0,0,"N",69.9,33.0333,"2009","Barack Obama",1,0
+72,2009-07-17,"16:00","Miran shah","South Waziristan","FATA",1,0,5,0,4,0,0,4,5,0,4,"N",69.9,33.0333,"2009","Barack Obama",1,5
+73,2009-08-05,"","Laddha","South Waziristan","FATA",1,0,1,1,2,0,0,1,3,3,5,"Y",69.9,33.0333,"2009","Barack Obama",1,1
+74,2009-08-11,"","Laddha","South Waziristan","FATA",1,0,10,4,10,0,0,10,14,5,10,"Y",69.9,33.0333,"2009","Barack Obama",1,10
+75,2009-08-21,"","Miran shah","South Waziristan","FATA",1,0,0,9,13,0,0,9,13,0,3,"Y",69.9,33.0333,"2009","Barack Obama",1,0
+76,2009-08-27,"15:50","Laddha","South Waziristan","FATA",1,0,0,0,10,0,0,0,10,5,7,"N",69.9,33.0333,"2009","Barack Obama",1,0
+77,2009-09-08,"23:45","Mir Ali ","South Waziristan","FATA",1,0,0,3,5,0,5,5,8,0,6,"N",69.9,33.0333,"2009","Barack Obama",1,0
+78,2009-09-09,"","Miran shah","South Waziristan","FATA",1,0,10,0,0,0,0,0,10,0,0,"N",69.9,33.0333,"2009","Barack Obama",1,10
+79,2009-09-14,"6:05","mir ali","South Waziristan","FATA",1,0,0,4,6,0,2,4,8,1,5,"N",69.9,33.0333,"2009","Barack Obama",1,0
+80,2009-09-24,"23:00","Miran shah","South Waziristan","FATA",1,0,10,2,10,0,0,10,12,2,3,"N",69.9,33.0333,"2009","Barack Obama",1,10
+81,2009-09-29,"","Sararogha","South Waziristan","FATA",1,0,0,5,12,0,0,5,12,6,8,"N",69.9,33.0333,"2009","Barack Obama",1,0
+82,2009-09-29,"19:30","Miran shah","South Waziristan","FATA",1,0,9,3,4,0,0,4,12,0,2,"N",69.9,33.0333,"2009","Barack Obama",1,9
+83,2009-09-30,"","Miran shah","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,0,0,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+84,2009-10-15,"3:40","Miran shah","North Waziristan","FATA",1,0,4,4,6,0,0,4,10,0,9,"Y",70.1455,32.9746,"2009","Barack Obama",1,4
+85,2009-10-21,"","Spalga","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+86,2009-10-24,"11:30","Damadola","Bajaur  Agency","FATA",1,0,0,16,22,0,11,22,27,0,8,"N",71.5,34.6833,"2009","Barack Obama",1,0
+87,2009-11-05,"1:30","mir ali","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,8,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+88,2009-11-18,"23:00","Mir Ali","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,4,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+89,2009-11-20,"","Mir Ali","North Waziristan","FATA",1,0,8,2,8,0,0,8,10,0,2,"N",70.1455,32.9746,"2009","Barack Obama",1,8
+90,2009-12-08,"6:20","Spalga","North Waziristan","FATA",2,0,3,0,0,0,0,0,3,0,3,"N",70.1455,32.9746,"2009","Barack Obama",1,3
+91,2009-12-10,"","Laddha","South Waziristan","FATA",1,4,2,1,6,0,3,6,10,0,8,"N",69.9,33.0333,"2009","Barack Obama",1,6
+92,2009-12-17,"","Datta Khel","North Waziristan","FATA",1,0,0,2,2,0,0,2,2,0,0,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+93,2009-12-18,"3:50","Datta Khel","North Waziristan","FATA",1,0,2,2,6,0,0,2,8,0,8,"Y",70.1455,32.9746,"2009","Barack Obama",1,2
+94,2009-12-18,"15:30","Datta Khel","North Waziristan","FATA",1,0,8,0,5,0,0,5,8,5,8,"",70.1455,32.9746,"2009","Barack Obama",1,8
+95,2009-12-26,"19:00","Miran shah","North Waziristan","FATA",1,0,0,3,10,0,3,3,13,2,3,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+96,2009-12-31,"","Miran shah","North Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,2,"N",70.1455,32.9746,"2009","Barack Obama",1,0
+97,2010-01-01,"8:50","Nawana","North Waziristan","FATA",2,0,0,0,2,0,0,0,2,0,3,"",70.1455,32.9746,"2010","Barack Obama",1,0
+98,2010-01-03,"20:30","Mosaki village-near Mir Ali","North Waziristan","FATA",2,0,0,0,2,0,3,0,5,3,4,"",70.1455,32.9746,"2010","Barack Obama",1,0
+99,2010-01-06,"16:00","Sanzalai-Datta Khel","North Waziristan","FATA",1,0,0,13,25,0,0,13,25,0,6,"Y",70.1455,32.9746,"2010","Barack Obama",1,0
+100,2010-01-08,"10:00","Tappi Village","North Waziristan","FATA",1,0,4,4,6,0,0,4,10,2,9,"N",70.1455,32.9746,"2010","Barack Obama",1,4
+101,2010-01-09,"11:00","Ismail Khan","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,6,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+102,2010-01-14,"6:30","Shakoi","South Waziristan","FATA",1,0,10,5,10,0,0,10,15,0,7,"N",69.9,33.0333,"2010","Barack Obama",1,10
+103,2010-01-15,"","Mir Ali","South Waziristan","FATA",1,0,11,6,6,0,3,6,20,0,8,"N",69.9,33.0333,"2010","Barack Obama",1,11
+104,2010-01-17,"","shaktoi ","South Waziristan","FATA",1,0,0,15,0,0,0,15,20,0,0,"",69.9,33.0333,"2010","Barack Obama",1,0
+105,2010-01-19,"18:30","Booya Village","North Waziristan","FATA",1,0,6,0,5,0,0,5,6,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,6
+106,2010-01-29,"","Mohammad Khel","North Waziristan","FATA",3,0,0,5,9,0,6,5,15,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+107,2010-02-02,"17:30","Datta Khel- Degan- Kamar","North Waziristan","FATA",1,0,16,1,16,0,0,16,17,0,8,"N",70.1455,32.9746,"2010","Barack Obama",1,16
+108,2010-02-14,"3:30","Mir Ali","North Waziristan","FATA",1,0,0,4,7,0,0,4,7,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+109,2010-02-15,"14:00","Tappi village- 15 km east of Miranshah","North Waziristan","FATA",1,0,0,0,0,0,0,0,4,0,0,"",70.1455,32.9746,"2010","Barack Obama",1,0
+110,2010-02-17,"","Tappi Village","North Waziristan","FATA",1,0,3,1,3,0,0,3,4,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,3
+111,2010-02-18,"","Dande Darpakhel","North Waziristan","FATA",1,0,4,0,0,0,0,1,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,4
+112,2010-02-24,"","Darga Mandi","North Waziristan","FATA",1,0,0,6,8,0,3,8,9,0,6,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+113,2010-03-08,"","miran shah","North Waziristan","FATA",1,0,5,0,0,0,0,0,5,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,5
+114,2010-03-10,"21:20","miran shah","North Waziristan","FATA",1,0,8,6,12,0,0,12,14,0,5,"N",70.1455,32.9746,"2010","Barack Obama",1,8
+115,2010-03-16,"12:45","datta khel","North Waziristan","FATA",1,0,10,1,8,0,0,8,11,2,7,"N",70.1455,32.9746,"2010","Barack Obama",1,10
+116,2010-03-16,"","tol Khel","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,0,22,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+117,2010-03-17,"","Datta khel","North Waziristan","FATA",1,0,0,5,7,0,0,5,7,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+118,2010-03-17,"","Mada Khel","North Waziristan","FATA",1,0,0,3,11,0,0,3,11,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+119,2010-03-21,"17:00","Datta Khel","North Waziristan","FATA",1,0,0,0,8,0,0,0,8,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+120,2010-03-23,"21:00","miran shah","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,2,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+121,2010-03-27,"","Mir Ali","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,5,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+122,2010-03-30,"23:00","Tappi Area","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+123,2010-04-12,"21:30","Datta Khel","North Waziristan","FATA",1,0,0,5,10,0,0,5,10,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+124,2010-04-14,"19:00","Datta Khel","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+125,2010-04-16,"","Toorikhel","North Waziristan","FATA",1,0,6,0,0,0,0,0,6,22,25,"N",70.1455,32.9746,"2010","Barack Obama",1,6
+126,2010-04-24,"21:00","miran shah","North Waziristan","FATA",1,0,0,7,9,0,0,7,9,0,8,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+127,2010-04-26,"","Khushali Toorikhel","North Waziristan","FATA",1,0,6,3,5,0,0,5,9,4,10,"N",70.1455,32.9746,"2010","Barack Obama",1,6
+128,2010-05-03,"15:30","Machi Khel-Mir Ali","North Waziristan","FATA",1,0,0,4,7,0,0,4,7,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+129,2010-05-09,"8:00","Inzarkas in Datta Khel ","North Waziristan","FATA",1,0,0,10,11,0,0,10,11,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+130,2010-05-11,"6:00","Doga- Datta Khel","North Waziristan","FATA",1,0,0,14,15,0,0,14,15,4,8,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+131,2010-05-11,"14:00","Gurwak","North Waziristan","FATA",1,0,7,0,7,0,0,7,14,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,7
+132,2010-05-15,"","Tirah valley","Khyber Agency","FATA",1,0,0,13,15,0,0,13,15,4,9,"N",71.1481,34.0983,"2010","Barack Obama",1,0
+133,2010-05-21,"","Muhammad Khel","North Waziristan","FATA",1,0,6,0,4,0,0,6,10,0,0,"Y",70.1455,32.9746,"2010","Barack Obama",1,6
+134,2010-05-28,"12:00","Mizai Narai","South Waziristan","FATA",1,0,0,8,11,0,0,8,11,2,4,"N",69.9,33.0333,"2010","Barack Obama",1,0
+135,2010-06-10,"","Khadi village","North Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+136,2010-06-11,"7:30","Bahadar Khel village- Dattakhel","North Waziristan","FATA",1,0,0,11,12,0,3,11,15,7,12,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+137,2010-06-19,"9:30","Haider Khel-Mir Ali","North Waziristan","FATA",1,0,0,11,16,0,0,11,16,3,19,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+138,2010-06-26,"","Khushali khel village- Mir Ali","North Waziristan","FATA",1,0,0,2,4,0,0,2,4,1,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+139,2010-06-27,"15:30","Tabbi Tolkhel-4 km north of MiranShah","North Waziristan","FATA",1,0,6,0,5,0,0,5,6,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,6
+140,2010-06-29,"7:00","Kari Kot","South Waziristan","FATA",2,1,0,6,7,0,0,6,8,0,0,"N",69.9,33.0333,"2010","Barack Obama",1,1
+141,2010-07-15,"","Misermada Khel- MiranShah","North Waziristan","FATA",2,0,0,0,7,0,0,0,7,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+142,2010-07-24,"","Dwasarak- 40km west of Wana","South Waziristan","FATA",1,0,0,16,18,0,0,16,18,0,0,"N",69.9,33.0333,"2010","Barack Obama",1,0
+143,2010-07-25,"","shaktoi","South Waziristan","FATA",1,0,0,3,6,0,0,3,6,4,5,"Y",69.9,33.0333,"2010","Barack Obama",1,0
+144,2010-07-25,"11:30","shaktoi","South Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,5,"Y",69.9,33.0333,"2010","Barack Obama",1,0
+145,2010-07-25,"","MiranShah","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,2,"Y",70.1455,32.9746,"2010","Barack Obama",1,0
+146,2010-08-14,"9:30","Issori village- Mir Ali","North Waziristan","FATA",1,0,0,8,12,0,5,12,13,4,6,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+147,2010-08-21,"","KutabKhel- 3km south of MiranShah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+148,2010-08-23,"","Danday Darpa Khel- 5km from Miran Shah","North Waziristan","FATA",1,0,0,5,10,0,2,5,12,5,15,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+149,2010-08-23,"","Dera Mandi","North Waziristan","FATA",1,0,0,5,11,0,0,5,11,0,4,"",70.1455,32.9746,"2010","Barack Obama",1,0
+150,2010-08-27,"11:30","Shaheedano- Badshah Kot- Talokonj","Kurram Agency","FATA",1,0,0,6,9,0,0,6,9,0,0,"",69.9667,33.8167,"2010","Barack Obama",1,0
+151,2010-09-03,"","MiranShah","North Waziristan","FATA",1,0,0,6,9,0,0,6,9,3,8,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+152,2010-09-03,"","Datta Khel","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+153,2010-09-06,"","Khar Qamar","North Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+154,2010-09-08,"6:30","Danday darpakhel- 3 km west of miranshah bazar","North Waziristan","FATA",1,0,0,6,10,0,0,6,10,0,2,"Y",70.1455,32.9746,"2010","Barack Obama",1,0
+155,2010-09-08,"","Ambor Shaga","North Waziristan","FATA",1,0,0,0,0,0,4,0,4,0,1,"Y",70.1455,32.9746,"2010","Barack Obama",1,0
+156,2010-09-08,"21:00","Darga Mandi- Miran Shah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,2,"Y",70.1455,32.9746,"2010","Barack Obama",1,0
+157,2010-09-09,"4:30","Machus Camp- Miran shah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,5,"",70.1455,32.9746,"2010","Barack Obama",1,0
+158,2010-09-12,"6:15","Newey Adda village in Datta Khel- near Miranshah","North Waziristan","FATA",1,0,0,3,4,0,2,4,5,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+159,2010-09-14,"6:00","Bush Narai","North Waziristan","FATA",1,0,0,8,12,0,0,8,12,0,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+160,2010-09-14,"19:00","KutabKhel-MiranShah","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+161,2010-09-15,"16:30","Danday Darpa Khel- Miran Shah","North Waziristan","FATA",1,0,0,0,12,0,14,12,14,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+162,2010-09-15,"","Datta Khel","North Waziristan","FATA",1,0,0,5,7,0,0,5,7,0,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+163,2010-09-19,"","Datta Khel","North Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+164,2010-09-20,"","Datta Khel","North Waziristan","FATA",1,0,0,5,9,0,0,5,9,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+165,2010-09-21,"17:30","Khund","South Waziristan","FATA",1,0,0,7,8,0,0,7,8,0,4,"N",69.9,33.0333,"2010","Barack Obama",1,0
+166,2010-09-21,"","Azam Warsak Village","South Waziristan","FATA",1,0,0,5,12,0,0,5,12,0,8,"N",69.9,33.0333,"2010","Barack Obama",1,0
+167,2010-09-21,"","Azam Warsak Village","South Waziristan","FATA",1,0,0,0,8,0,0,0,8,0,0,"",69.9,33.0333,"2010","Barack Obama",1,0
+168,2010-09-25,"","Datta Khel","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+169,2010-09-26,"","Manada khel- Darmano road- and Lawar Mandi in Datta Khel","North Waziristan","FATA",1,0,0,9,12,0,0,9,12,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+170,2010-09-27,"","Khshali ToorKhel- southeast of Miran Shah","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+171,2010-09-28,"","Zeba Village-Wana","South Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",69.9,33.0333,"2010","Barack Obama",1,0
+172,2010-10-02,"10:00","Kasra madda khel-and  Tirmara-in Datta khel","North Waziristan","FATA",1,0,0,14,17,0,4,17,18,3,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+173,2010-10-04,"12:00","Mir Ali","North Waziristan","FATA",1,0,0,3,1,5,8,8,9,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+174,2010-10-06,"17:00","MiranShah Bazaar","North Waziristan","FATA",1,0,0,5,6,0,0,5,6,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+175,2010-10-06,"","Hurmaz village of Mir ali","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+176,2010-10-07,"17:40","Khaisoori- 40km east of Miranshah","North Waziristan","FATA",1,0,0,0,2,0,2,0,4,2,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+177,2010-10-08,"17:35","MiranShah","North Waziristan","FATA",1,0,0,9,10,0,0,9,10,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+178,2010-10-10,"11:00","Shewa istrict- spinwan tehsil","North Waziristan","FATA",1,0,0,6,8,0,0,6,8,3,5,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+179,2010-10-13,"9:00","Inzarkas in Datta Khel ","North Waziristan","FATA",1,0,0,2,7,3,4,5,11,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+180,2010-10-15,"","machikhel area- near Mirali","North Waziristan","FATA",1,0,0,3,6,0,0,3,6,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+181,2010-10-15,"23:45","Aziz Khel","North Waziristan","FATA",1,0,0,3,6,0,0,3,6,2,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+182,2010-10-18,"","Sunzali area of Dattakhel","North Waziristan","FATA",1,0,0,3,6,0,4,6,7,1,5,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+183,2010-10-27,"3:30","Spinwam. Mir Ali","North Waziristan","FATA",1,0,0,2,5,0,0,2,5,0,1,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+184,2010-10-27,"14:45","Degan of datta khel","North Waziristan","FATA",1,0,0,0,3,0,4,3,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+185,2010-10-28,"9:00","MiranShah","North Waziristan","FATA",1,0,0,4,5,0,3,5,7,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+186,2010-11-01,"9:30","Haider Khel- Mir Ali","North Waziristan","FATA",1,0,0,5,6,0,0,5,6,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+187,2010-11-03,"","Anzer village near miranshah- eso khel village of Mir ali- Poikhel village of datta khel","North Waziristan","FATA",1,0,0,7,12,4,6,11,18,1,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+188,2010-11-07,"","Dandi saidgai- miramshah","North Waziristan","FATA",1,0,0,5,9,0,0,5,9,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+189,2010-11-07,"","Datta khel- Miramshah","North Waziristan","FATA",1,0,0,4,9,0,0,4,9,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+190,2010-11-11,"","Gulli khel in Ghulam Khan ","North Waziristan","FATA",1,0,0,6,8,0,0,6,8,5,6,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+191,2010-11-13,"","MiranShah","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+192,2010-11-16,"9:00","Ghulam Khan ","North Waziristan","FATA",1,0,0,0,16,0,4,0,20,4,7,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+193,2010-11-19,"12:00","Naurak village- 15 km east of Miranshah","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,2,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+194,2010-11-21,"","Khadi village","North Waziristan","FATA",1,0,0,5,9,0,0,5,9,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+195,2010-11-22,"","Khewsar Village- Miran shah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+196,2010-11-26,"","Pir Kelay","North Waziristan","FATA",1,0,0,2,3,0,2,3,4,0,4,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+197,2010-11-28,"","Hasaan Khel- 30 km east of Miran Shah","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+198,2010-12-06,"","Khushali turikhel","North Waziristan","FATA",1,0,0,5,7,0,0,5,7,0,3,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+199,2010-12-10,"17:45","Khadar Khel","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+200,2010-12-14,"","Spalga village- 15 km south of Miranshah","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+201,2010-12-16,"","tirah valley ","Khyber Agency","FATA",1,0,2,0,5,0,0,0,7,0,0,"N",71.1481,34.0983,"2010","Barack Obama",1,2
+202,2010-12-17,"","tirah valley ","Khyber Agency","FATA",4,0,0,21,50,0,0,21,50,0,0,"N",71.1481,34.0983,"2010","Barack Obama",1,0
+203,2010-12-27,"10:00","shera tala/and  Machikhel","North Waziristan","FATA",6,0,0,18,25,0,0,18,25,4,7,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+204,2010-12-28,"10:00","Ghulam Khan ","North Waziristan","FATA",1,0,0,5,22,0,0,5,22,0,8,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+205,2010-12-31,"23:30","Ghulam Khan ","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,8,"N",70.1455,32.9746,"2010","Barack Obama",1,0
+206,2011-01-01,"7:30","Madi Khel","North Waziristan","FATA",1,0,0,6,9,0,0,6,9,0,5,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+207,2011-01-01,"","Gharghuski village nera Naurak- in mirali","North Waziristan","FATA",1,0,0,5,11,0,0,5,11,2,8,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+208,2011-01-01,"","Mohammad Khel","North Waziristan","FATA",1,0,0,4,5,0,0,4,5,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+209,2011-01-07,"","DattaKhel","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,4,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+210,2011-01-12,"9:30","Haider Khel- Mir Ali","North Waziristan","FATA",1,0,0,1,3,0,3,3,4,0,2,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+211,2011-01-18,"23:00","DattaKhel","North Waziristan","FATA",1,0,0,4,7,0,0,4,7,0,3,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+212,2011-01-23,"","Datta khel","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+213,2011-01-23,"","Datta Khel","North Waziristan","FATA",1,0,0,2,3,0,0,2,3,0,0,"",70.1455,32.9746,"2011","Barack Obama",1,0
+214,2011-01-23,"","mando khel","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,0,3,"",70.1455,32.9746,"2011","Barack Obama",1,0
+215,2011-02-20,"2:00","Azam warsak","South Waziristan","FATA",1,0,0,5,6,0,0,5,6,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+216,2011-02-21,"23:15","Tappi village- Miranshah","North Waziristan","FATA",1,0,0,5,10,0,0,5,10,0,4,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+217,2011-02-21,"","azamwarsak- west of wana","South Waziristan","FATA",1,0,0,0,7,0,0,0,7,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+218,2011-02-24,"","Danday Darpa Khel- 30km west of miranshah","North Waziristan","FATA",3,0,0,0,0,0,2,0,2,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+219,2011-02-24,"","Data khel","North Waziristan","FATA",3,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+220,2011-03-08,"12:00","Landi Dag area- 7 km south of Wana bazaar","South Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,2,"N",69.9,33.0333,"2011","Barack Obama",1,0
+221,2011-03-08,"","Ismailkhel village","North Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,2,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+222,2011-03-11,"","Khaisor town- 30km north of Miranshah","North Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+223,2011-03-11,"","Khaisor town- 30km north of Miranshah","North Waziristan","FATA",1,0,0,2,3,0,0,2,3,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+224,2011-03-13,"","Esha check post- spalga village- 15km northwest of Miranshah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,5,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+225,2011-03-13,"","Azamwarsak-Pray kari village","South Waziristan","FATA",1,0,0,0,0,0,0,0,0,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+226,2011-03-14,"7:30","Tappi village- miranshah razmak road","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+227,2011-03-16,"","Amboor shega area in Dattakhel tehsil","North Waziristan","FATA",1,0,0,5,6,0,0,5,6,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+228,2011-03-17,"","Nevi Adda Shega area","North Waziristan","FATA",1,0,0,40,41,0,0,40,41,8,15,"Y",70.1455,32.9746,"2011","Barack Obama",1,0
+229,2011-04-13,"","near Angoor adda","South Waziristan","FATA",1,6,0,1,6,0,0,6,7,2,4,"N",69.9,33.0333,"2011","Barack Obama",1,6
+230,2011-04-22,"5:45","Spinam- mirali tall road- Hassan khel area","North Waziristan","FATA",1,0,0,23,25,0,0,23,25,5,8,"Y",70.1455,32.9746,"2011","Barack Obama",1,0
+231,2011-05-06,"","Data khel tehsil- Dowatoui area","North Waziristan","FATA",1,0,0,13,18,0,0,13,18,0,4,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+232,2011-05-10,"","Angoor Adda","South Waziristan","FATA",1,0,0,2,3,0,3,3,5,0,7,"N",69.9,33.0333,"2011","Barack Obama",1,0
+233,2011-05-12,"11:00","Paikhel Mazdok area- Dattakhel Tehsil","North Waziristan","FATA",1,0,0,0,8,0,0,0,8,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+234,2011-05-13,"","Kharkamar area- 40km west of miramshsh","North Waziristan","FATA",1,0,0,3,6,0,0,3,6,0,0,"",70.1455,32.9746,"2011","Barack Obama",1,0
+235,2011-05-16,"","Khoshi Torikhel area of Tehsil Mirali","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+236,2011-05-16,"","Marki Killey area","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+237,2011-05-20,"18:00","Sarbr area- Razmak miranshah road- near Esha check post","North Waziristan","FATA",1,0,0,0,6,0,0,0,6,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+238,2011-05-23,"","machikhel area- near Mirali","North Waziristan","FATA",1,0,0,0,7,0,0,0,7,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+239,2011-06-03,"23:45","Ghwakhwa area- 10km west of wana","South Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+240,2011-06-06,"","Shalam Raghzai 10 km northwest of wana","South Waziristan","FATA",1,0,0,0,0,0,0,7,8,0,2,"",69.9,33.0333,"2011","Barack Obama",1,0
+241,2011-06-06,"","Wach Dana- 12 km northwest of wana","South Waziristan","FATA",1,0,0,0,0,0,0,8,10,0,3,"",69.9,33.0333,"2011","Barack Obama",1,0
+242,2011-06-06,"","Dare nishtar in shwal","South Waziristan","FATA",1,0,0,0,0,0,0,3,5,0,0,"",69.9,33.0333,"2011","Barack Obama",1,0
+243,2011-06-08,"","Shwal Tehsil- Zoi narry area","North Waziristan","FATA",1,0,0,23,24,0,0,23,24,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+244,2011-06-15,"","Wana","South Waziristan","FATA",1,0,0,0,7,0,0,0,7,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+245,2011-06-15,"","Wana","South Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+246,2011-06-15,"","Tappi village- 10 km east of miranshah","North Waziristan","FATA",1,0,0,4,8,0,0,4,8,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+247,2011-06-20,"","Khrdand area","Lower Kurram Agency","FATA",1,0,0,0,3,0,9,11,12,0,8,"N",69.9667,33.8167,"2011","Barack Obama",1,0
+248,2011-06-27,"","Ghalmandi Panga- Bray Nishtar area near the border with Afghanistan and North Waziristan","North Waziristan","FATA",1,0,0,3,8,0,0,3,8,0,2,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+249,2011-06-27,"","Mantoi area- 40 km north-west of Miranshah- South Waziristan","South Waziristan","FATA",1,0,0,12,14,0,0,12,14,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+250,2011-07-05,"","Guest house in Mirali- about 25 KM east of miranshah","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,5,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+251,2011-07-11,"2:00","Gorwaik area of dattakhel town","North Waziristan","FATA",1,0,0,10,12,0,0,10,12,0,6,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+252,2011-07-12,"","Malik shahi village in Birmal Tehsil","South Waziristan","FATA",1,0,0,5,13,0,0,5,13,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+253,2011-07-12,"","DreNishter Area- shawal valley","North Waziristan","FATA",1,0,0,8,16,0,0,8,16,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+254,2011-07-12,"","Neway adda village of Dattakhel","North Waziristan","FATA",1,0,0,1,3,0,0,1,3,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+255,2011-08-01,"","Azamwarsak","South Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+256,2011-08-02,"","Qutub Khel village- 5km  east of miranshah","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+257,2011-08-10,"","North western tribal belt along the afghan border","North Waziristan","FATA",2,0,0,0,0,0,21,18,21,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+258,2011-08-16,"","Miranshah Market","North Waziristan","FATA",2,0,0,0,0,0,0,0,4,0,0,"Y",70.1455,32.9746,"2011","Barack Obama",1,0
+259,2011-08-19,"","Sheen Warsik in South Waziristan","South Waziristan","FATA",1,0,0,0,0,0,0,2,4,0,0,"N",69.9,33.0333,"2011","Barack Obama",1,0
+260,2011-08-22,"","Norak area of North Waziristan ","North Waziristan","FATA",1,0,0,0,0,0,0,4,5,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+261,2011-08-22,"","Khaisura village in Mir ali ","North Waziristan","FATA",1,0,0,0,0,0,0,0,6,0,0,"",70.1455,32.9746,"2011","Barack Obama",1,0
+262,2011-09-11,"","HisoKhel Village","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+263,2011-09-23,"","Khushali Area- Mir Ali","North Waziristan","FATA",1,0,0,3,5,0,0,3,5,0,4,"N",70.1455,32.9746,"2011","Barack Obama",1,0
+264,2011-09-27,"22:45","Azam warsak","South Waziristan","FATA",1,0,4,0,2,0,0,2,4,0,4,"",69.9,33.0333,"2011","Barack Obama",1,4
+265,2011-09-30,"","Baghar","South Waziristan","FATA",1,0,0,0,0,0,0,3,4,0,0,"",69.9,33.0333,"2011","Barack Obama",1,0
+266,2011-10-13,"","Danda Darpakhel","North Waziristan","FATA",1,0,6,0,0,0,0,4,6,0,6,"",70.1455,32.9746,"2011","Barack Obama",1,6
+267,2011-10-27,"","Azam Warsak","South Waziristan","FATA",1,0,6,0,0,0,0,4,6,3,4,"",69.9,33.0333,"2011","Barack Obama",1,6
+268,2011-10-30,"","Datta Khel","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,2,"",70.1455,32.9746,"2011","Barack Obama",1,0
+269,2011-11-03,"","Darpakhel Sarai","North Waziristan","FATA",1,0,3,0,0,0,0,2,3,0,3,"",70.1455,32.9746,"2011","Barack Obama",1,3
+270,2011-11-15,"","Miranshah","North Waziristan","FATA",1,0,6,0,0,0,0,0,6,2,3,"",70.1455,32.9746,"2011","Barack Obama",1,6
+271,2011-11-16,"","Babar Ghar- Sararogha","South Waziristan","FATA",1,0,22,0,0,0,0,17,22,0,6,"",69.9,33.0333,"2011","Barack Obama",1,22
+272,2011-11-17,"","Shawal","North Waziristan","FATA",1,0,7,0,0,0,0,0,7,0,0,"",70.1455,32.9746,"2011","Barack Obama",1,7
+273,2012-01-10,"","Miranshah","North Waziristan","FATA",1,0,0,0,0,0,0,0,4,0,0,"",70.1455,32.9746,"2012","Barack Obama",1,0
+274,2011-10-30,"","Doga area of Dattakhel- 15 km east of miranshah","North Waziristan","FATA",1,0,0,4,6,0,0,4,6,0,2,"",70.1455,32.9746,"2011","Barack Obama",1,0
+275,2011-10-31,"","Naurak mirali","North Waziristan","FATA",1,0,0,2,4,0,0,2,4,0,5,"",70.1455,32.9746,"2011","Barack Obama",1,0
+276,2011-11-03,"","Darpakhel sarai","North Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,5,"",70.1455,32.9746,"2011","Barack Obama",1,0
+277,2011-11-15,"","Miranshah Bazar","North Waziristan","FATA",1,0,0,6,7,0,0,6,7,0,4,"",70.1455,32.9746,"2011","Barack Obama",1,0
+278,2011-11-16,"","Baber Ghar area","South Waziristan","FATA",1,0,0,15,18,0,0,15,18,0,0,"",69.9,33.0333,"2011","Barack Obama",1,0
+279,2011-11-17,"","Ramzak area","North Waziristan","FATA",1,0,0,6,9,0,0,6,9,0,4,"",70.1455,32.9746,"2011","Barack Obama",1,0
+280,2012-01-10,"","Miranshah","North Waziristan","FATA",1,0,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+281,2012-01-12,"19:00","Dogga village- Datta khel tehsil- 45 km west of miranshah","North Waziristan","FATA",1,0,0,0,0,0,6,4,6,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+282,2012-01-23,"","Muhammad khel village","North Waziristan","FATA",1,0,0,0,2,0,0,0,2,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+283,2012-01-23,"","Deegan village","North Waziristan","FATA",1,0,0,2,3,0,0,2,3,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+284,2012-02-08,"7:00","Tappi- 10KM southeast of Miranshah","North Waziristan","FATA",1,0,0,0,10,0,0,0,10,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+285,2012-02-09,"6:30","Miranshah","North Waziristan","FATA",1,4,0,0,4,0,0,0,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,4
+286,2012-02-16,"6:30","Spagla Town Near Miranshah","North Waziristan","FATA",1,0,0,0,5,0,0,0,5,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+287,2012-02-16,"6:45","Spagla Town Near Miranshah","North Waziristan","FATA",1,0,0,4,7,0,8,12,15,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+288,2012-03-13,"7:15","Birmal area of South Waziristan","South Waziristan","FATA",1,0,8,0,0,0,0,7,8,0,2,"N",69.9,33.0333,"2012","Barack Obama",1,8
+289,2012-03-13,"","Surra Khawra area of Shawal South Waziristan","South Waziristan","FATA",1,0,7,0,0,0,0,0,0,0,0,"N",69.9,33.0333,"2012","Barack Obama",1,7
+290,2012-03-09,"","Mandao area on the boarder od North and South Waziristan","South Waziristan","FATA",3,1,12,0,0,0,0,8,13,0,0,"N",69.9,33.0333,"2012","Barack Obama",1,13
+291,2012-03-30,"3:00","Market in Miranshah North Waziristan","North Waziristan","FATA",3,0,0,0,4,0,0,0,4,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+292,2012-04-29,"","Miranshah","North Waziristan","FATA",1,0,0,0,0,3,4,3,4,2,3,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+293,2012-05-05,"","Shawal area- 70km west of Miranshah","North Waziristan","FATA",1,0,0,0,0,0,10,0,10,0,8,"Y",70.1455,32.9746,"2012","Barack Obama",1,0
+294,2012-05-23,"","Miranshah","North Waziristan","FATA",2,0,0,4,5,0,0,4,5,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+295,2012-05-24,"5:30","Mir Ali","North Waziristan","FATA",1,0,0,2,10,4,8,2,10,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+296,2012-05-26,"4:00","Miranshah","North Waziristan","FATA",2,0,0,1,4,2,3,3,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+297,2012-05-28,"9:00","HassoKhel Town- 25km East of Miranshah","North Waziristan","FATA",1,0,0,5,8,0,0,5,8,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+298,2012-05-28,"","Datta Khel District- 30km West of Miranshah","North Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+299,2012-06-02,"8:30","Khawashikhel Village- 5km West of Wana","South Waziristan","FATA",1,0,3,0,0,0,0,2,3,0,0,"N",69.9,33.0333,"2012","Barack Obama",1,3
+300,2012-06-03,"","Wacha Dana- 10km West of Wana","South Waziristan","FATA",1,0,11,0,0,0,0,6,11,0,2,"N",69.9,33.0333,"2012","Barack Obama",1,11
+301,2012-06-04,"3:30","Heshokhel Village- 3km East of Mirali","North Waziristan","FATA",1,1,0,0,14,0,0,0,15,0,5,"N",70.1455,32.9746,"2012","Barack Obama",1,1
+302,2012-06-13,"","Isha Village- 10km East of Miranshah","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+303,2012-06-14,"3:15","Miranshah Bazaar","North Waziristan","FATA",2,0,0,2,4,0,0,2,4,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+304,2012-06-26,"2:00","Shawal Area- 50km Southwest of Miranshah","North Waziristan","FATA",1,0,5,0,0,0,0,0,5,0,3,"N",70.1455,32.9746,"2012","Barack Obama",1,5
+305,2012-07-01,"","Shawal District- 50km Southwest of Miranshah","North Waziristan","FATA",1,0,8,0,0,0,0,0,8,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,8
+306,2012-07-06,"20:45","Zoi Nari- Tehsil Dattakhel","North Waziristan","FATA",6,0,0,4,17,0,0,4,17,2,3,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+307,2012-07-06,"22:30","Zoi Nari- Tehsil Dattakhel","North Waziristan","FATA",1,0,0,3,18,0,0,3,18,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+308,2012-07-23,"23:00","Dray Nashtar Village- 65km West of Miranshah","North Waziristan","FATA",8,0,0,10,12,0,0,10,12,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+309,2012-07-29,"18:30","Khushali Turkhel Village- 35km East of Miranshah","North Waziristan","FATA",6,0,0,0,0,0,7,0,7,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+310,2012-08-18,"13:30","Shuwedar Village","North Waziristan","FATA",2,0,6,0,6,0,0,6,12,0,3,"N",70.1455,32.9746,"2012","Barack Obama",1,6
+311,2012-08-19,"6:45","Mana- Shawal Area","North Waziristan","FATA",1,0,0,4,7,0,0,4,7,0,4,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+312,2012-08-19,"","Mana- Shawal Area","North Waziristan","FATA",1,0,0,0,3,0,0,0,3,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+313,2012-08-21,"","Shna Khora- 5km West of Miranshah","North Waziristan","FATA",1,0,0,3,6,0,0,3,6,3,4,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+314,2012-08-24,"","Makki Gharr- Shawal Area","North Waziristan","FATA",1,0,6,0,0,0,0,5,6,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,6
+315,2012-08-24,"","Tonda Darra- Shawal Area","North Waziristan","FATA",1,0,6,0,0,0,0,4,6,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,6
+316,2012-08-24,"","Darra Nishtar- Shawal Area","North Waziristan","FATA",1,0,8,0,0,0,0,5,8,0,14,"N",70.1455,32.9746,"2012","Barack Obama",1,8
+317,2012-09-01,"9:00","Degan Area- Datta Khel","North Waziristan","FATA",4,0,0,4,6,0,0,4,6,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+318,2012-09-22,"","Datta Khel","North Waziristan","FATA",1,0,0,3,4,0,0,3,4,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+319,2012-09-24,"","Kaderkhail Village- 40km East of Miranshah","North Waziristan","FATA",2,0,0,5,6,0,0,5,6,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+320,2012-10-01,"","Khaiderkhel Area- 30 km East of Miranshah","North Waziristan","FATA",4,0,0,0,3,0,0,0,3,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+321,2012-10-10,"4:00","Hurmaz village of Mir ali Tehsil","North Waziristan","FATA",4,0,0,0,5,0,0,0,5,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+322,2012-10-11,"16:40","Bulandkhel Area- Orakzai","North Waziristan","FATA",4,0,0,17,18,0,0,17,18,15,20,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+323,2012-10-24,"","Tappi Area- 20 km East of Miranshah","North Waziristan","FATA",2,0,0,3,5,0,0,3,5,0,0,"Y",70.1455,32.9746,"2012","Barack Obama",1,0
+324,2012-11-29,"12:00","Sheen Warak Area- Wana","North Waziristan","FATA",1,0,0,2,4,0,0,2,4,0,4,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+325,2012-12-01,"","Sheen Warsask Area","South Waziristan","FATA",3,0,0,0,3,0,1,0,4,0,3,"N",69.9,33.0333,"2012","Barack Obama",1,0
+326,2012-12-06,"7:45","Mubarak Shah Village- Mir Ali","North Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+327,2012-12-09,"","Tabbi Village- Miranshah","North Waziristan","FATA",4,1,0,0,3,0,0,1,4,0,6,"N",70.1455,32.9746,"2012","Barack Obama",1,1
+328,2012-12-21,"12:15","Hisukhel Area of Mir Ali","North Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,0,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+329,2012-12-28,"","Gurbuz- 65km West of Miranshah","North Waziristan","FATA",8,0,0,4,7,0,0,4,7,0,2,"N",70.1455,32.9746,"2012","Barack Obama",1,0
+330,2013-01-02,"22:00","Sara Kanda area of Birmal tehsil","South Waziristan","FATA",1,0,17,0,0,0,0,7,17,0,0,"N",69.9,33.0333,"2013","Barack Obama",1,17
+331,2013-01-06,"","Babar Ghar Village","South Waziristan","FATA",1,0,17,0,0,0,0,10,17,0,7,"N",69.9,33.0333,"2013","Barack Obama",1,17
+332,2013-01-08,"","Haider Khel Village- 25km East of Miranshah","North Waziristan","FATA",8,0,0,4,8,0,0,4,8,1,4,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+333,2013-01-08,"","Haso Khel village","North Waziristan","FATA",4,0,0,3,4,0,0,3,4,1,4,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+334,2013-01-10,"","Heso Khel village- 35km East of Miranshah","North Waziristan","FATA",4,0,0,4,6,0,0,4,6,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+335,2013-02-06,"","Ghulam Khan Tehsil","North Waziristan","FATA",4,0,0,3,5,0,0,3,5,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+336,2013-02-08,"","Bobar Gar area- 50km south of Miranshah","North Waziristan","FATA",2,2,9,0,0,2,2,7,9,2,6,"N",70.1455,32.9746,"2013","Barack Obama",1,11
+337,2013-03-21,"23:30","Datta Khel tehsil- 35 kilometres west of Miransha","North Waziristan","FATA",1,0,0,1,4,0,0,1,4,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+338,2013-04-14,"18:30","Datta Khel Tehsil- 50 Kilometres west of Miranshah","North Waziristan","FATA",2,0,0,4,4,0,0,4,4,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+339,2013-04-17,"","Baber Ghar Area of South Waziristan","South Waziristan","FATA",2,0,5,0,0,0,0,5,5,2,7,"N",69.9,33.0333,"2013","Barack Obama",1,5
+340,2013-05-29,"","Chashma village- 3km east of Miranshah","North Waziristan","FATA",2,0,7,0,0,0,0,7,7,4,4,"N",70.1455,32.9746,"2013","Barack Obama",1,7
+341,2013-07-02,"2:30"," Sarai Darpa Khel area","North Waziristan","FATA",4,0,17,0,0,0,0,16,17,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,17
+342,2013-07-13,"23:30","Mir Ali Tehsil","North Waziristan","FATA",2,0,0,0,0,2,2,2,2,0,0,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+343,2013-09-06,"6:45","Ghulam Khan Area","North Waziristan","FATA",2,3,3,0,0,3,3,6,7,4,4,"N",70.1455,32.9746,"2013","Barack Obama",1,6
+344,2013-09-22,"12:45","Shawal Town of North Waziristan","North Waziristan","FATA",4,0,0,6,7,0,0,6,7,2,3,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+345,2013-09-29,"","Dargamandi area- seven km north of Miranshah","North Waziristan","FATA",2,0,0,3,6,0,0,3,6,3,3,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+346,2013-10-27,"1:00","Zafar Town area near Miramshah Bazar","North Waziristan","FATA",1,0,0,3,3,0,0,3,3,3,3,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+347,2013-10-29,"1:30","Dandey Darpakhel Area- five kilometres (three miles) north of Miranshah","North Waziristan","FATA",1,0,5,0,0,0,0,5,5,2,2,"N",70.1455,32.9746,"2013","Barack Obama",1,5
+348,2013-11-21,"","Tehsil Tal's main Tal bazaar","Hungu","KPK",4,0,0,2,2,4,4,6,8,6,8,"N",71.06,33.53,"2013","Barack Obama",1,0
+349,2013-11-28,"","Chashma area of Miranshah","North Waziristan","FATA",2,0,3,0,0,0,0,3,3,8,8,"N",70.1455,32.9746,"2013","Barack Obama",1,3
+350,2013-12-14,"","Mach Magai area of Loe Suleman","Khyber Agency","FATA",1,0,0,6,6,0,0,0,6,2,4,"N",71.1481,34.0983,"2013","Barack Obama",1,0
+351,2013-12-25,"2:00","Qutub Khel village- 5km  east of miranshah","North Waziristan","FATA",2,0,0,3,4,0,0,3,4,0,1,"N",70.1455,32.9746,"2013","Barack Obama",1,0
+352,2014-06-11,"2:30","Dargah Mandi village 10 kilometres (six miles) west of the main town of Miramshah ","North Waziristan","FATA",8,0,16,0,0,4,6,16,16,4,4,"N",70.1455,32.9746,"2014","Barack Obama",1,16
+353,2014-06-18,"5:30","Dargah Mandi village 10 kilometres (six miles) west of the main town of Miramshah ","North Waziristan","FATA",6,0,0,6,6,0,0,6,6,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+354,2014-07-10,"5:00","Datta Khel is about 50 kilometers (30 miles) west of Miran Shah","North Waziristan","FATA",2,0,6,0,0,0,0,6,6,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,6
+355,2014-07-16,"","Datta Khel is about 50 kilometers (30 miles) west of Miran Shah","North Waziristan","FATA",4,0,20,0,0,0,0,18,20,0,5,"N",70.1455,32.9746,"2014","Barack Obama",1,20
+356,2014-07-19,"23:45","Datta Khel is about 50 kilometers (30 miles) west of Miran Shah","North Waziristan","FATA",1,0,15,0,0,5,5,8,15,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,15
+357,2014-08-06,"","Datta Khel is about 50 kilometers (30 miles) west of Miran Shah","North Waziristan","FATA",1,0,0,0,0,5,6,5,6,2,2,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+358,2014-09-24,"4:45","Lorha Mandi area of Datta Khel tehsil- 65 kilometres west of Miramshah","North Waziristan","FATA",4,0,10,0,0,2,2,10,10,2,2,"N",70.1455,32.9746,"2014","Barack Obama",1,10
+359,2014-09-28,"12:00","Karikot Karezai Pal- Wana","South Waziristan","FATA",1,0,4,0,0,2,2,4,4,0,0,"N",69.9,33.0333,"2014","Barack Obama",1,4
+360,2014-10-05,"17:50","Kand Ghar area of Shawal district","South Waziristan","FATA",4,0,5,0,0,1,1,5,5,2,2,"N",69.9,33.0333,"2014","Barack Obama",1,5
+361,2014-10-06,"17:45","Bari Mail area of Shawal district","South Waziristan","FATA",1,0,8,0,0,0,0,8,8,6,8,"N",69.9,33.0333,"2014","Barack Obama",1,8
+362,2014-10-07,"","Kandghar area of Shawal","North Waziristan","FATA",2,0,7,0,0,0,0,6,7,5,11,"N",70.1455,32.9746,"2014","Barack Obama",1,7
+363,2014-10-07,"12:30","Datta Khel area","North Waziristan","FATA",3,0,4,0,0,0,0,2,8,4,4,"N",70.1455,32.9746,"2014","Barack Obama",1,4
+364,2014-10-07,"18:30","A house in the Datta Khel area ","North Waziristan","FATA",1,0,0,4,4,0,0,4,4,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+365,2014-10-09,"","Loman area of Dattakhel Tehsil","North Waziristan","FATA",1,0,0,3,3,0,0,3,4,2,2,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+366,2014-10-30,"","Nargas- a village some 30 kilometres west of Wana- the main town in the South Waziristan agency ","South Waziristan","FATA",1,0,7,0,0,1,4,4,7,0,0,"N",69.9,33.0333,"2014","Barack Obama",1,7
+367,2014-11-11,"","Doa Toi area of Datakhel tehsil in North Waziristan Agency","North Waziristan","FATA",1,0,6,0,0,0,0,4,6,0,2,"N",70.1455,32.9746,"2014","Barack Obama",1,6
+368,2014-11-20,"","Dattakhel","North Waziristan","FATA",2,0,6,0,-6,0,0,0,5,0,3,"Y",70.1455,32.9746,"2014","Barack Obama",1,6
+369,2014-11-21,"","N/A","North Waziristan","FATA",1,0,5,0,-5,0,0,0,9,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,5
+370,2014-11-26,"","Kundghar","North Waziristan","FATA",2,0,4,0,-4,0,0,0,6,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,4
+371,2014-12-03,"","Dattakhel","North Waziristan","FATA",1,0,3,0,3,0,0,6,9,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,3
+372,2014-12-07,"6:00","Kher Tangi","North Waziristan","FATA",1,0,0,0,0,0,0,0,18,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+373,2014-12-20,"","Dattakhel","North Waziristan","FATA",2,0,0,0,0,0,0,0,6,0,2,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+374,2014-12-26,"","Dattakhel","North Waziristan","FATA",1,0,0,0,0,0,0,0,6,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,0
+375,2014-12-26,"","Shawal Valley","North Waziristan","FATA",1,0,5,-4,-1,0,0,4,39,0,0,"N",70.1455,32.9746,"2014","Barack Obama",1,5
+376,2015-01-03,"","Shawal valley ","North Waziristan","FATA",1,0,0,0,0,0,0,0,8,0,2,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+377,2015-01-15,"","Acha Dara area ","North Waziristan","FATA",1,0,6,0,0,0,0,0,6,0,0,"",70.1455,32.9746,"2015","Barack Obama",1,6
+378,2015-01-15,"2:00","Wacha Dhara area- Spilgai- border of SWA and NWA","South Waziristan","FATA",1,0,0,0,7,0,0,0,7,0,0,"",69.9,33.0333,"2015","Barack Obama",1,0
+379,2015-01-19,"","Shawal Valley","North Waziristan","FATA",2,0,0,0,0,0,7,0,6,0,4,"",70.1455,32.9746,"2015","Barack Obama",1,0
+380,2015-01-28,"","Shawal Valley","North Waziristan","FATA",2,0,0,7,0,0,0,0,7,0,4,"",70.1455,32.9746,"2015","Barack Obama",1,0
+381,2015-03-24,"","Nazyan district of Afghanistan's Nangarhar province","Khyber Agency","FATA",2,0,9,0,0,0,0,0,9,0,0,"N",71.1481,34.0983,"2015","Barack Obama",1,9
+382,2015-03-18,"","Shabak Kurram tribal agency-adjacent to North Waziristan","North Waziristan","FATA",1,0,3,0,0,0,0,2,3,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,3
+383,2015-04-12,"","Shawwal ","North Waziristan","FATA",2,4,0,0,0,0,0,0,4,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,4
+384,2015-05-16,"","Warokey Mandi area Shawal district","North Waziristan","FATA",2,0,0,0,0,1,0,5,6,0,2,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+385,2015-05-18,"","Zoey Narey Shawal Valley ","North Waziristan","FATA",2,0,0,0,0,0,0,0,6,0,2,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+386,2015-05-18,"","Datta Khel ","North Waziristan","FATA",2,0,0,0,0,0,0,0,6,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+387,2015-05-21,""," Datta Khel- Shawal Valley ","North Waziristan","FATA",1,0,0,0,0,0,0,15,16,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+388,2015-06-01,"","Shawal area","North Waziristan","FATA",2,0,0,0,0,0,0,0,4,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,0
+389,2015-06-06,"","Shawal Valley","North Waziristan","FATA",1,0,9,0,0,0,0,8,9,0,0,"N",70.1455,32.9746,"2015","Barack Obama",1,9
+390,2015-08-06,"","Datta Khel ","North Waziristan","FATA",1,0,5,0,0,0,0,0,5,0,0,"N",32.905167,69.748798,"2015","Barack Obama",1,5
+391,2015-09-01,"","Shawal Valley/Datta Khel(Karwanda /Lawra Mandi area)","North Waziristan","FATA",1,0,0,0,0,0,0,0,5,0,3,"N",32.844444,69.830556,"2015","Barack Obama",1,0
+392,2015-09-07,"","Shawal Valley","North Waziristan","FATA",1,0,0,0,0,0,0,0,3,0,0,"N",32.844444,69.830556,"2015","Barack Obama",1,0
+393,2015-09-18,"","Shonkrai Narai area","North Waziristan","FATA",2,0,0,6,7,0,0,6,7,6,0,"N",32.320237,69.859741,"2015","Barack Obama",1,0
+394,2015-09-18,"","Shawal region","North Waziristan","FATA",1,0,19,0,0,0,0,0,19,0,0,"N",32.844444,69.830556,"2015","Barack Obama",1,19
+395,2016-01-09,"","Mangroti area","North Waziristan","FATA",1,0,0,0,0,0,0,0,5,0,0,"N",32.320237,69.859741,"2016","Barack Obama",1,0
+396,2016-01-22,"","Kurram agency","North Waziristan","FATA",4,0,0,0,0,0,0,0,3,1,1,"N",33.695975,70.336069,"2016","Barack Obama",1,0
+397,2016-05-21,"15:45","Kuchaki","Dalbandin","Balochistan",1,0,1,1,1,0,0,2,2,0,0,"0",28.896179,64.399215,"2016","Barack Obama",1,1
+398,2017-03-02,"16:00","Sara Khwa, Kurram agency","North Waziristan","FATA",1,0,2,0,0,0,0,2,2,0,0,"N",32.293811,70.105,"2017","Barack Obama",1,2
+400,2017-04-26,"12:30","Lawara Mandi area","North Waziristan","FATA",2,0,7,3,3,0,0,10,10,0,0,"",33.145357,70.029226,"2017","Barack Obama",1,7
+401,2017-05-24,"12:00","Garvik area, Shawal Tehsil","North Waziristan","FATA",1,0,0,0,0,0,0,3,3,0,0,"N",32.7061861,69.4157815,"2017","Barack Obama",1,0
+402,2017-06-12,"21:00","Spin Thal","Hangu","KPK",1,0,0,0,0,0,0,2,2,0,0,"N",33.358693,70.54072,"2017","Barack Obama",1,0
+403,2017-07-03,"","","South Waziristan","FATA",2,0,0,0,0,0,0,4,4,0,0,"N",32.120819,69.589987,"2017","Barack Obama",1,0
+404,2017-09-15,"","Ghuz Ghari","Kurram Agency","FATA",2,0,0,0,0,0,0,3,3,2,2,"N",33.732174,70.150755,"2017","Barack Obama",1,0
