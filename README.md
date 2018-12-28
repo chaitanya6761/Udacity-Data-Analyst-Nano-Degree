@@ -1,3 +1,7 @@
+# [Udacity Data Analyst Nanodegree](https://www.udacity.com/course/data-analyst-nanodegree--nd002)
+![](https://raw.githubusercontent.com/chaitanya6761/Udacity-Data-Analyst-Nano-Degree/master/certificate.JPG)
+
+
 ### Projects Completed:
 - P0 - Analyze Bay Area Bike Share Data
 - P1 - Test a Perceptual Phenomenon **(Stroop Effect)**
