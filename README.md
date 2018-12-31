@@ -8,6 +8,7 @@
 - P2 - Investigate A Dataset **(Titanic Survival Data)**
 - P3 - Data Wrangling With MongoDB **(Open Street Map Data)**
 - P4 - Explore And Summarize Data **(White Wine Dataset)**
+- P5 - Identify Fraud From Enron Email **(Enron Finance Dataset)**
 - P6 - Data Visualization **(Visualising Pakistan Drone Attacks)**
 
 
